@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type = "text/css" href="css/stylesHome.css"/>
-    <meta charset="UTF-8"/>
+
 </head>
+
 <body>
 
 <!-- NAVIGATION BAR -->
@@ -33,24 +36,6 @@
 </div>
 
 <!-- DROP DOWN LIST CODE FROM W3 -->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-</script>
 
 <div class = "page">
 	<div>
@@ -58,6 +43,6 @@ for (i = 0; i < acc.length; i++) {
 		<h2 class = "title">(Work in progress)</h2>
 	</div>
 </div>
-
+<script src="js/sidebarDropDown.js"></script>
 </body>
 </html>

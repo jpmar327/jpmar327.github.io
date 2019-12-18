@@ -63,6 +63,13 @@
 	position:relative;
 	text-decoration:none;
 }
+.slideshow{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+
+}
 
 .home{
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;

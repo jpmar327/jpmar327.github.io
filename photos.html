@@ -2,105 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-</head>
-<style>
-
-/* The sidebar menu */
-.sidenav {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 20%; /* Set the width of the sidebar */
-	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
-	left: 0;
-	background-color: #111; /* Black */
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
-	text-align: center;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: transparent;
-  color: #444;
-  cursor: pointer;
-  padding: 2.5%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 150%;
-  transition: 0.4s;
-  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: white;
-}
-
-.active, .accordion:hover {
-  background-color: transparent;
-  color: teal;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: grey;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-li {
-	padding-bottom:2.5%;
-	list-style-type: none;
-}
-
-.page {
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 80%; /* Set the width of the sidebar */
-	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
-	right: 0;
-	background-color: white; /* Black */
-	overflow-x: hidden; /* Disable horizontal scroll */
-
-}
-
-.title {
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
-	color: teal;
-	font-size: 300%;
-	text-align: center;
-	padding: 2.5%;
-
-}
-
-.links {
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	color: white;
-	font-size: 100%;
-	position:relative;
-	text-decoration:none;
-}
-.slideshow{
-	margin-left: auto;
-	margin-right: auto;
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
-}
-
-.home{
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 120;
-	color:teal;
-	font-size: 140%;
-	text-align: center;
-	padding: 2.5%;
-	text-decoration:none;
-	padding-top: 5%;
-}
-</style>
-
+    <link rel="stylesheet" type = "text/css" href="css/stylesPhotos.css"/>
 </head>
 <body>
 
@@ -130,29 +32,8 @@ li {
 		</li>
 	</div>
 </div>
-
-<!-- DROP DOWN LIST CODE FROM W3 -->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-</script>
 <div class = "page">
 	<div>
-		<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 		<div class="pa-carousel-widget slideshow" style="width:100%; height:700px; display:none; padding-top: -10%"
 		data-link="https://photos.app.goo.gl/L2tvX5VTVWVfdaydA"
 		data-title="Photo Editing"
@@ -166,6 +47,8 @@ for (i = 0; i < acc.length; i++) {
 		</div>
 	</div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<script src="js/sidebarDropDown.js"></script>
 </body>
 </html>
 
