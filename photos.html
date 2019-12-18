@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+</head>
+<style>
+
+/* The sidebar menu */
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 20%; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	text-align: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 2.5%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 150%;
+  transition: 0.4s;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: white;
+}
+
+.active, .accordion:hover {
+  background-color: transparent;
+  color: teal;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: grey;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+li {
+	padding-bottom:2.5%;
+	list-style-type: none;
+}
+
+.page {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 80%; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	right: 0;
+	background-color: white; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+
+}
+
+.title {
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+	color: teal;
+	font-size: 300%;
+	text-align: center;
+	padding: 2.5%;
+
+}
+
+.links {
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: white;
+	font-size: 100%;
+	position:relative;
+	text-decoration:none;
+}
+.slideshow{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+}
+
+.home{
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 120;
+	color:teal;
+	font-size: 140%;
+	text-align: center;
+	padding: 2.5%;
+	text-decoration:none;
+	padding-top: 5%;
+}
+</style>
+
+</head>
+<body>
+
+
+<!-- NAVIGATION BAR -->
+<div class="sidenav">
+	<div class = "home" >
+	<a class = "home" href = "https://jpmar327.github.io/">HOME</a></div>
+	<button class="accordion">App Development</button>
+	<div class="panel">
+		<li style = "padding-top:2.5%">
+			<a href = "https://jpmar327.github.io/Routelanta/" class = "links" >Routelanta</a>
+		</li>
+		<li>
+			<a href = "https://github.com/jpmar327/Music-Genre-Gif" class = "links">Spotify Gif Player (Work in Progress)</a>
+		</li>
+	</div>
+
+	<button class="accordion">Art</button>
+	<div class="panel">
+		<li style = "padding-top:2.5%">
+			<a href = "photos.html" class = "links">Photo Editing</a>
+			
+		</li>
+		<li>
+			<a class = "links">Photography</a>
+		</li>
+	</div>
+</div>
+
+<!-- DROP DOWN LIST CODE FROM W3 -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+<div class = "page">
+	<div>
+		<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+		<div class="pa-carousel-widget slideshow" style="width:100%; height:700px; display:none; padding-top: -10%"
+		data-link="https://photos.app.goo.gl/L2tvX5VTVWVfdaydA"
+		data-title="Photo Editing"
+		data-description="6 new photos · Album by Jp Martins">
+		<object data="https://lh3.googleusercontent.com/NdRsrkt4nZIc1aeRdL4EgW2QY6DotiGpn0GsggPhF8ltuLksY-BQfijNoSVDOzcT8yCioKuDQ3wncd5wzIquFixf4ifTUygj7TTWATggIfl9Y4vl9276n6knzmohHmrrSNkfGfNnwNA=w1920-h1080"></object>
+		<object data="https://lh3.googleusercontent.com/wjMYdocJ0oaesXq0qZkjBYs8YNTDOT_-MP8Rbh8dtBpyZY1x6724Xfz-pCK3pMKtYlbYSRUnStDYG4XqmrkWxTTqkL4KrVcvz7pR0b8rwYgLK-tUxgCB5sXKwL2SQ9Qa7qD5As7aQvk=w1920-h1080"></object>
+		<object data="https://lh3.googleusercontent.com/T9zvW6aZKk7sZqevNIBexucI4NzrnTNx1cWgtfTiRGBW2-kYBXA7XedKq1_UoCwzz3aa50vNYqeyPQJhkqagty5d0R0lq-e-adLMbUf9w5I51xMm0bT3O2aQFMzWUzXRBbJFbdqZqI8=w1920-h1080"></object>
+		<object data="https://lh3.googleusercontent.com/rOi7xcamGVhx7etHEP5TfzRfcsIduw5AzZAdWrNCB8iwTpoxNmffmikzNQx03p5zt39sGY1pR5qFvvVqAMdjr0JCbr5Ac1hkY1RhFqwjHSFbYh0xC627Kk9uqy2RAN_ZCHBq_gt-T-8=w1920-h1080"></object>
+		<object data="https://lh3.googleusercontent.com/xdnOybkMnwxoY4igLPhlezIS_B02wuy2Mo2VJVIbtbHy2RveqtOV4skbVhdn_Sp6o8Odh3CEoPOmBtPTZm-b-r6UQt0U7ZicTOwSb4Hq4s_g7v4sK-d90B_BAhMSAAY6hdngzqVrIiA=w1920-h1080"></object>
+		<object data="https://lh3.googleusercontent.com/yBSg4xn1cGWrlY7Y3u2HG3kGKWJ1jJ1SBwUVWIZzQ5gNj4D86HxriPJyoTZXqBhT8cKyrO23sALM9de4u9sYcOHCsEB-5gj-vgT3YjnpUK3ssq7jR5Lpq2y6azGzWZAA7N0WDLAhFPA=w1920-h1080"></object>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
