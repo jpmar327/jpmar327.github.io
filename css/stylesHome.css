@@ -4,13 +4,13 @@ html {
 
 .sidenav {
 	height: 100%; 
-	width: 10%;
+	width: 12%;
 	position: fixed; 
 	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #111;
-	overflow-x: hidden;
+	/*overflow-y: scroll;*/
 	padding: 1%;
 	text-align: center;
 }
@@ -40,36 +40,42 @@ html {
 
 .page {
 	height: 100%;
-	width: 89%; 
+	width: 87%;
 	position: fixed;
 	z-index: 1;
 	top: 0; 
-	right: 0;
-	background-color: white;
-	/*overflow-x: hidden;*/
+	left: 13%;
+	background-color: grey;
+	overflow-y: scroll;
+	/*overflow-x: scroll;*/
 
 }
 
-.welcome {
+/*.welcome {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
-	font-size: 110%;
+	font-size: 100%;
 	text-align: center;
 	padding: 1%;
-}
+}*/
 
 .about {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: black;
-	font-size: 150%;
+	/*font-size: 100%;*/
+	font-size: 1.75vw;
 	text-align:center;
+	/*font-size-adjust: 12vw;*/
+	padding: 0.5%;
 }
 
 .links {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
-	font-size: 75%;
+	/*font-size: 75%;*/
+	font-size: 0.75vw;
+
 	position:relative;
 	text-decoration:none;
 }
@@ -78,12 +84,11 @@ html {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color:teal;
-	font-size: 125%;
+	font-size: 2vw;
 	text-align: center;
-	padding: 2.5%;
-	padding-top: 5%;
+	margin: 2.5%;
+	margin-top: 5%;
 	text-decoration:none;
-
 }
 
 .header {
@@ -97,14 +102,9 @@ html {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 .liList {
-	padding: 0.5%;
 	list-style-type: none;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 125%;
-}
-
-img {
-  border-radius: 50%;
+	font-size: 1.5vw;
 }
 
 .center {
@@ -144,43 +144,106 @@ img {
 
 .column1of2 {
 	float: left;
-	width: 30%;
-	margin:3%;
+	width: 25vw;
+	/*margin-right: 2.5%*/
+	/*height:12vw;*/
+	/*padding: 1%;*/
+	height: 25vw;
+	border-radius: 50%;
+	background-image: url("me2.jpeg");
+	background-repeat: no-repeat, repeat;
+	background-color: #cccccc;
+	background-position: center;
+	background-size: cover; /* Resize the background image to cover the entire container */
+	/*height:100%;*/
+	/*max-height: 100%;*/
+	/*text-align:center;*/
+	/*padding:1.5%;*/
+	/*padding: 2.5%;*/
+	/*height: 100%*/
 }
 
 .column2of2 {
 	float: left;
-	width:60%;
-	margin:2%;
-}
-.column1of3 {
-	float: left;
-	width: 30%;
-	margin:3%;
+	/*height:auto;*/
+	height: 90%;
+	max-width: 60%;
+	width: 57vw;
+	/*padding:1%;*/
+	padding-left: 5%;
+	/*margin: 2.5%;*/
+	/*height:95%;*/
+	/*max-height: 95%;*/
+	/*padding:2.5%;*/
+
 }
 
-.column2of3 {
-	float: left;
-	width: 30%;
-	margin:3%;
-}
-.column3of3 {
-	float: left;
-	width: 30%;
-	margin:3%;
-}
 
 #section1 {
-  height: 400px;
-  width: 89%;
-  background-color: white;
-  right:0;
-  top:0;
-  z-index: 1;
-  position: fixed;
+	/*background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;*/
+	margin: 2.5%;
+	padding: 1vw;
+	align-content: center;
+	/*z-index: 1;*/
 }
 
 #section2 {
-  height: 600px;
-  background-color: #111;
+	margin: 2.5%;
+	padding: 1vw;
+	align-content: center;
+}
+
+#section3 {
+	margin: 2.5%;
+	padding: 1vw;
+	align-content: center;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	/*height:60%;*/
+	height:25vw;
+	/*width: 80vw;*/
+	margin:0;
+	border-radius: 5px;
+	padding: 2vw;
+	background-color: white;
+
+
+}
+
+#profile img {
+	/*object-fit: scale-down;*/
+	/*display: circle;*/
+	border-radius: 100%;
+	/*height: 11vw;*/
+	/*height:100%;*/
+	/*text-align: center;*/
+	width:10vw;
+	height:100%;
+	/*height:auto;*/
+	/*max-width: 450px;
+	max-height: 450px;*/
+	/*min-width: 30%;*/
+	/*float: left;*/
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    /*right: 10%;*/
+    bottom: 0;
+	/*padding: 1vw;*/
+	/*position: fixed;*/
+	
+}
+
+.bck-img{
+	/*<img src="pictures/me.jpeg" style = "width:auto;height:20vw;"alt="me"/>*/
+	background: color url('pictures/me.jpeg') others;
+}
+
+.profile{
+	padding: 0.5vw;
 }

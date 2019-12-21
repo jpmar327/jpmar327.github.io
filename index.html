@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8"/ name="viewport">
 	<link rel="stylesheet" type = "text/css" href="css/stylesHome.css"/>
 
 </head>
@@ -11,7 +11,7 @@
 
 <!-- NAVIGATION BAR -->
 <div class="sidenav">
-	<div class = "home" >
+	<div >
 	<a class = "home" href = "https://jpmar327.github.io/">HOME</a></div>
 	<button class="accordion">App Development</button>
 	<div class="panel">
@@ -25,30 +25,39 @@
 	<div class="panel">
 		<div>
 			<li style = "padding-top:2.5%" class="liSide"><a href = "photos.html" class = "links">Photo Editing</a></li>
-			<li class="liSide"><a a href = "#section2" class = "links" >Photography</a></li>
+			<li class="liSide"><a a href = "#section1" class = "links" >Photography</a></li>
 		</div>
 	</div>
 </div>
 
 <!-- MAIN PAGE -->
-<section id = "section1">
-<!-- 	<div class = "header">
-		<div class = "welcome">jpmartins327@gmail.com | (770) 728 - 2086</div>
-	</div> -->
-	<div class = "column1of2">
-		<img src="pictures/me.jpeg" alt="me" width="100%" height="100%"/>
-	</div>
-
-	<div class = "column2of2">
-		<div class = "about"><strong>ABOUT ME</strong></div>
-		<div style = "padding:1.5%">
-			<li class = "liList" style = "font-size:150%;">Joao Pedro "JP" Santos Martins</li>
-			<li class = "liList"><strong>Georgia Institute of Technology:</strong> Bachelors Degree in Mecahnical Engineering, Class of 2019</li>
-<!-- 			<li class = "liList"><strong>Bachelors Degree: </strong>Mechanical Engineering</li> -->
-
+<div class = "page">
+	<div id = "section1">
+		<div class = "card" >
+			<div class="column1of2" id = "profile" ></div>
+			
+			<div class = "column2of2">
+				<div class = "about"><strong>ABOUT ME</strong></div>
+				<li class = "liList">Joao Pedro "JP" Santos Martins</li>
+				<li class = "liList"><strong>Georgia Institute of Technology:</strong> Bachelors Degree in Mecahnical Engineering, Class of 2019</li>
+			</div>
 		</div>
 	</div>
-</section>
+	<div id = "section2">
+		<div class = "card">
+			<div>
+				
+			</div>
+		</div>
+	</div>
+	<div id = "section3">
+		<div class = "card">
+			<div>
+				
+			</div>
+		</div>
+	</div>
+</div>
 
 <script src="js/sidebarDropDown.js"></script>
 </body>
