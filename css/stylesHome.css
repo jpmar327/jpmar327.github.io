@@ -46,7 +46,7 @@ html {
 	z-index: 1;
 	top: 0; 
 	left: 13%;
-	background-color: grey;
+	background-color: #111;
 	/*overflow-y: scroll;*/
 	overflow: scroll;
 
@@ -63,14 +63,21 @@ html {
 #about {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
-	color: black;
-	font-size: 100%;
+	color: white;
+	font-size: 2vw;
 	text-align:center;
 	padding: 0.5%;
     left: 0;
     right: 0;
 }
+#job {
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+	color: teal;
+	font-size: 2vw;
+	padding: 0.5%;
 
+}
 .links {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
@@ -107,6 +114,17 @@ html {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-size: 1.5vw;
 	text-overflow: hidden;
+	color: white;
+}
+
+#liExp {
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 1.5vw;
+	text-overflow: hidden;
+	color: white;
+	padding-bottom: 1%;
+	margin-left: 0; 
+	padding-left: 0;
 }
 
 .column1of2 {
@@ -134,21 +152,20 @@ html {
 
 }
 
-
 #section1 {
 	display: block;
 	height: auto;
 	align-content: center;
-	width:95%;
-	padding: 2.5%;
+	width:98%;
+	padding: 1%;
 }
 
 #section2 {
 	display: block;
 	height: auto;
 	align-content: center;
-	width:95%;
-	padding: 2.5%;
+	width:98%;
+	padding: 1%;
 }
 
 #section3 {
@@ -162,10 +179,10 @@ html {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	height:inherit;
-	width: inherit;
+	width: 95%;
 	border-radius: 5px;
-	padding: inherit;
-	background-color: white;
+	padding: 2.5%;
+	background-color: #24292e;
 	display: inline-block;
 
 
