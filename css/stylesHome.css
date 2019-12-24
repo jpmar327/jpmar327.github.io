@@ -186,7 +186,7 @@ body{
 	margin-right: 2.5%;
 	height: 300px;
 	border-radius: 50%;
-	background-image: url("me.jpeg");
+	background-image: url("me.JPEG");
 	background-repeat: no-repeat, repeat;
 	background-color: #cccccc;
 	background-position: center;
