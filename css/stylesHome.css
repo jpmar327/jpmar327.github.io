@@ -2,17 +2,35 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+	/*width:700px;*/
+	display: block;
+	background: #111;
+	overflow-y: scroll;
+	/*overflow-x: scroll;*/
+
+}
 .sidenav {
 	height: 100%; 
-	width: 12%;
+	width: 150px;
 	position: fixed; 
 	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #111;
 	/*overflow-y: scroll;*/
-	padding: 1%;
+	/*padding: 1%;*/
 	text-align: center;
+	/*float:left;*/
+	margin-right: 5%;
+}
+
+#sections{
+	text-align: center;
+	font-size: 100%;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: white;
+	text-decoration:none;
 }
 
 .accordion {
@@ -41,14 +59,24 @@ html {
 .page {
 	height: 100%;
 	/*width: 87%;*/
-	width:87vw;
-	position: fixed;
-	z-index: 1;
+	/*width:87vw;*/
+	position: absolute;
+	/*z-index: 1;*/
 	top: 0; 
-	left: 13%;
+	/*left: 25%;*/
 	background-color: #111;
-	/*overflow-y: scroll;*/
-	overflow: scroll;
+	max-width: 900px;
+	min-width: 775px;
+	/*margin: calc( - 775px);*/
+	margin-top: 0%;
+	margin-bottom: 0%;
+	
+	left: 25%;
+	right: 25%;
+
+	/*float:left;*/
+	
+
 
 }
 
@@ -64,26 +92,39 @@ html {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: white;
-	font-size: 2vw;
+	font-size: 150%;
 	text-align:center;
 	padding: 0.5%;
+	margin-bottom: 2%;
     left: 0;
     right: 0;
+    /*display: inline-block;*/
 }
 #job {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: teal;
-	font-size: 2vw;
-	padding: 0.5%;
+	font-size: 100%;
+	/*float: left;*/
+	margin: 0;
+	/*padding: 0.5%;*/
 
 }
+#title{
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+	color: teal;
+	font-size: 100%;
+	margin: auto;
+	/*float: left;*/
+	margin: 0%;
+}
+
 .links {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
-	/*font-size: 75%;*/
-	font-size: 0.75vw;
-
+	font-size: 75%;
+	/*font-size: 0.75vw;*/
 	position:relative;
 	text-decoration:none;
 }
@@ -112,26 +153,38 @@ html {
 #liList {
 	list-style-type: none;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 1.5vw;
+	/*font-size: 1.5vw;*/
+
 	text-overflow: hidden;
 	color: white;
 }
 
 #liExp {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-size: 1.5vw;
+	/*font-size: 1.5vw;*/
 	text-overflow: hidden;
 	color: white;
 	padding-bottom: 1%;
 	margin-left: 0; 
-	padding-left: 0;
+	font-size: 100%;
+	/*padding-left: 0;*/
 }
 
+
+.resume{
+	height: auto;
+	width: 97.5%;
+	display: inline-block;
+	padding-left: 2.5%;
+	/*padding-top: 1%;*/
+	margin-bottom:2.5%;
+
+}
 .column1of2 {
 	float: left;
-	width: 25vw;
-	/*margin-right: 2.5%;*/
-	height: 25vw;
+	width: 125px;
+	margin-right: 2.5%;
+	height: 125px;
 	border-radius: 50%;
 	background-image: url("me2.jpeg");
 	background-repeat: no-repeat, repeat;
@@ -141,13 +194,13 @@ html {
 	position: inline-block;
 }
 
+
 .column2of2 {
-	width: 57.5%;
+	width: 65%;
 	/*min-width: 380px;*/
 	padding-left: 2.5%;
 	display: inline-block;
 	float: left;
-	position: absolute;
 	height: inherit;
 
 }
@@ -158,6 +211,7 @@ html {
 	align-content: center;
 	width:98%;
 	padding: 1%;
+
 }
 
 #section2 {
@@ -168,13 +222,34 @@ html {
 	padding: 1%;
 }
 
-#section3 {
+#sectionBio {
+	display: block;
+	height: auto;
+	align-content: center;
+	width:95%;
+	padding: 2.5%;
+	/*max-width: 775px;*/
+	/*min-width: 750px;*/
+	/*overflow-x: scroll;*/
+}
+
+#sectionResume {
+	display: block;
+	height: auto;
+	align-content: center;
+	width:95%;
+	padding: 2.5%;
+	/*max-width: 775px;*/
+}
+
+#sectionProjects {
 	display: block;
 	height: auto;
 	align-content: center;
 	width:95%;
 	padding: 2.5%;
 }
+
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -197,7 +272,18 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
+    text-align: center;
 	
+}
+
+#jobsicon img{
+	float: left;
+	height: 75px;
+	margin:auto;
+	position: inline;
+	margin-right: 2.5%;
+	padding-left: 3.5%
+
 }
 
 .bck-img{
