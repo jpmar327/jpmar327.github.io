@@ -222,7 +222,7 @@ body{
 	padding: 1%;
 }
 
-#sectionBio {
+#bio {
 	display: block;
 	height: auto;
 	align-content: center;
@@ -233,7 +233,7 @@ body{
 	/*overflow-x: scroll;*/
 }
 
-#sectionResume {
+#experience {
 	display: block;
 	height: auto;
 	align-content: center;
