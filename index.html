@@ -14,8 +14,9 @@
 		<!-- <div class="accordion">Resume</divclass="accordion"> -->
 		<div>
 		<a class = "home" href = "https://jpmar327.github.io/">HOME</a></div>
-		<div style="margin:5%"><a href = "#bio" id = "sections" >About Me</a></div>
-		<div style="margin:5%"><a href = "#experience" id = "sections" >Experience</a></div>
+		<div style="margin:5%"><a href = "#bio" class = "sections" >About Me</a></div>
+		<div style="margin:5%"><a href = "#experience" class = "sections" >Experience</a></div>
+		<div style="margin:5%"><a href = "#projects" class = "sections" >Projects</a></div>
 		<div class="panel">
 			<div>
 				<li class="liSide" style = "padding-top:2.5%"><a href = "https://jpmar327.github.io/Routelanta/" class = "links" >Routelanta</a></li>
@@ -41,72 +42,101 @@
 
 	<!-- MAIN PAGE -->
 	<div class = "page">
-
+		<!-- About me -->
 		<div id = "bio">
 			<div  class = "card">
-				<div class=" column1of2" id = "profile" >
+				<div class=" column1of2" class = "profile" >
 					
 				</div>
 				
 				<!-- <div class = "column2of2"> -->
-					<div id = "about"><strong>ABOUT ME</strong></div>
-					<li id = "liList">Joao Pedro "JP" Santos Martins</li>
-					<li id = "liList"><strong>Georgia Institute of Technology:</strong> Bachelors Degree in Mechanical Engineering, Class of 2019</li>
+					<div class = "sectionHeader"><strong>ABOUT ME</strong></div>
+					<li class = "liList">Joao Pedro "JP" Santos Martins</li>
+					<li class = "liList"><strong>Georgia Institute of Technology:</strong> Bachelors Degree in Mechanical Engineering, Class of 2019</li>
 				<!-- </div> -->
 			</div>
 
 		</div>
+		<!-- Experience -->
 		<div id = "experience">
 			<div class = "card">
-				<div id = "about"><strong>PROFESSIONAL EXPERIENCE</strong></div>
+				<div class = "sectionHeader"><strong>PROFESSIONAL EXPERIENCE</strong></div>
 
-					<div id = "jobsicon">
-						<img src="css/GTRI_icon2.png" alt="gtri">
-						<h1 id = "job"><strong style = "font-size: 150%">Georgia Tech Research Institute (GTRI)</strong><br><i>CIPHER Student Assistant</i></h1>
-					</div>
-					<div class = "resume">
+					<!-- <div> -->
+						<img class = "icon" src="css/GTRI_icon2.png" alt="gtri">
+						<a class = "job"><strong>Georgia Tech Research Institute (GTRI)</strong><br><i>CIPHER Student Assistant</i></a>
+					<!-- </div> -->
+					<div class = "listInfo">
 						<ul>
-							<li id = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
-							<li id = "liExp">Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
-							<li id = "liExp">Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
+							<li class = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
+							<li class = "liExp">Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
+							<li class = "liExp">Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
 						</ul>
 					</div>
 
-					<div id = "jobsicon">
-						<img src="css/AW_icon.png" alt="aw">
-						<h1 id = "job"><strong style = "font-size: 150%">Archer Western</strong><br><i>Project Engineer Intern</i></h1>
-					</div>
-					<div class = "resume">
+						<img class = "icon" src="css/AW_icon.png" alt="aw">
+						<a class = "job"><strong>Archer Western</strong><br><i>Project Engineer Intern</i></a>
+					<div class = "listInfo">
 						<ul>
-							<li id = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
-							<li id = "liExp">Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
-							<li id = "liExp">Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
+							<li class = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
+							<li class = "liExp">Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
+							<li class = "liExp">Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
 						</ul>
 					</div>
 
-					<div id = "jobsicon">
-						<img src="css/TI_icon.png" alt="ti">
-						<h1 id = "job"><strong style = "font-size: 150%">TI Automotive</strong><br><i>Quality Engineer Intern </i></h1>
-					</div>
-					<div class = "resume">
+						<img class = "icon" src="css/TI_icon.png" alt="ti">
+						<a class = "job"><strong>TI Automotive</strong><br><i>Quality Engineer Intern </i></a>
+					<div class = "listInfo">
 						<ul>
-							<li id = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
-							<li id = "liExp">Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
-							<li id = "liExp">Formulated and enforced new work protocol tests to analyze quality of gas tanks and filler pipes</li>
-							<li id = "liExp">Trained new employees on proper testing operations and effectively using aforementioned work protocols</li>
+							<li class = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
+							<li class = "liExp">Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
+							<li class = "liExp">Formulated and enforced new work protocol tests to analyze quality of gas tanks and filler pipes</li>
+							<li class = "liExp">Trained new employees on proper testing operations and effectively using aforementioned work protocols</li>
 						</ul>
 					</div>
 
 			</div>
 		</div>
-		<div id = "sectionProjects">
+		<div id = "projects">
 			<div class = "card">
-				<div>
-					
+				<div class = "sectionHeader">
+					<strong>TECHNICAL PROJECTS</strong>
 				</div>
+
+				<div class = "iconHeader">
+						<a href = "https://github.com/jpmar327/Music-Genre-Gif" class="iconHeader">
+							<img src="css/spotify_icon.png" alt="spotify" class = "iconHeader">
+<!-- 						</a> -->
+<!-- 						<a href = "https://github.com/jpmar327/Music-Genre-Gif" class="iconHeader"> -->
+							<h1 class = "iconHeader">Spotify to Visual App</h1>
+						</a>
+						
+				</div>
+				<div class = "listInfo">
+					<ul>
+						<li class = "liProjects">Created a web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
+						<li class = "liProjects">Displays current song playback information to a front-end client display using a React.js & Node.js</li>
+						<li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li>
+					</ul>
+				</div>
+				<div class = "iconHeader">
+					<a class = "iconHeader" href = "https://jpmar327.github.io/Routelanta/">
+							<img class = "iconHeader" src="css/routelanta_icon.png" alt="routelanta">
+							<h1 class = "iconHeader">Routelanta</h1>
+					</a>
+						
+				</div>
+				<div class = "listInfo">
+					<ul>
+						<li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
+						<li class = "liProjects">Identified several Points of Interest around Atlanta, modified algorithm to locate runs in vicinity of points of interests</li>
+						<li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using the following data from Strava</li>
+					</ul>
+				</div>	
 			</div>
 		</div>
 	</div>
+</div>
 
 	<script src="js/sidebarDropDown.js"></script>
 </body>

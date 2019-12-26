@@ -19,18 +19,19 @@ body{
 	left: 0;
 	background-color: #111;
 	/*overflow-y: scroll;*/
-	/*padding: 1%;*/
+	padding-top: 1.5%;
 	text-align: center;
 	/*float:left;*/
-	margin-right: 5%;
+	margin-right: 35px;
 }
 
-#sections{
+.sections{
 	text-align: center;
 	font-size: 125%;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
 	text-decoration:none;
+	display: block;
 }
 
 .accordion {
@@ -57,7 +58,7 @@ body{
 }
 
 .page {
-	height: 100%;
+	/*height: 100%;*/
 	/*width: 87%;*/
 	/*width:87vw;*/
 	position: absolute;
@@ -71,8 +72,8 @@ body{
 	margin-top: 0%;
 	margin-bottom: 0%;
 	
-	left: 25%;
-	right: 25%;
+	left: 30%;
+	right: 30%;
 
 	/*float:left;*/
 	
@@ -88,7 +89,7 @@ body{
 	padding: 1%;
 }*/
 
-#about {
+.sectionHeader {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: white;
@@ -98,16 +99,34 @@ body{
 	margin-bottom: 2%;
     left: 0;
     right: 0;
+
     /*display: inline-block;*/
 }
-#job {
+.job {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
+	/*font-weight: 10;*/
 	color: teal;
-	font-size: 100%;
+	font-size: 150%;
 	/*float: left;*/
 	margin: 0;
 	/*padding: 0.5%;*/
+	text-decoration:none;
+	margin-bottom: 0%;
+
+}
+
+.projectTitle{
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*font-weight: 10;*/
+	color: teal;
+	font-size: 150%;
+	/*float: left;*/
+	/*margin: 0;*/
+	/*padding: 0.5%;*/
+	text-decoration:none;
+/*	vertical-align: middle;*/
+	/*margin-bottom: 0%;*/
+	/*align-content: center;*/
 
 }
 #title{
@@ -150,7 +169,7 @@ body{
 	list-style-type: none;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
-#liList {
+.liList {
 	list-style-type: none;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	/*font-size: 1.5vw;*/
@@ -159,7 +178,7 @@ body{
 	color: white;
 }
 
-#liExp {
+.liExp {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	/*font-size: 1.5vw;*/
 	text-overflow: hidden;
@@ -170,8 +189,18 @@ body{
 	/*padding-left: 0;*/
 }
 
+.liProjects {
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*font-size: 1.5vw;*/
+	text-overflow: hidden;
+	color: white;
+	padding-bottom: 1%;
+	margin-left: 0; 
+	font-size: 120%;
+	/*padding-left: 0;*/
+}
 
-.resume{
+.listInfo{
 	height: auto;
 	width: 97.5%;
 	display: inline-block;
@@ -214,14 +243,6 @@ body{
 
 }
 
-#section2 {
-	display: block;
-	height: auto;
-	align-content: center;
-	width:98%;
-	padding: 1%;
-}
-
 #bio {
 	display: block;
 	height: auto;
@@ -242,7 +263,7 @@ body{
 	/*max-width: 775px;*/
 }
 
-#sectionProjects {
+#projects {
 	display: block;
 	height: auto;
 	align-content: center;
@@ -263,7 +284,7 @@ body{
 
 }
 
-#profile img {
+img.profile {
 	border-radius: 100%;
 	width:10vw;
 	height:100%;
@@ -275,12 +296,132 @@ body{
     text-align: center;
 	
 }
+div.iconHeader {
+	/*width: 100%;*/
 
-#jobsicon img{
-	float: left;
-	width: 100px;
+	/*position:relative;*/
+	height:90px;
+	/*position: relative;*/
+	/*line-height:90px;*/
+	/*display: block;*/
+	/*margin: auto;*/
+	/*float: left;*/
+	/*margin: 1em auto;*/
+	/*display:inline-block;*/
+	/*margin:auto;*/
+	/*position: block;*/
+	/*padding: inherit;*/
+	/*margin-right: 2.5%;*/
+	/*padding-left: 60px;*/
+	/*padding-right: 2.5%;*/
+	/*margin-bottom: 2.5%;*/
+	padding-inline-start:10%;
+	padding-inline-end:10%;
+
+
+}
+a.iconHeader{
+	text-decoration: none;
+	height: 0px;
+
+}
+h1.iconHeader {
+	/*width: 70%;*/
+	font-size: 45px;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	line-height: 90px;
+	/*position:relative;*/
+	/*height:90px;*/
+	/*line-height:90px;*/
 	margin:auto;
-	position: inline;
+	/*text-decoration: none;*/
+	/*float: left;*/
+	/*display:inline;*/
+	text-align: center;
+	color:#008080;
+	/*margin:auto;*/
+	/*position: block;*/
+	/*padding: inherit;*/
+	/*margin-right: 2.5%;*/
+	/*padding-left: 60px;*/
+	/*padding-right: 2.5%;*/
+	/*margin-bottom: 2.5%;*/
+
+
+}
+
+img.iconHeader{
+	float: left;
+	height:90px;
+	/*margin:auto;*/
+/*	display: inline;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(50%, 0);*/
+	
+/*	margin-left: auto;
+	margin-right: auto;*/
+	/*position: block;*/
+/*	margin-right: 2.5%;
+	padding-left: 3.5%*/
+	padding-inline-end:2.5%;
+
+}
+
+#projectIcon{
+	/*height: 90px;*/
+	/*float: left;*/
+	/*width: 100%;*/
+	/*margin:auto;*/
+	/*padding-left: 10%;*/
+	/*display: block;*/
+}
+img.projectIcon{
+	float: left;
+	width: 90px;
+	margin:auto;
+	/*position: block;*/
+/*	margin-right: 2.5%;
+	padding-left: 3.5%*/
+
+}
+
+h1.projectIcon{
+	width:100%;
+	font-size:45px;
+	/*float: left;*/
+	/*margin: auto;*/
+	/*display: inline;*/
+	text-align: center;
+	/*padding-left: 5%;*/
+	/*text-decoration: none;*/
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*font-weight: 10;*/
+	color: teal;
+}
+#projectIcon a{
+	margin:auto;
+	text-decoration: none;
+}
+
+#projectName {
+	width:calc(85% - 90px);
+	font-size:250%;
+	padding-left: 5%;
+	text-decoration: none;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+	color: teal;
+	/*text-align: center;*/
+}
+#pr {
+	vertical-align: center;
+}
+.icon{
+	float: left;
+	width: 15%;
+	margin:auto;
+	/*position: block;*/
 	margin-right: 2.5%;
 	padding-left: 3.5%
 
