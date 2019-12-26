@@ -73,15 +73,18 @@ body{
 
 
 .sectionHeader {
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
-	color: white;
-	font-size: 225%;
-	text-align:center;
+
 	padding: 0.5%;
 	margin-bottom: 2%;
     left: 0;
     right: 0;
+}
+h1.sectionHeader{
+		font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-weight: 10;
+	color: white;
+	font-size: 225%;
+	text-align:center;
 }
 .job {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
