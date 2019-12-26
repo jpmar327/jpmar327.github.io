@@ -58,58 +58,36 @@ body{
 }
 
 .page {
-	/*height: 100%;*/
-	/*width: 87%;*/
-	/*width:87vw;*/
 	position: absolute;
-	/*z-index: 1;*/
 	top: 0; 
-	/*left: 25%;*/
 	background-color: #111;
 	max-width: 900px;
 	min-width: 775px;
-	/*margin: calc( - 775px);*/
 	margin-top: 0%;
 	margin-bottom: 0%;
-	
 	left: 30%;
 	right: 30%;
-
-	/*float:left;*/
-	
 
 
 }
 
-/*.welcome {
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	color: white;
-	font-size: 100%;
-	text-align: center;
-	padding: 1%;
-}*/
 
 .sectionHeader {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: white;
-	font-size: 150%;
+	font-size: 225%;
 	text-align:center;
 	padding: 0.5%;
 	margin-bottom: 2%;
     left: 0;
     right: 0;
-
-    /*display: inline-block;*/
 }
 .job {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-weight: 10;*/
 	color: teal;
 	font-size: 150%;
-	/*float: left;*/
 	margin: 0;
-	/*padding: 0.5%;*/
 	text-decoration:none;
 	margin-bottom: 0%;
 
@@ -117,33 +95,16 @@ body{
 
 .projectTitle{
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-weight: 10;*/
 	color: teal;
 	font-size: 150%;
-	/*float: left;*/
-	/*margin: 0;*/
-	/*padding: 0.5%;*/
 	text-decoration:none;
-/*	vertical-align: middle;*/
-	/*margin-bottom: 0%;*/
-	/*align-content: center;*/
 
-}
-#title{
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
-	color: teal;
-	font-size: 100%;
-	margin: auto;
-	/*float: left;*/
-	margin: 0%;
 }
 
 .links {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: white;
 	font-size: 75%;
-	/*font-size: 0.75vw;*/
 	position:relative;
 	text-decoration:none;
 }
@@ -172,32 +133,26 @@ body{
 .liList {
 	list-style-type: none;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-size: 1.5vw;*/
-
 	text-overflow: hidden;
 	color: white;
 }
 
 .liExp {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-size: 1.5vw;*/
 	text-overflow: hidden;
 	color: white;
 	padding-bottom: 1%;
 	margin-left: 0; 
 	font-size: 100%;
-	/*padding-left: 0;*/
 }
 
 .liProjects {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-size: 1.5vw;*/
 	text-overflow: hidden;
 	color: white;
 	padding-bottom: 1%;
 	margin-left: 0; 
 	font-size: 120%;
-	/*padding-left: 0;*/
 }
 
 .listInfo{
@@ -249,9 +204,6 @@ body{
 	align-content: center;
 	width:95%;
 	padding: 2.5%;
-	/*max-width: 775px;*/
-	/*min-width: 750px;*/
-	/*overflow-x: scroll;*/
 }
 
 #experience {
@@ -260,7 +212,6 @@ body{
 	align-content: center;
 	width:95%;
 	padding: 2.5%;
-	/*max-width: 775px;*/
 }
 
 #projects {
@@ -296,142 +247,81 @@ img.profile {
     text-align: center;
 	
 }
-div.iconHeader {
-	/*width: 100%;*/
-
-	/*position:relative;*/
-	height:90px;
-	/*position: relative;*/
-	/*line-height:90px;*/
-	/*display: block;*/
-	/*margin: auto;*/
-	/*float: left;*/
-	/*margin: 1em auto;*/
-	/*display:inline-block;*/
+div.projectContainer{
+	height: 90px
+}
+div.iconContainer{
+	float:left;
+	padding-left:7.5%;
+	padding-right: 2.5%
+}
+img.iconLogo {
+	height: 90px;
+}
+div.nameContainer{
+	display: inline-block;
+}
+h1.projectTitle{
+	/*width: 70%;*/
+	font-size: 35px;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*line-height: 90px;*/
 	/*margin:auto;*/
-	/*position: block;*/
-	/*padding: inherit;*/
-	/*margin-right: 2.5%;*/
-	/*padding-left: 60px;*/
-	/*padding-right: 2.5%;*/
-	/*margin-bottom: 2.5%;*/
+	text-align: center;
+	color:#008080;
+}
+
+div.projectHeader {
+	height:90px;
 	padding-inline-start:10%;
 	padding-inline-end:10%;
 
 
 }
-a.iconHeader{
+a.projectHeader{
 	text-decoration: none;
-	height: 0px;
+	/*height: 0px;*/
 
 }
-h1.iconHeader {
+h1.projectHeader {
 	/*width: 70%;*/
-	font-size: 45px;
+	font-size: 35px;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	line-height: 90px;
-	/*position:relative;*/
-	/*height:90px;*/
-	/*line-height:90px;*/
-	margin:auto;
-	/*text-decoration: none;*/
-	/*float: left;*/
-	/*display:inline;*/
+	/*line-height: 90px;*/
+	/*margin:auto;*/
 	text-align: center;
 	color:#008080;
-	/*margin:auto;*/
-	/*position: block;*/
-	/*padding: inherit;*/
-	/*margin-right: 2.5%;*/
-	/*padding-left: 60px;*/
-	/*padding-right: 2.5%;*/
-	/*margin-bottom: 2.5%;*/
 
 
 }
 
-img.iconHeader{
+/*img.projectHeader{
 	float: left;
 	height:90px;
-	/*margin:auto;*/
-/*	display: inline;
-	left: 50%;
-    margin-right: -50%;
-    transform: translate(50%, 0);*/
-	
-/*	margin-left: auto;
-	margin-right: auto;*/
-	/*position: block;*/
-/*	margin-right: 2.5%;
-	padding-left: 3.5%*/
 	padding-inline-end:2.5%;
 
 }
 
-#projectIcon{
-	/*height: 90px;*/
-	/*float: left;*/
-	/*width: 100%;*/
-	/*margin:auto;*/
-	/*padding-left: 10%;*/
-	/*display: block;*/
-}
 img.projectIcon{
 	float: left;
 	width: 90px;
 	margin:auto;
-	/*position: block;*/
-/*	margin-right: 2.5%;
-	padding-left: 3.5%*/
 
 }
 
 h1.projectIcon{
 	width:100%;
 	font-size:45px;
-	/*float: left;*/
-	/*margin: auto;*/
-	/*display: inline;*/
 	text-align: center;
-	/*padding-left: 5%;*/
-	/*text-decoration: none;*/
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	/*font-weight: 10;*/
 	color: teal;
 }
-#projectIcon a{
-	margin:auto;
-	text-decoration: none;
-}
-
-#projectName {
-	width:calc(85% - 90px);
-	font-size:250%;
-	padding-left: 5%;
-	text-decoration: none;
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-	font-weight: 10;
-	color: teal;
-	/*text-align: center;*/
-}
-#pr {
-	vertical-align: center;
-}
+*/
 .icon{
 	float: left;
 	width: 15%;
 	margin:auto;
-	/*position: block;*/
 	margin-right: 2.5%;
 	padding-left: 3.5%
 
-}
-
-.bck-img{
-	/*<img src="pictures/me.jpeg" style = "width:auto;height:20vw;"alt="me"/>*/
-	background: color url('pictures/me.jpeg') others;
-}
-
-.profile{
-	padding: 0.5vw;
 }
