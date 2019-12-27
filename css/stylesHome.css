@@ -73,14 +73,13 @@ body{
 
 
 .sectionHeader {
-
 	padding: 0.5%;
 	margin-bottom: 2%;
     left: 0;
     right: 0;
 }
 h1.sectionHeader{
-		font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
 	color: white;
 	font-size: 225%;
@@ -96,13 +95,22 @@ h1.sectionHeader{
 
 }
 
-.projectTitle{
+/*.projectTitle{
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: teal;
+	font-size: 150%;
+	text-decoration:none;
+
+}*/
+
+.jobTitle{
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	color: teal;
 	font-size: 150%;
 	text-decoration:none;
 
 }
+
 
 .links {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -251,29 +259,57 @@ img.profile {
 	
 }
 div.projectContainer{
-	height: 90px
+	height: 100px
 }
 div.iconContainer{
 	float:left;
-	padding-left:7.5%;
+	padding-left:5%;
 	padding-right: 2.5%
 }
 img.iconLogo {
-	height: 90px;
+	height: 100px;
 }
 div.nameContainer{
 	display: inline-block;
 }
 h1.projectTitle{
 	/*width: 70%;*/
-	font-size: 35px;
+	font-size: 40px;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	/*line-height: 90px;*/
 	/*margin:auto;*/
 	text-align: center;
 	color:#008080;
 }
+h1.jobTitle{
+	/*width: 70%;*/
+	/*font-size: 25px;*/
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*line-height: 90px;*/
+	/*margin:auto;*/
+	color:#008080;
+}
 
+
+strong.jobTitle{
+	/*width: 70%;*/
+	font-size: 30px;
+	/*font-weight: 10;*/
+	/*font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
+	/*line-height: 90px;*/
+	/*margin:auto;*/
+	/*color:#008080;*/
+}
+
+i.jobTitle{
+	/*width: 70%;*/
+	font-size: 25px;
+	/*font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
+	/*line-height: 90px;*/
+	/*margin:auto;*/
+	font-weight: 10;
+	color:#008080;
+}
 div.projectHeader {
 	height:90px;
 	padding-inline-start:10%;
@@ -293,6 +329,17 @@ h1.projectHeader {
 	/*line-height: 90px;*/
 	/*margin:auto;*/
 	text-align: center;
+	color:#008080;
+
+
+}
+
+h1.jobHeader {
+	/*width: 70%;*/
+	font-size: 35px;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*line-height: 90px;*/
+	margin:auto;
 	color:#008080;
 
 
