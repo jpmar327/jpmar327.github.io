@@ -284,10 +284,10 @@ h1.projectTitle{
 h1.jobTitle{
 	/*width: 70%;*/
 	/*font-size: 25px;*/
-	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
 	/*line-height: 90px;*/
 	/*margin:auto;*/
-	color:#008080;
+	/*color:#008080;*/
 }
 
 
@@ -295,16 +295,16 @@ strong.jobTitle{
 	/*width: 70%;*/
 	font-size: 30px;
 	/*font-weight: 10;*/
-	/*font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	/*line-height: 90px;*/
 	/*margin:auto;*/
-	/*color:#008080;*/
+	color:#008080;
 }
 
 i.jobTitle{
 	/*width: 70%;*/
 	font-size: 25px;
-	/*font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;*/
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	/*line-height: 90px;*/
 	/*margin:auto;*/
 	font-weight: 10;
