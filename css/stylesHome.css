@@ -334,6 +334,8 @@ p.description{
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	text-overflow: hidden;
 	color: white;
+	font-size: 20px;
+	font-weight: 10;
 }
 i.jobTitle{
 	/*width: 70%;*/
