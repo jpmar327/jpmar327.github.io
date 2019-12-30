@@ -12,17 +12,17 @@ body{
 }
 .sidenav {
 	height: 100%; 
-	width: 150px;
+	width: 10%;
 	position: fixed; 
 	z-index: 1;
-	top: 0;
-	left: 0;
+	/*top: 0;*/
+	/*left: 0;*/
 	background-color: #111;
 	/*overflow-y: scroll;*/
 	padding-top: 1.5%;
 	text-align: center;
 	/*float:left;*/
-	margin-right: 35px;
+	/*margin-right: 35px;*/
 }
 
 .sections{
@@ -60,22 +60,17 @@ body{
 .page {
 	position: absolute;
 	top: 0; 
-	background-color: #111;
-	max-width: 900px;
-	min-width: 775px;
+	/*background-color: #111;*/
+	max-width: 90%;
+	min-width: 90%;
 	margin-top: 0%;
-	margin-bottom: 0%;
-	left: 30%;
-	right: 30%;
+	/*margin-bottom: 0%;*/
+	left: 10%;
+	/*right: 30%;*/
 
 
 }
 
-
-.sectionHeader {
-    left: 0;
-    right: 0;
-}
 h1.sectionHeader{
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 10;
@@ -179,11 +174,11 @@ h1.sectionHeader{
 	margin-right: 2.5%;
 	height: 300px;
 	border-radius: 50%;
-	background-image: url("me2.png");
+	/*background-image: url("me2.png");
 	background-repeat: no-repeat, repeat;
 	background-color: #cccccc;
 	background-position: center;
-	background-size: cover; /* Resize the background image to cover the entire container */
+	background-size: cover; /* Resize the background image to cover the entire container */*/
 	position: inline-block;
 }
 
@@ -211,35 +206,37 @@ h1.sectionHeader{
 	display: block;
 	height: auto;
 	align-content: center;
-	width:95%;
-	padding: 2.5%;
+	/*width:95%;*/
+	padding: 0.5%;
 }
 
 #experience {
 	display: block;
 	height: auto;
 	align-content: center;
-	width:95%;
-	padding: 2.5%;
+	/*width:95%;*/
+	padding: 0.5%;
 }
 
 #projects {
 	display: block;
 	height: auto;
 	align-content: center;
-	width:95%;
-	padding: 2.5%;
+	/*width:95%;*/
+	padding: 0.5%;
 }
 
 
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	height:inherit;
-	width: 95%;
+	/*height:inherit;*/
+	width: 60%;
 	border-radius: 5px;
 	padding: 2.5%;
 	background-color: #24292e;
-	display: inline-block;
+	/*display: inline-block;*/
+	margin: 1% auto;
+	padding-top: 1%;
 
 
 }
@@ -257,18 +254,44 @@ img.profile {
 	
 }
 div.projectContainer{
-	height: 100px
+	/*height: 100px*/
 }
+
+div.aboutContainer{
+	/*height: 300px*/
+}
+
 div.iconContainer{
 	float:left;
 	padding-left:5%;
-	padding-right: 2.5%
+	width: 100px;
+	/*padding-right: 2.5%*/
 }
 img.iconLogo {
-	height: 100px;
+	width: 100%;
 }
+div.picContainer{
+	float:left;
+	/*padding-left:5%;*/
+	width: 250px;
+	padding-right: 5%;
+
+}
+img.profilePic {
+	width: 100%;
+	border-radius: 100%;
+
+}
+div.descriptionContainer{
+	/*display: inline-block;*/
+	/*float: left;*/
+	min-height: 250px;
+	/*padding-left: 5%;*/
+}
+
 div.nameContainer{
 	display: inline-block;
+	padding-left: 5%;
 }
 h1.projectTitle{
 	/*width: 70%;*/
@@ -298,7 +321,20 @@ strong.jobTitle{
 	/*margin:auto;*/
 	color:#008080;
 }
-
+h1.description{
+	/*width: 70%;*/
+	font-size: 30px;
+	/*font-weight: 10;*/
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	/*line-height: 90px;*/
+	/*margin:auto;*/
+	color:#008080;
+}
+p.description{
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	text-overflow: hidden;
+	color: white;
+}
 i.jobTitle{
 	/*width: 70%;*/
 	font-size: 25px;
