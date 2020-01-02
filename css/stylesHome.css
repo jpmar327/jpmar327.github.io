@@ -203,17 +203,19 @@ h1.sectionHeader{
 }
 
 #bio {
-	display: block;
+	/*display: block;*/
 	height: auto;
 	align-content: center;
 	/*width:95%;*/
 	padding: 0.5%;
+	position: relative;
 }
 
 #experience {
-	display: block;
+	/*display: block;*/
 	height: auto;
 	align-content: center;
+	position: relative;
 	/*width:95%;*/
 	padding: 0.5%;
 }

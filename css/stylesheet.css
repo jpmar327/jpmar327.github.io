@@ -1,0 +1,228 @@
+html {
+    height: 100%;
+    margin: 0;
+    overflow-y:scroll;
+}
+
+body {
+/*eight: auto; */
+    display: grid;
+    margin: 0 auto;
+    padding: 0 5%;
+    /* padding-bottom: 10%; */
+    padding-top: 2.5%;
+    /* width: 1700px; */
+    min-width: 1000px;
+    overflow-y: hidden;
+    background-color: #111;
+    /* padding: 1%; */
+    grid-template-columns: 650px auto;
+    grid-template-rows: 650px;
+}
+
+div.page{
+	height:95%;
+	width: 100%;
+}
+
+.buttons{
+height: 100%;
+    margin: auto;
+    /* background-color: #111; */
+    border-radius: 5px;
+    display: flex;
+}
+
+.text {
+	color: white;
+	text-align: center;
+	font-size: 125%;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: white;
+}
+
+div.icons{
+    display: inline-flex;
+    padding: 0 5%;
+}
+
+img.icons {
+width: 90%;
+    margin: auto;
+}
+input.icons {
+width: 90%;
+    margin: auto;
+}
+
+img.profile {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.cardSections{
+height: 775px;
+    width: 95%;
+    margin: auto;
+    /*display: block;*/
+}
+
+.col {
+    display: inline-grid;
+    grid-template-rows: 550px 100px;
+    grid-template-columns: 600px;
+    margin: 0 auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+    background-color: #24292e;
+    height: 650px;
+    overflow-y: hidden;
+
+}
+
+h1.description{
+/*width: 70%; */
+    font-size: 175%;
+    /* font-weight: 10; */
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    /* line-height: 90px; */
+    /* margin: auto; */
+    color: #008080;
+}
+p.description{
+font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    /*text-overflow: hidden;*/
+    color: white;
+    font-size: 125%;
+    font-weight: 10;
+}
+div.descriptionContainer{
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*min-height: 250px;*/
+    /*padding-left: 5%;*/
+}
+/*div.nameContainer{
+    display: inline-block;
+    padding-left: 5%;
+}*/
+.sections{
+    text-align: center;
+    font-size: 125%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: white;
+    text-decoration:none;
+    display: block;
+}
+h1.sectionHeader{
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: 10;
+    color: white;
+    font-size: 225%;
+    text-align: center;
+    /*display: inline-block;*/
+    width: 100%;
+}
+@media (max-width:1500px){
+    body {
+    overflow-y: scroll;
+    margin-bottom: 0;
+    margin-top: 5%;
+    padding: 0;
+    /* display: inline-grid; */
+    /* text-align: center; */
+    padding-top: 1%;
+    /* width: 1700px; */
+    /* min-width: 1000px; */
+    overflow-y: hidden;
+    /* background-color: #111; */
+    /* padding: 1%; */
+    grid-template-columns: auto;
+    grid-template-rows: 650px 700px;
+    }
+    .card{
+        width: 80%;
+        margin:auto;
+    }
+}
+#bio {
+    display: block;
+    height: 600px;
+    /* padding: 25px 0; */
+    align-content: center;
+    /* width: 95%; */
+    padding: 25px;
+    /* margin: auto; */
+     /*position: relative;*/
+}
+
+#experience {
+/*display: grid;*/
+    /* height: 90%; */
+    height: 600px;
+    display: none;
+    align-content: center;
+    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
+    /* width: 95%; */
+    padding: 25px;
+     /*margin: auto 0;*/
+}
+
+#projects {
+    display: none;
+    height: 600px;
+    /* padding: 25px 0; 
+    align-content: center;
+    /* width: 95%; */
+    padding: 25px;
+    /* margin: auto; */
+     /*position: relative;*/
+     /*margin: auto 0;*/
+}
+
+.jobHeader{
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: 15% auto;
+    grid-template-rows: 100%;
+
+}
+.iconLogo {
+    height: 90%;
+    margin: auto;
+}
+h1.jobTitle{
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: 10;
+    color: white;
+    font-size: 115%;
+    /*padding-left: 2.5%;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+}
+
+.liExp {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: white;
+    padding-bottom: 0.5%;
+    margin-left: 0;
+    font-size: 80%;
+}
+
+h1.projectTitle{
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: 10;
+    color: white;
+    font-size: 150%;
+}
+.liProjects {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: white;
+    padding-bottom: 0.5%;
+    margin-left: 0;
+    font-size: 80%;
+}

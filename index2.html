@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<!-- <link rel="stylesheet" type = "text/css" href="css/stylesHome.css"/> -->
+
+</head>
+<style>
+
+
+
+
+html {
+    height: 100%;
+    margin: 0;
+    overflow-y:scroll;
+    /*padding: 1%;*/
+}
+
+body {
+    /*height: 100%;*/
+    display: block;
+    margin: auto 0;
+    padding: 2.5%;
+    padding-bottom: 0;
+    /* width: 1700px; */
+    min-width: 1000px;
+    overflow-y: hidden;
+    background-color: #111;
+     /*padding: 1%;*/
+}
+
+div.page{
+	height:95%;
+	width: 100%;
+}
+
+.col1{
+height: 600px;
+    /* width: 685px; 
+    /* background-color: #111; */
+    /* margin: 0 auto; */
+    display: inline-flex;
+    /* padding: 5% 0; */
+    /* margin-left: 5%; */
+    z-index: 1;
+}
+.buttons{
+/*float: left; */
+    /* height: 100%; */
+    width: 100px;
+    /* margin: 1%; */
+    /* margin-right: 10%; */
+    background-color: #111;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+	color: white;
+	text-align: center;
+	font-size: 125%;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: white;
+
+}
+div.col12 {
+	    /* display: inline-block; */
+    /* width: 80%; */
+    height: 600px;
+    float: left;
+    /* padding: 0 10%; */
+    /* min-width: 40%; */
+    max-width: 80%;
+    /* padding: 5%; */
+    /* margin-left: 57.5px; */
+    /* padding-bottom: 0; */
+     margin: 0 auto;
+}
+
+div.icons{
+    /* width: 100%; */
+    height: 10%;
+    /* background-color: white; */
+    display: inline-flex;
+    /*padding-bottom: 30%;*/
+    padding: 5%;
+    padding-bottom: 30%;
+}
+
+img.icons {
+height: 100%;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* height: 40%; */
+    margin: 0 auto;
+}
+
+img.profile {
+    height: 100%;
+    /* margin: 1% 0; */
+    border-radius: 25px;
+    /* display: inline-block; */
+     /*margin: 10% 0;*/
+}
+
+.section{
+    /* padding: 5% 0; */
+    /* display: inline-block; */
+    height: 600px;
+    width: 800px;
+    /* position: relative; */
+    /* margin: auto 0; */
+    float: left;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+    /* padding: 2.5%; */
+    background-color: #24292e;
+    /* padding-top: 1%; */
+    /* display: inline-flex; */
+    /* float: left; */
+    /* height: auto; */
+    /* align-content: center; */
+    /* width: 600px; */
+    /* padding: 15% 0; */
+    height: 100%;
+    /* margin: 3.35% 0;*/
+}
+
+#bio {
+	display: block;
+	height: auto;
+	align-content: center;
+	/*width:95%;*/
+	padding: 0.5%;
+}
+
+@media (max-width:1600px){
+    body {
+    /*text-align:left;*/
+    /*height: 80%;*/
+    /*display: block;*/
+    /*margin: auto 0;*/
+    /*width: 10%;*/
+    /*width: 50%;*/
+    /*margin:calc((50%-800px)/2);*/
+    /*padding-right: 25%;*/
+    margin-bottom: 0;
+    /*padding-right: 0;*/
+    margin-top: 5%;
+    padding: 0;
+    /* width: 1700px; */
+    /*min-width: 1000px;*/
+    /*overflow-y: scroll;*/
+    /*background-color: #111;*/
+     /*padding: 1%;*/
+         display: grid;
+    text-align: center;
+    }
+}
+
+</style>
+<script type="text/javascript">
+//bio,experience,projects,skills,photography
+function SwapDivsWithClick(div1,div2,div3,div4,div5)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   if( d2.style.display == "none" )
+   {
+      d1.style.display = "none";
+      d2.style.display = "block";
+   }
+   else
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
+   }
+}
+</script>
+
+<body>
+	<div class = "col12">
+	<div class = "col1">
+		<div class = "buttons">
+			<div class = "icons">
+				<img class="icons" src="about.png">
+			</div>
+			<div class = "icons">
+				<img class="icons" src="experience.png">
+			</div>
+			<div class = "icons">
+				<img class="icons" src="projects.png">
+			</div>
+			<div class = "icons">
+				<img class="icons" src="skills.png">
+			</div>
+			<div class = "icons">
+				<img class="icons" src="photography.png">
+			</div>
+		</div>
+		<img class = "profile" src="me3.png" alt="me">
+	</div>
+</div>
+	<div class = "section">
+		<div class = "card">
+			
+	</div>
+	</div>	
+	<
+</body>
+</html>

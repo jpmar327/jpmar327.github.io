@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
+</head>
+<script type="text/javascript">
+//bio,experience,projects,skills,photography
+function bio(){
+    document.getElementById('bio').style.display = "block";
+    document.getElementById('experience').style.display = "none";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('skills').style.display = "none";
+    document.getElementById('photos').style.display = "none";
+
+
+}
+
+function exp(){
+    document.getElementById('bio').style.display = "none";
+    document.getElementById('experience').style.display = "block";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('skills').style.display = "none";
+    document.getElementById('photos').style.display = "none";
+
+
+}
+
+function proj(){
+    document.getElementById('bio').style.display = "none";
+    document.getElementById('experience').style.display = "none";
+    document.getElementById('projects').style.display = "block";
+    document.getElementById('skills').style.display = "none";
+    document.getElementById('photos').style.display = "none";
+
+
+}
+
+function skills(){
+    document.getElementById('bio').style.display = "none";
+    document.getElementById('experience').style.display = "none";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('skills').style.display = "none";
+    document.getElementById('photos').style.display = "block";
+
+
+}
+
+function photos(){
+    document.getElementById('bio').style.display = "none";
+    document.getElementById('experience').style.display = "none";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('skills').style.display = "none";
+    document.getElementById('photos').style.display = "block";
+
+
+}
+
+// function SwapDivsWithClick(div1,div2,div3,div4,div5)
+// {
+//     d1 = document.getElementById(div1);
+//     d2 = document.getElementById(div2);
+//     d3 = document.getElementById(div3);
+//     d4 = document.getElementById(div4);
+//     d5 = document.getElementById(div5);
+//     //d2 = document.getElementById(div2);
+
+
+//     if( d2.style.display == "none" )
+//     {
+//       d1.style.display = "none";
+//       d2.style.display = "block";
+//     }
+//     else
+//     {
+//       d1.style.display = "block";
+//       d2.style.display = "none";
+//     }
+// }
+
+// function showDiv() {
+//    document.getElementById('welcomeDiv').style.display = "block";
+// }
+</script>
+
+
+<body>
+    <div class="col">
+        <img class="profile" src="me3.png" alt="me">
+        <div class="buttons">
+            <div class="icons">
+                <input class="icons" type="image" name="about me" title = "About Me" src="about.png"  onclick="bio()" />
+            </div>
+            <div class="icons">
+                <input class="icons" type="image" name="experience" title = "Professional Experience" src="experience.png"  onclick="exp()" />
+            </div>
+            <div class="icons">
+                <input class="icons" type="image" name="projects" title = "Technical Projects" src="projects.png"  onclick="proj()" />
+            </div>
+            <div class="icons">
+                <input class="icons" type="image" name="photos" title = "Digital Design" src="photography.png"  onclick="photo()" />
+            </div>
+            <div class="icons">
+                <input class="icons" type="image" name="skills" title = "Skills" src="skills.png"  onclick="skills()" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div id = "bio">
+            <h1 class = "sectionHeader">ABOUT ME</h1>
+            <div class = "descriptionContainer">
+                <h1 class = "description">Joao Pedro "JP" Santos Martins</h1>
+                <p class = "description">
+                    I graduated from Georgia Institute of Technology with Bachelors in mechanical engineering in December of 2019. I have a passion for software engineering and mechatronics. I am a self taught when it comes to software engineering.
+                </p>
+            </div>
+        </div>
+
+        <div id = "experience">
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/GTRI_icon3.png" alt="gtri">
+                <h1 class = "jobTitle">Georgia Tech Research Institute<br><i>CIPHER Student Assistant</i></h1>
+            </div>
+            <ul>
+                <li class = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
+                <li class = "liExp">Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
+                <li class = "liExp">Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
+            </ul>
+
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/AW_icon2.png" alt="aw">
+                <h1 class = "jobTitle">Archer Western<br><i>Project Engineer Intern</h1>
+            </div>
+            <ul>
+                <li class = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
+                <li class = "liExp">Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
+                <li class = "liExp">Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
+            </ul>
+
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/TI_icon2.png" alt="ti">
+                <h1 class = "jobTitle">TI Automotive<br><i>Quality Engineer Intern</i></h1>
+            </div>
+            <ul>
+                <li class = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
+                <li class = "liExp">Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
+                <li class = "liExp">Formulated and enforced new work protocol tests to analyze quality of gas tanks and filler pipes</li>
+                <li class = "liExp">Trained new employees on proper testing operations and effectively using aforementioned work protocols</li>
+            </ul>
+        </div>
+    <div id = "projects">
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/spotify_icon.png" alt="spotify">
+                <h1 class = "projectTitle">Spotify to Visual App</h1>
+            </div>
+                <ul>
+                    <li class = "liProjects">Created a web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
+                    <li class = "liProjects">Displays current song playback information to a front-end client display using a React.js & Node.js</li>
+                    <li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li>
+                </ul>
+
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/routelanta_icon2.png" alt="routelanta">
+                <h1 class = "projectTitle">Spotify to Visual App</h1>
+            </div>
+            <ul>
+                <li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
+                <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
+                <li class = "liProjects">Used K Means clustering to classify running routes in Atlanta by difficulty based on length and height gaina</li>
+            </ul>
+
+            <div class = "jobHeader">
+                <img class = "iconLogo" src="css/motor_icon.png" alt="motor">
+                <h1 class = "projectTitle">Follow the Dot Robot</h1>
+            </div>
+            <ul>
+                <li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
+                <li class = "liProjects">Identified several Points of Interest around Atlanta, modified algorithm to locate runs in vicinity of points of interests</li>
+                <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
+            </ul>
+        </div>
+    </div>
+<!--         <div class="icons">
+            <input class="icons" type="image" name="about me" title = "About Me" src="about.png"  onclick="showDiv()" />
+        </div>
+        <div class="icons">
+
+            <input class="icons" type="image" name="experience" title = "Professional Experience" src="experience.png" onclick="showDiv()" />
+        </div>
+        <div class="icons">
+            <input class="icons" type="image" name="projects" title = "Technical Projects" src="projects.png" onclick="showDiv()" />
+        </div>
+        <div class="icons">
+            <input class="icons" type="image" name="skills" title = "Skills" src="skills.png" onclick="showDiv()" />
+        </div>
+        <div class="icons">
+            <input class="icons" type="image" name="photography" title = "Digital Design" src="photography.png"  onclick="showDiv()" />
+        </div> -->
+
+</body>
+</body>
+</html>
+
+<!--             <div class="icons">
+                <a href = "#bio" class = "sections" title = "About Me">
+                    <img class="icons" src="about.png">
+                </a>
+            </div> -->
+
+            <!-- <div class="icons">
+                <a href = "#experience" class = "sections" title = "Professional Experience">
+                    <img class="icons" src="experience.png">
+                </a>
+            </div>
+            <div class="icons">
+                <a href = "#projects" class = "sections" title = "Technical Projects">
+                    <img class="icons" src="projects.png">
+                </a>
+            </div>
+            <div class="icons">
+                <a href = "#photos" class = "sections" title = "Digital Design">
+                    <img class="icons" src="photography.png">
+                </a>
+            </div>
+            <div class="icons">
+                <a href = "#skills" class = "sections" title = "Skills">
+                    <img class="icons" src="skills.png">
+                </a>
+            </div> -->
