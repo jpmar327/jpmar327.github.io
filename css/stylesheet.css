@@ -2,6 +2,7 @@ html {
     height: 100%;
     margin: 0;
     overflow-y:scroll;
+
 }
 
 body {
@@ -14,7 +15,9 @@ body {
     /* width: 1700px; */
     min-width: 1000px;
     overflow-y: hidden;
-    background-color: #111;
+    /*background-color: #111;*/
+    background-image: url('side1.png');
+    background-size: cover;
     /* padding: 1%; */
     grid-template-columns: 650px auto;
     grid-template-rows: 650px;
@@ -47,7 +50,7 @@ div.icons{
 }
 
 img.icons {
-width: 90%;
+    height: 100%;
     margin: auto;
 }
 input.icons {
@@ -126,7 +129,7 @@ h1.sectionHeader{
     /*display: inline-block;*/
     width: 100%;
 }
-@media (max-width:1500px){
+@media (max-width:1400px){
     body {
     overflow-y: scroll;
     margin-bottom: 0;
@@ -141,6 +144,8 @@ h1.sectionHeader{
     /* background-color: #111; */
     /* padding: 1%; */
     grid-template-columns: auto;
+    background-image: url('long3.png');
+    background-size: cover;
     grid-template-rows: 650px 700px;
     }
     .card{
@@ -177,7 +182,7 @@ h1.sectionHeader{
     /* padding: 25px 0; 
     align-content: center;
     /* width: 95%; */
-    padding: 55px;
+    padding: 15px;
     /* margin: auto; */
      /*position: relative;*/
      /*margin: auto 0;*/
@@ -190,8 +195,13 @@ h1.sectionHeader{
     grid-template-rows: 100%;
 
 }
+.projectHeader{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15% 70% 15%;
+}
 .iconLogo {
-    height: 90%;
+    height: 95%;
     margin: auto;
 }
 h1.jobTitle{
@@ -212,6 +222,9 @@ h1.jobTitle{
     margin-left: 0;
     font-size:85%;
 }
+.ulExp{
+    margin: 10px 0;
+}
 i.exp{
     font-size: 90%;
 }
@@ -220,12 +233,12 @@ h1.projectTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 150%;
+    font-size: 160%;
 }
 .liProjects {
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
-    font-size: 80%;
+    font-size: 100%;
 }
