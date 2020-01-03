@@ -5,10 +5,10 @@ html {
 }
 
 body {
-/*eight: auto; */
+    /*padding: 0 25%;*/
     display: grid;
-    margin: 0 auto;
-    padding: 0 5%;
+    padding: 2.5%;
+    /* padding: 0 5%; */
     /* padding-bottom: 10%; */
     padding-top: 2.5%;
     /* width: 1700px; */
@@ -167,7 +167,7 @@ h1.sectionHeader{
     align-content: center;
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
-    padding: 25px;
+    padding: 15px;
      /*margin: auto 0;*/
 }
 
@@ -177,7 +177,7 @@ h1.sectionHeader{
     /* padding: 25px 0; 
     align-content: center;
     /* width: 95%; */
-    padding: 25px;
+    padding: 55px;
     /* margin: auto; */
      /*position: relative;*/
      /*margin: auto 0;*/
@@ -198,7 +198,7 @@ h1.jobTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 115%;
+    font-size: 110%;
     /*padding-left: 2.5%;*/
     /*text-align: center;*/
     /*display: inline-block;*/
@@ -210,7 +210,10 @@ h1.jobTitle{
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
-    font-size: 80%;
+    font-size:85%;
+}
+i.exp{
+    font-size: 90%;
 }
 
 h1.projectTitle{
