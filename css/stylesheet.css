@@ -22,7 +22,25 @@ body {
     grid-template-columns: 650px auto;
     grid-template-rows: 650px;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 div.page{
 	height:95%;
 	width: 100%;
@@ -165,54 +183,58 @@ h1.sectionHeader{
 }
 
 #experience {
-/*display: grid;*/
-    /* height: 90%; */
-    height: 600px;
+    /* display: grid; */
+    height: 90%;
+    /* height: 600px; */
     display: none;
     align-content: center;
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
-    padding: 15px;
-     /*margin: auto 0;*/
+    padding: 2.5%;
+    /*margin: auto 0;*/
+    overflow-y: scroll;
 }
 
 #projects {
+
+    height: 90%;
+    /* height: 600px; */
     display: none;
-    height: 600px;
-    /* padding: 25px 0; 
     align-content: center;
+    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
-    padding: 15px;
-    /* margin: auto; */
-     /*position: relative;*/
-     /*margin: auto 0;*/
+    padding: 2.5%;
+    /*margin: auto 0;*/
+    overflow-y: scroll;
 }
 
 .jobHeader{
     display: grid;
-    /* height: 100%; */
+    height: 15%;
     grid-template-columns: 15% auto;
     grid-template-rows: 100%;
 
 }
 .projectHeader{
     display: grid;
+    height: 15%;
+    grid-template-columns: 15% 60% 15%;
     grid-template-rows: 100%;
-    grid-template-columns: 15% 65% 15%;
 }
 .iconLogo {
-    height: 95%;
+    height: 100%;
     margin: auto;
 }
 h1.jobTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 110%;
-    /*padding-left: 2.5%;*/
-    /*text-align: center;*/
-    /*display: inline-block;*/
-    /*width: 100%;*/
+    font-size: 150%;
+    /* padding-left: 2.5%; */
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* width: 100%; */
+    margin: auto 0;
 }
 
 .liExp {
@@ -220,27 +242,28 @@ h1.jobTitle{
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
-    font-size:85%;
+    font-size:115%;
 }
 .ulExp{
     margin: 10px 0;
 }
 i.exp{
-    font-size: 90%;
+    font-size: 85%;
 }
 
 h1.projectTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 160%;
+    font-size: 200%;
+    margin: auto 0;
 }
 .liProjects {
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
-    font-size: 100%;
+    font-size: 115%;
 }
 .button {
     display: inline-block;
@@ -249,14 +272,14 @@ h1.projectTitle{
     border: none;
     color: white;
     text-align: center;
-    /* font-size: 28px; */
-    height: 100%;
+    font-size: 125%;
+    height: 75%;
     /* padding: 20px; */
+    margin-top: 7.5%;
     width: 100%;
     transition: all 0.5s;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     cursor: pointer;
-    /* margin: 5px;
 }
 
 .button span {
