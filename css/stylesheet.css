@@ -149,22 +149,22 @@ h1.sectionHeader{
 }
 @media (max-width:1400px){
     body {
-    overflow-y: scroll;
-    margin-bottom: 0;
-    margin-top: 5%;
-    padding: 0;
-    /* display: inline-grid; */
-    /* text-align: center; */
-    padding-top: 1%;
-    /* width: 1700px; */
-    /* min-width: 1000px; */
-    overflow-y: hidden;
-    /* background-color: #111; */
-    /* padding: 1%; */
-    grid-template-columns: auto;
-    background-image: url('long3.png');
-    background-size: cover;
-    grid-template-rows: 650px 700px;
+        overflow-y: scroll;
+        margin-bottom: 0;
+        margin-top: 5%;
+        padding: 0;
+        /* display: inline-grid; */
+        /* text-align: center; */
+        padding-top: 1%;
+        /* width: 1700px; */
+        /* min-width: 1000px; */
+        overflow-y: hidden;
+        /* background-color: #111; */
+        /* padding: 1%; */
+        grid-template-columns: auto;
+        background-image: url('long3.png');
+        background-size: cover;
+        grid-template-rows: 650px 700px;
     }
     .card{
         width: 80%;
@@ -184,7 +184,7 @@ h1.sectionHeader{
 
 #experience {
     /* display: grid; */
-    height: 90%;
+    height: 95%;
     /* height: 600px; */
     display: none;
     align-content: center;
@@ -197,7 +197,7 @@ h1.sectionHeader{
 
 #projects {
 
-    height: 90%;
+    height: 95%;
     /* height: 600px; */
     display: none;
     align-content: center;
@@ -206,6 +206,19 @@ h1.sectionHeader{
     padding: 2.5%;
     /*margin: auto 0;*/
     overflow-y: scroll;
+}
+
+#photos{
+    /*display: grid;*/
+    height: 82.5%;
+    /* height: 600px; */
+    /* display: none; */
+    /* align-content: center; */
+    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
+    /* width: 95%; */
+    padding: 5%;
+    /* overflow-y: scroll; */
+    /*grid-template-rows: 75% 25%;*/
 }
 
 .jobHeader{
@@ -218,7 +231,7 @@ h1.sectionHeader{
 .projectHeader{
     display: grid;
     height: 15%;
-    grid-template-columns: 15% 60% 15%;
+    grid-template-columns: 15% 60% 20%;
     grid-template-rows: 100%;
 }
 .iconLogo {
@@ -241,11 +254,12 @@ h1.jobTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
     padding-bottom: 0.5%;
+    /* padding-top: 0.5%; */
     margin-left: 0;
-    font-size:115%;
+    font-size: 100%;
 }
 .ulExp{
-    margin: 10px 0;
+    margin: 1.5% 0;
 }
 i.exp{
     font-size: 85%;
@@ -305,4 +319,68 @@ h1.projectTitle{
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    height: 90%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 100%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+.row{
+    display: grid;
+    grid-template-columns: 18.3333333% 18.333333% 8.333% 18.3333% 18.333% 18.333%;
+    grid-template-rows: 100%;
+    padding-top: 2.5%;
+}
+/* Clear floats after the columns */
+.row:after {
+/*  content: "";
+  display: table;
+  clear: both;
+  width: 100%;*/
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+grid-template-rows: 65% 7.5% 22.5%;
+    grid-template-columns: 100%;
+    height: 100%;
+    display: grid;
+}
+
+/* Expanding image text */
+#expandedImg{
+margin: 0 auto;
+    height: 100%;
+    border-bottom: 45px solid #008080;
+}
+#imgtext {
+    color: white;
+    text-align: center;
+    font-size: 125%;
+    margin: auto;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    right: 15%;
+    top: -1%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }

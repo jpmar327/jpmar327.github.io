@@ -6,82 +6,55 @@
 	<link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
 </head>
 <script type="text/javascript">
-//bio,experience,projects,skills,photography
-function bio(){
-    document.getElementById('bio').style.display = "block";
-    document.getElementById('experience').style.display = "none";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('skills').style.display = "none";
-    document.getElementById('photos').style.display = "none";
 
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "grid";
+    }
+    //bio,experience,projects,skills,photography
+    function bio(){
+        document.getElementById('bio').style.display = "block";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('photos').style.display = "none";
+    }
 
-}
+    function exp(){
+        document.getElementById('bio').style.display = "none";
+        document.getElementById('experience').style.display = "block";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('photos').style.display = "none";
+    }
 
-function exp(){
-    document.getElementById('bio').style.display = "none";
-    document.getElementById('experience').style.display = "block";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('skills').style.display = "none";
-    document.getElementById('photos').style.display = "none";
+    function proj(){
+        document.getElementById('bio').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('projects').style.display = "block";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('photos').style.display = "none";
+    }
 
+    function skills(){
+        document.getElementById('bio').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('photos').style.display = "none";
+        document.getElementById('skills').style.display = "block";
+    }
 
-}
+    function photos(){
+        document.getElementById('bio').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('photos').style.display = "block";
+        document.getElementById('skills').style.display = "none";
+    }
 
-function proj(){
-    document.getElementById('bio').style.display = "none";
-    document.getElementById('experience').style.display = "none";
-    document.getElementById('projects').style.display = "block";
-    document.getElementById('skills').style.display = "none";
-    document.getElementById('photos').style.display = "none";
-
-
-}
-
-function skills(){
-    document.getElementById('bio').style.display = "none";
-    document.getElementById('experience').style.display = "none";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('skills').style.display = "none";
-    document.getElementById('photos').style.display = "block";
-
-
-}
-
-function photos(){
-    document.getElementById('bio').style.display = "none";
-    document.getElementById('experience').style.display = "none";
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('skills').style.display = "none";
-    document.getElementById('photos').style.display = "block";
-
-
-}
-
-// function SwapDivsWithClick(div1,div2,div3,div4,div5)
-// {
-//     d1 = document.getElementById(div1);
-//     d2 = document.getElementById(div2);
-//     d3 = document.getElementById(div3);
-//     d4 = document.getElementById(div4);
-//     d5 = document.getElementById(div5);
-//     //d2 = document.getElementById(div2);
-
-
-//     if( d2.style.display == "none" )
-//     {
-//       d1.style.display = "none";
-//       d2.style.display = "block";
-//     }
-//     else
-//     {
-//       d1.style.display = "block";
-//       d2.style.display = "none";
-//     }
-// }
-
-// function showDiv() {
-//    document.getElementById('welcomeDiv').style.display = "block";
-// }
 </script>
 
 
@@ -99,7 +72,7 @@ function photos(){
                 <input class="icons" type="image" name="projects" title = "Technical Projects" src="projects.png"  onclick="proj()" />
             </div>
             <div class="icons">
-                <input class="icons" type="image" name="photos" title = "Digital Design" src="photography.png"  onclick="photo()" />
+                <input class="icons" type="image" name="photos" title = "Digital Design" src="photography.png"  onclick="photos()" />
             </div>
             <div class="icons">
                 <input class="icons" type="image" name="skills" title = "Skills" src="skills.png"  onclick="skills()" />
@@ -192,6 +165,103 @@ function photos(){
                 <li class = "liProjects">A stepper motor control program written in C was flashed onto the MSP Launchpad to control the robot’s pointer based on the coordinates the Python program dictated</li>
             </ul>
         </div>
+
+        <div id = "photos">
+                        <!-- The expanding image container -->
+            <div class="container">
+              <!-- Close the image -->
+              <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+              <!-- Expanded image -->
+              <img id="expandedImg" style="height:100%">
+
+              <!-- Image text -->
+              <div id="imgtext"></div>
+                          <div class="row">
+                <div class="column">
+                    <img src="photos/cave.jpg" alt="Israel Cave" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="photos/City.jpg" alt="Sao Paulo City" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="photos/General Benny.jpg" alt="General Benny" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="photos/Samy Jump.jpg" alt="Wake Kicker" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="photos/Santorini.png" alt="Oia Greece" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="photos/Santorini Boat.jpg" alt="Mediterranean Sea" style = "display:block" onclick="myFunction(this);">
+                </div>
+            </div>
+            </div>
+            <!-- The grid: four columns -->
+
+        </div>
+
+
+<!--             <div class="slideContainer">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img class = "slides" src="photos/cave.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img class = "slides" src="photos/City.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img class = "slides" src="photos/General Benny.jpg" style="width:50%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img class = "slides" src="photos/Samy Jump.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img class = "slides" src="photos/Santorini Boat.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class = "slides" src="photos/Santorini.png" style="width:100%">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/cave.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/City.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/General Benny.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/Samy Jump.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/Santorini Boat.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>    
+                <div class="column">
+                  <img class="demo cursor slides" src="photos/Santorini.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+              </div>
+            </div> -->
     </div>
 
 </body>
