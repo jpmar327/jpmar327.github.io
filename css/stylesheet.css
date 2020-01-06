@@ -16,7 +16,7 @@ body {
     min-width: 1000px;
     overflow-y: hidden;
     /*background-color: #111;*/
-    background-image: url('side1.png');
+    background-image: url('wall.jpg');
     background-size: cover;
     /* padding: 1%; */
     grid-template-columns: 650px auto;
@@ -97,12 +97,23 @@ height: 775px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(36,41,46,0.75);
+    border-radius: 25px;
+    height: 650px;
+    overflow-y: hidden;
+    /*position: relative;*/
+    /*z-index: 2;*/
+}
+/*.textCard {
+    box-shadow: 0 4px 8px 0 rgba(50,50,50,50.2);
     border-radius: 25px;
     background-color: #24292e;
     height: 650px;
     overflow-y: hidden;
-
-}
+    opacity: 0.75;
+    position: relative;
+    z-index: 1;
+}*/
 
 h1.description{
 /*width: 70%; */
@@ -384,3 +395,4 @@ margin: 0 auto;
     font-size: 35px;
     cursor: pointer;
 }
+h1,img,p{opacity: 1;}
