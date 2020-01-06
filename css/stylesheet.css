@@ -1,33 +1,34 @@
 html {
-    height: 100%;
-    margin: 0;
-    overflow-y:scroll;
+/*    height: 100%;
+    margin: 0;*/
+    /*overflow-y:scroll;*/
+    /*padding-top: 2.5%;*/
 
 }
 
 body {
-    /*padding: 0 25%;*/
+    /* padding: 0 25%; */
     display: grid;
+    margin: auto;
     padding: 2.5%;
-    /* padding: 0 5%; */
-    /* padding-bottom: 10%; */
-    padding-top: 2.5%;
     /* width: 1700px; */
-    min-width: 1000px;
-    overflow-y: hidden;
-    /*background-color: #111;*/
-    background-image: url('wall.jpg');
-    background-size: cover;
+    /* min-width: 1000px; */
+    /*overflow-y: hidden;*/
+    /* background-color: #111; */
+    background-image: url(wall.jpg);
+    /* background-size: cover; */
     /* padding: 1%; */
-    grid-template-columns: 650px auto;
-    grid-template-rows: 650px;
+    grid-template-columns: 45% 55%;
+    height: 90%;
+    grid-template-rows: 100%;
+     /*width: 90%;*/
 }
-/* width */
+ /*width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+/* Track 
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
@@ -72,37 +73,40 @@ img.icons {
     margin: auto;
 }
 input.icons {
-width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 img.profile {
-    width: 90%;
+    height: 600px;
     margin: 0 auto;
-    border-radius: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .cardSections{
-height: 775px;
+    height: 775px;
     width: 95%;
     margin: auto;
     /*display: block;*/
 }
 
 .col {
-    display: inline-grid;
-    grid-template-rows: 550px 100px;
+display: inline-grid;
+    grid-template-rows: 600px 125px;
     grid-template-columns: 600px;
     margin: 0 auto;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: rgba(36,41,46,0.75);
-    border-radius: 25px;
-    height: 650px;
-    overflow-y: hidden;
-    /*position: relative;*/
-    /*z-index: 2;*/
+    border-radius: 10px;
+    height: 725px;
+    overflow: hidden;
+    /* position: relative; */
+    /* z-index: 2; */
+    margin: 0 auto;
+    width: 95%;
 }
 /*.textCard {
     box-shadow: 0 4px 8px 0 rgba(50,50,50,50.2);
@@ -158,44 +162,48 @@ h1.sectionHeader{
     /*display: inline-block;*/
     width: 100%;
 }
-@media (max-width:1400px){
+@media (max-width:1300px){
     body {
-        overflow-y: scroll;
-        margin-bottom: 0;
-        margin-top: 5%;
-        padding: 0;
+        /* overflow-y: scroll; */
+        /* margin-bottom: 0; */
+        /* margin-top: 5%; */
+        /* padding: 0; */
         /* display: inline-grid; */
         /* text-align: center; */
-        padding-top: 1%;
+        /* padding-top: 1%; */
         /* width: 1700px; */
+        height: 1450px;
         /* min-width: 1000px; */
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         /* background-color: #111; */
         /* padding: 1%; */
+        padding: 5%;
         grid-template-columns: auto;
-        background-image: url('long3.png');
-        background-size: cover;
-        grid-template-rows: 650px 700px;
+        background-image: url(long3.png);
+        background-size: auto;
+        grid-template-rows: 725px 800px;
+        margin: auto;
     }
     .card{
-        width: 80%;
-        margin:auto;
+        width: 90%;
+        margin: 0 auto;
+        /*height: 100%*/
     }
 }
 #bio {
     display: block;
-    height: 600px;
+    height: 90%;
     /* padding: 25px 0; */
     align-content: center;
     /* width: 95%; */
-    padding: 25px;
+    padding: 2.5%;
     /* margin: auto; */
      /*position: relative;*/
 }
 
 #experience {
     /* display: grid; */
-    height: 95%;
+    height: 90%;
     /* height: 600px; */
     display: none;
     align-content: center;
@@ -208,7 +216,7 @@ h1.sectionHeader{
 
 #projects {
 
-    height: 95%;
+    height: 90%;
     /* height: 600px; */
     display: none;
     align-content: center;
