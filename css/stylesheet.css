@@ -14,8 +14,9 @@ body {
     /* width: 1700px; */
     /* min-width: 1000px; */
     /* overflow-y: hidden; */
-    /* background-color: #111; */
+     /*background-color: #111; */
     background-image: url(wall.jpg);
+    /*background-image: url("D:/jpmar/Documents/Code/Github Pages/jpmar327.github.io/photos/Santorini Boat.jpg");*/
     /* background-size: cover; */
     /* padding: 1%; */
     grid-template-columns: 45% 55%;
@@ -58,7 +59,7 @@ height: 100%;
 .text {
     color: white;
     text-align: center;
-    font-size: 125%;
+    font-size: 50px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
 }
@@ -175,12 +176,12 @@ h1.sectionHeader{
         height: 1450px;
         /* min-width: 1000px; */
         /* overflow-y: hidden; */
-        /* background-color: #111; */
+         background-color: #111; 
         /* padding: 1%; */
         padding: 5%;
         grid-template-columns: auto;
-        background-image: url(long3.png);
-        background-size: auto;
+        /*background-image: url(long3.png);*/
+        /*background-size: auto;*/
         grid-template-rows: 725px 800px;
         margin: auto;
     }
