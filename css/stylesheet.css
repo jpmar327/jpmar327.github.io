@@ -299,14 +299,14 @@ h1.sectionHeader{
 .jobHeader{
     display: grid;
     height: 15%;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 150px auto;
     grid-template-rows: 100%;
 
 }
 .projectHeader{
     display: grid;
-    height: 15%;
-    grid-template-columns: 15% 60% 20%;
+    height: 100px;
+    grid-template-columns: 150px 60% auto;
     grid-template-rows: 100%;
 }
 .iconLogo {
@@ -344,7 +344,7 @@ h1.projectTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 200%;
+    font-size: 35px;
     margin: auto 0;
 }
 .liProjects {
