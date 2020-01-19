@@ -173,8 +173,9 @@ img.profile {
 
 h1.description{
 /*width: 70%; */
-    font-size: 175%;
-    /* font-weight: 10; */
+    font-size: 50px;
+     font-weight: 10; 
+    text-align: center;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /* line-height: 90px; */
     /* margin: auto; */
@@ -184,7 +185,7 @@ p.description{
 font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /*text-overflow: hidden;*/
     color: white;
-    font-size: 125%;
+    font-size: 30px;
     font-weight: 10;
 }
 div.descriptionContainer{
