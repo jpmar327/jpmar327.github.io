@@ -120,7 +120,7 @@ img.profile {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: rgba(36,41,46,0.75);
     border-radius: 5px;
-    height: 700px;
+    height: 90vh;
     overflow: hidden;
     /* position: relative; */
     /* z-index: 2; */
@@ -185,8 +185,8 @@ p.description{
 font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /*text-overflow: hidden;*/
     color: white;
-    font-size: 30px;
-    font-weight: 10;
+    font-size: 45px;
+    font-weight: 1px;
 }
 div.descriptionContainer{
     /*display: inline-block;*/
@@ -226,7 +226,7 @@ h1.sectionHeader{
         /* padding-top: 1%; */
         /* width: 1700px; */
         background-image: url(background_long.png);
-        height: 1450px;
+        /*height: 1450px;*/
         /* min-width: 1000px; */
         /* overflow-y: hidden; */
          background-color: #1a1a1d; 
@@ -243,7 +243,7 @@ h1.sectionHeader{
     .card{
         width: 90%;
         margin: 0 auto;
-        /*height: 100%*/
+        height: 80vh;
     }
 }
 #bio {
@@ -298,7 +298,7 @@ h1.sectionHeader{
 
 .jobHeader{
     display: grid;
-    height: 15%;
+    height: 100px;
     grid-template-columns: 150px auto;
     grid-template-rows: 100%;
 
