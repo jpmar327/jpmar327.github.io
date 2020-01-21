@@ -187,6 +187,7 @@ font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,san
     color: white;
     font-size: 35px;
     font-weight: 1px;
+    margin: auto;
 }
 div.descriptionContainer{
     /*display: inline-block;*/
@@ -248,11 +249,11 @@ h1.sectionHeader{
 }
 #bio {
     display: block;
-    height: 95%;
+    height: 90%;
     /* padding: 25px 0; */
     /* align-content: center; */
     /* width: 95%; */
-    padding: 2.5%;
+    padding: 5%;
     /* margin: auto; */
      /*position: relative;*/
 }
