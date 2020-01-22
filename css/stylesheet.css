@@ -126,6 +126,11 @@ img.profile {
     /* z-index: 2; */
     margin: 0 auto;
     width: 100%;
+    background-repeat: no-repeat; 
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-image: url(background.png);
+    background-size: cover;
 }
 .aboutText{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -338,7 +343,7 @@ h1.jobTitle{
     margin: 1.5% 0;
 }
 i.exp{
-    font-size: 85%;
+    font-size: 30px;
 }
 
 h1.projectTitle{
