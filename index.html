@@ -57,7 +57,6 @@
 
 </script>
 
-
 <body>
     <div class="col">
         <div class = "cardProfile">
@@ -67,27 +66,30 @@
                 <div class="infoGrid">
                     <img src="css/school_logo.png" class="aboutIMG">
                     <h1 class = "aboutText">Georgia Institute of Technology</h1>
+                    <img src="css/bachelors_icon.png" class="aboutIMG">
+                    <h1 class = "aboutText">B.S.M.E.</h1>
                     <img src="css/mail_icon.png" class="aboutIMG">
                     <h1 class = "aboutText">jpmartins327@gmail.com</h1>
                     <img src="css/house_icon.png" class="aboutIMG">
                     <h1 class = "aboutText">Atlanta, GA, USA</h1>
                 </div>
-  <!--               <div style="height:100px;display:flex;width: 500px;">
-                    <a href="linkedin.com/in/joao-pedro-jp-santos-martins-532574108" style="display:inline-block;">
-                        <img style="height:75%;display:inline-block;"  src="css/linkedin_icon.png">
-                    </a>
-                                        <a href="linkedin.com/in/joao-pedro-jp-santos-martins-532574108">
-                        <img style="height:75%;display:inline-block;"  src="css/linkedin_icon.png">
-                    </a>
-                                        <a href="linkedin.com/in/joao-pedro-jp-santos-martins-532574108">
-                        <img style="height:75%;display:inline-block;"  src="css/linkedin_icon.png">
-                    </a>
-                </div> -->
+
+            </div>
+            <div style="height:100px;display:grid;margin:auto;grid-template-columns: auto auto auto;width: 100%">
+                <a href="https://linkedin.com/in/joao-pedro-jp-santos-martins-532574108" style="display:inline-block;height: 100px;text-align: center;">
+                    <img style="height:100%;margin: auto"  src="css/linkedin_icon.png">
+                </a>
+                <a href="https://github.com/jpmar327" style="display:inline-block;height: 100px;text-align: center;">
+                    <img style="height:100%;"  src="css/github_icon.png">
+                </a>
+                <a href="https://www.flickr.com/gp/115564363@N02/z804Ad" style="display:inline-block;height: 100px;text-align: center;">
+                    <img style="height:100%;"  src="css/flikr_icon.png">
+                </a>
             </div>
 
         </div>
         
-        <div class="buttons">
+        <div class="sectionButtons">
             <div class="icons">
                 <input class="icons" type="image" name="about me" title = "About Me" src="about.png"  onclick="bio()" />
             </div>
@@ -108,11 +110,9 @@
 
     <div class="card">
         <div id = "bio">
-            <h1 class = "sectionHeader">ABOUT ME</h1>
             <div class = "descriptionContainer">
-                <h1 class = "description">Joao Pedro "JP" Santos Martins</h1>
                 <p class = "description">
-                    I graduated from Georgia Institute of Technology with Bachelors in mechanical engineering in December of 2019. I have a passion for software engineering and mechatronics. I am a self taught when it comes to software engineering.
+                    Recent graduate from Georgia Tech currently in search of a full-time software engineering position. Experienced in multiple programming languages, frameworks, and engineering software. Developed multiple applications and projects using programming tools and languages, such as Python, JavaScript, HTML, C, React.js, etc.
                 </p>
             </div>
         </div>
@@ -120,7 +120,7 @@
         <div id = "experience">
             <div class = "jobHeader">
                 <img class = "iconLogo" src="css/GTRI_icon3.png" alt="gtri">
-                <h1 class = "jobTitle"><strong>Georgia Tech Research Institute</strong><br><i class = "exp">CIPHER Student Assistant</i></h1>
+                <h1 class = "jobTitle">Georgia Tech Research Institute<br><i class = "exp">CIPHER Student Assistant</i></h1>
             </div>
             <ul class = "ulExp">
                 <li class = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
@@ -130,7 +130,7 @@
 
             <div class = "jobHeader">
                 <img class = "iconLogo" src="css/AW_icon2.png" alt="aw">
-                <h1 class = "jobTitle"><strong>Archer Western</strong><br><i class = "exp">Project Engineer Intern / Construction Estimator Intern</i></h1>
+                <h1 class = "jobTitle">Archer Western<br><i class = "exp">Project Engineer Intern / Construction Estimator Intern</i></h1>
             </div>
             <ul class = "ulExp">
                 <li class = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
@@ -144,7 +144,7 @@
 
             <div class = "jobHeader">
                 <img class = "iconLogo" src="css/TI_icon2.png" alt="ti">
-                <h1 class = "jobTitle"><strong>TI Automotive</strong><br><i class = "exp">Quality Engineer Intern</i></h1>
+                <h1 class = "jobTitle">TI Automotive<br><i class = "exp">Quality Engineer Intern</i></h1>
             </div>
             <ul class = "ulExp">
                 <li class = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
@@ -156,12 +156,12 @@
     <div id = "projects">
             <div class = "projectHeader">
                 <img class = "iconLogo" src="css/spotify_icon.png" alt="spotify">
-                <h1 class = "projectTitle"><strong>Spotify to Visual App</strong></h1>
+                <h1 class = "projectTitle">Spotify to Visual App</h1>
                 <a href="https://github.com/jpmar327/Music-Genre-Gif" style="display: contents;">
                     <button class="button" style="vertical-align:middle"><span>Repository </span></button>
                 </a>
             </div>
-                <ul>
+                <ul  class = "ulExp">
                     <li class = "liProjects">Created a web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
                     <li class = "liProjects">Displays current song playback information to a front-end client display using a React.js & Node.js</li>
                     <li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li>
@@ -169,12 +169,12 @@
 
             <div class = "projectHeader">
                 <img class = "iconLogo" src="css/routelanta_icon2.png" alt="routelanta">
-                <h1 class = "projectTitle"><strong>Routelanta Running App</strong></h1>
+                <h1 class = "projectTitle">Routelanta Running App</h1>
                 <a href="https://jpmar327.github.io/Routelanta/" style="display: contents;">
                     <button class="button" style="vertical-align:middle"><span>Routelanta </span></button>
                 </a>
             </div>
-            <ul>
+            <ul  class = "ulExp">
                 <li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
                 <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
                 <li class = "liProjects">Used K Means clustering to classify running routes in Atlanta by difficulty based on length and height gain</li>
@@ -182,13 +182,13 @@
 
             <div class = "projectHeader">
                 <img class = "iconLogo" src="css/motor_icon.png" alt="motor">
-                <h1 class = "projectTitle"><strong>Follow the Dot Robot</strong></h1>
+                <h1 class = "projectTitle">Follow the Dot Robot</h1>
                 <a href="https://github.com/jpmar327/Follow-the-Dot-Robot" style="display: contents;">
                     <button class="button" style="vertical-align:middle"><span>Repository </span></button>
                 </a>
             </div>
-            <ul>
-                <li class = "liProjects">Constructed a robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and a camera</li>
+            <ul  class = "ulExp">
+                <li class = "liProjects">Constructed a robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
                 <li class = "liProjects">Movement of colored pin was detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
                 <li class = "liProjects">A stepper motor control program written in C was flashed onto the MSP Launchpad to control the robot’s pointer based on the coordinates the Python program dictated</li>
             </ul>
@@ -222,7 +222,7 @@
                     <img src="photos/Santorini.png" alt="Oia Greece" onclick="myFunction(this);">
                 </div>
                 <div class="column">
-                    <img src="photos/Santorini Boat.jpg" alt="Mediterranean Sea" style = "display:block" onclick="myFunction(this);">
+                    <img src="photos/Santorini Boat.jpg" alt="Mediterranean Sea" onclick="myFunction(this);">
                 </div>
             </div>
             </div>
