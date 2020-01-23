@@ -53,12 +53,10 @@ div.page{
     width: 100%;
 }
 
-.buttons{
-height: 100%;
+.sectionButtons{
+    height: 100%;
     margin: auto;
-    /* background-color: #111; */
-    border-radius: 5px;
-    display: flex;
+    background-color: #0b0c10;
 }
 
 .text {
@@ -71,11 +69,11 @@ height: 100%;
 
 div.icons{
     display: inline-flex;
-    padding: 0 5%;
+    padding: 20px;
 }
 
 img.icons {
-    height: 100%;
+    width: 100%;
     margin: auto;
 }
 input.icons {
@@ -99,8 +97,8 @@ img.profile {
     /* background-color: tomato; */
     /* border-radius: 10px; */
     display: grid;
-    grid-template-columns: inherit;
-    grid-template-rows: auto auto 100px;
+    /*grid-template-columns: inherit;*/
+    grid-template-rows: auto auto auto;
 
 }
 .cardSections{
@@ -112,13 +110,12 @@ img.profile {
 
 .col {
     display: inline-grid;
-    grid-template-rows: auto auto;
-    /* grid-template-columns: 500px; */
-     /*margin: 0 auto;*/
+    grid-template-columns: auto 100px;
+    grid-template-rows: 100%;
 }
 .card {
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75); */
-    background-color: rgba(36,41,46,1);
+    background-color: #0b0c10;
     /* border-radius: 5px; */
     height: 100vh;
     overflow: hidden;
@@ -129,7 +126,7 @@ img.profile {
     background-repeat: no-repeat; 
     /*background-attachment: fixed;*/
     background-position: center;
-    background-image: url(background.png);
+    background-image: url(background1.png);
     background-size: cover;
 }
 .aboutText{
@@ -226,7 +223,7 @@ h1.sectionHeader{
 }
 @media (max-width:1300px){
     body {
-         overflow-y: scroll; 
+        overflow-y: scroll;
         /* margin-bottom: 0; */
         /* margin-top: 5%; */
         /* padding: 0; */
@@ -234,15 +231,15 @@ h1.sectionHeader{
         /* text-align: center; */
         /* padding-top: 1%; */
         /* width: 1700px; */
-        /*background-image: url(background_long.png);*/
-        /*height: 1450px;*/
+        /* background-image: url(background_long.png); */
+        /* height: 1450px; */
         /* min-width: 1000px; */
         /* overflow-y: hidden; */
-         /*background-color: #1a1a1d; */
+        background-color: #0b0c10;
         /* padding: 1%; */
-        /*padding: 5%;*/
+        /* padding: 5%; */
         grid-template-columns: auto;
-        /*background-image: url(long3.png);*/
+        /* background-image: url(long3.png); */
         background-size: cover;
         grid-template-rows: auto auto;
         margin: auto;
@@ -251,8 +248,9 @@ h1.sectionHeader{
     }
     .card{
         /*width: 90%;*/
-        margin: 50px 0 0 0;
+        /*margin: 50px 0 0 0;*/
         height: 82.5vh;
+        background-color: #0b0c10;
     }
     input.icons {
         width: 75%;
@@ -282,6 +280,44 @@ h1.sectionHeader{
     }
     .name{
         font-size: 60px;
+    }
+    .sectionButtons{
+        height: auto;
+        padding: 25px 0;
+        /* background-color: #111; */
+        /* border-radius: 5px; */
+        display: flex;
+    }
+    .col {
+        /* display: inline-grid; */
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+    div.icons{
+        display: inline-flex;
+        margin: auto;
+    }
+
+    img.icons {
+    /*    width: 100px;
+        margin: auto;*/
+    }
+    input.icons {
+/*        width: 100px;
+        margin: auto;*/
+    }
+    .cardProfile{
+        height: 100%;
+        width: 100%;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+         background-color: white; 
+        /* border-radius: 10px; */
+        display: grid;
+        /*grid-template-columns: inherit;*/
+        grid-template-rows: auto auto 100px 50px;
+
     }
 }
 #bio {
