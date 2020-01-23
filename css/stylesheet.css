@@ -283,10 +283,11 @@ h1.sectionHeader{
     }
     .sectionButtons{
         height: auto;
-        padding: 25px 0;
+        padding: 25px 0 0 0;
         /* background-color: #111; */
         /* border-radius: 5px; */
         display: flex;
+
     }
     .col {
         /* display: inline-grid; */
