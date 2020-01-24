@@ -235,118 +235,26 @@ h1.sectionHeader{
     /*display: inline-block;*/
     width: 100%;
 }
-@media (max-width:1300px){
-    body {
-        overflow-y: scroll;
-        /* margin-bottom: 0; */
-        /* margin-top: 5%; */
-        /* padding: 0; */
-         display: grid; 
-        /* text-align: center; */
-        /* padding-top: 1%; */
-        /* width: 1700px; */
-        /* background-image: url(background_long.png); */
-        /* height: 1450px; */
-        /* min-width: 1000px; */
-        /* overflow-y: hidden; */
-        background-color: #0b0c10;
-        /* padding: 1%; */
-        /* padding: 5%; */
-        grid-template-columns: auto;
-        /* background-image: url(long3.png); */
-        background-size: cover;
-        grid-template-rows: auto auto;
-        margin: auto;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    .card{
-        /*width: 90%;*/
-        /*margin: 50px 0 0 0;*/
-        height: 82.5vh;
-        background-color: #0b0c10;
-    }
-    input.icons {
-        width: 75%;
-        margin: auto;
-    }
-    .infoGrid {
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 100px auto;
-         margin: 0 15px; 
-    }
-
-    .aboutText {
-        padding-bottom: 0.5%;
-        /* padding-top: 0.5%; */
-        margin-left: 0;
-        font-size: 40px;
-        font-weight: 10;
-        margin: auto 0;
-        padding-left: 25px;
-    }
-    .aboutIMG {
-        /* float: left; */
-        height: 75px;
-        margin: auto;
-        /* padding-right: 10px; */
-    }
-    .name{
-        font-size: 60px;
-    }
-    .sectionButtons{
-        height: auto;
-        /*padding: 25px 0 0 0;*/
-        /* background-color: #111; */
-        /* border-radius: 5px; */
-        display: flex;
-        margin: 0;
-
-    }
-
-    img.profile {
-        height: 500px;
-        width: auto;
-    }
-
-    .col {
-        /* display: inline-grid; */
-        grid-template-rows: auto 200px;
-        grid-template-columns: auto;
-        /* margin: 0 auto; */
-        width: 100%;
-    }
-    div.icons{
-        display: inline-flex;
-        /*margin: auto;*/
-    }
-
-    img.icons {
-    /*    width: 100px;
-        margin: auto;*/
-    }
-    input.icons {
-        width: 60%;
-        /*margin: auto;*/
-    }
-    .cardProfile{
-        height: 100%;
-        width: 100%;
-        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-         background-color: white; 
-        /* border-radius: 10px; */
-        display: grid;
-        /*grid-template-columns: inherit;*/
-        grid-template-rows: 600px 150px auto 50px;
-
-    }
-    .linksIcon{
-        grid-template-rows: 100px;
-        grid-template-columns: 200px 200px 200px;
-    }
-
+.rowImg {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  padding: 0 0.5%;
 }
+
+/* Create four equal columns that sits next to each other */
+.columnImg {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.columnImg img {
+  margin-top: 2.5%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
 #bio {
     display: block;
     height: 95%;
@@ -386,14 +294,14 @@ h1.sectionHeader{
 
 #photos{
     /*display: grid;*/
-    height: 82.5%;
+    height: 85%;
     /* height: 600px; */
      display: none; 
     /* align-content: center; */
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
     padding: 5%;
-    /* overflow-y: scroll; */
+     overflow-y: scroll; 
     /*grid-template-rows: 75% 25%;*/
 }
 
@@ -562,4 +470,130 @@ margin: 0 auto;
     font-size: 35px;
     cursor: pointer;
 }
+
 h1,img,p{opacity: 1;}
+
+@media (max-width:1300px){
+    body {
+        overflow-y: scroll;
+        /* margin-bottom: 0; */
+        /* margin-top: 5%; */
+        /* padding: 0; */
+         display: grid; 
+        /* text-align: center; */
+        /* padding-top: 1%; */
+        /* width: 1700px; */
+        /* background-image: url(background_long.png); */
+        /* height: 1450px; */
+        /* min-width: 1000px; */
+        /* overflow-y: hidden; */
+        background-color: #0b0c10;
+        /* padding: 1%; */
+        /* padding: 5%; */
+        grid-template-columns: auto;
+        /* background-image: url(long3.png); */
+        background-size: cover;
+        grid-template-rows: auto auto;
+        margin: auto;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .card{
+        /*width: 90%;*/
+        /*margin: 50px 0 0 0;*/
+        /*height: 82.5vh;*/
+        background-color: #0b0c10;
+    }
+    input.icons {
+        width: 75%;
+        margin: auto;
+    }
+    .infoGrid {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100px auto;
+         margin: 0 15px; 
+    }
+
+    .aboutText {
+        padding-bottom: 0.5%;
+        /* padding-top: 0.5%; */
+        margin-left: 0;
+        font-size: 40px;
+        font-weight: 10;
+        margin: auto 0;
+        padding-left: 25px;
+    }
+    .aboutIMG {
+        /* float: left; */
+        height: 75px;
+        margin: auto;
+        /* padding-right: 10px; */
+    }
+    .name{
+        font-size: 60px;
+    }
+    .sectionButtons{
+        height: auto;
+        /*padding: 25px 0 0 0;*/
+        /* background-color: #111; */
+        /* border-radius: 5px; */
+        display: flex;
+        margin: 0;
+
+    }
+
+    img.profile {
+        height: 500px;
+        width: auto;
+    }
+
+    .col {
+        /* display: inline-grid; */
+        grid-template-rows: auto 200px;
+        grid-template-columns: auto;
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+    div.icons{
+        display: inline-flex;
+        /*margin: auto;*/
+    }
+
+    img.icons {
+    /*    width: 100px;
+        margin: auto;*/
+    }
+    input.icons {
+        width: 60%;
+        /*margin: auto;*/
+    }
+    .cardProfile{
+        height: 100%;
+        width: 100%;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+        background-color: white; 
+        /* border-radius: 10px; */
+        display: grid;
+        /*grid-template-columns: inherit;*/
+        grid-template-rows: 600px 150px auto 50px;
+
+    }
+    .linksIcon{
+        grid-template-rows: 100px;
+        grid-template-columns: 200px 200px 200px;
+    }
+    .columnImg {
+        /*flex: none;*/
+        max-width: 100%;
+    }
+    .rowImg {
+        display: block;
+        /*flex-wrap: none;*/
+        /*padding: 0 4px;*/
+    }
+    #photos{
+        height:95%;
+    }
+
+}
