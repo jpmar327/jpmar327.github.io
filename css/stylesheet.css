@@ -56,7 +56,7 @@ div.page{
 .sectionButtons{
     height: 100%;
     margin: auto;
-    background-color: #0b0c10;
+    background-color: #1d202b;
 }
 
 .text {
@@ -82,13 +82,12 @@ input.icons {
 }
 
 img.profile {
-    margin: 0 auto;
     border-radius: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 250px;
+    width: 300px;
     margin: auto;
     display: block;
-    margin-top: 35px;
+    margin-top: auto;
 }
 .cardProfile{
     height: 100%;
@@ -98,9 +97,24 @@ img.profile {
     /* border-radius: 10px; */
     display: grid;
     /*grid-template-columns: inherit;*/
-    grid-template-rows: auto auto auto;
-
+    grid-template-rows: 350px 50px auto;
 }
+
+.linksIcon{
+    display: grid;
+    margin: auto;
+    /*height: 50px;*/
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px;
+}
+
+a.iconLinks{
+    text-align: center;
+}
+img.iconLinks{
+    height: 100%;
+}
+
 .cardSections{
     height: 775px;
     width: 95%;
@@ -136,15 +150,15 @@ img.profile {
     padding-bottom: 0.5%;
     /* padding-top: 0.5%; */
     margin-left: 0;
-    font-size: 25px;
-    font-weight: 10;
+    font-size: 22.5px;
+    font-weight: 500;
     margin: auto 0;
 
 }
 .infoGrid{
     display: grid;
     grid-template-rows: 50px 50px 50px 50px;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 75px auto;
     /*margin: 0 15px;*/
 }
 
@@ -227,7 +241,7 @@ h1.sectionHeader{
         /* margin-bottom: 0; */
         /* margin-top: 5%; */
         /* padding: 0; */
-        /* display: inline-grid; */
+         display: grid; 
         /* text-align: center; */
         /* padding-top: 1%; */
         /* width: 1700px; */
@@ -283,22 +297,29 @@ h1.sectionHeader{
     }
     .sectionButtons{
         height: auto;
-        padding: 25px 0 0 0;
+        /*padding: 25px 0 0 0;*/
         /* background-color: #111; */
         /* border-radius: 5px; */
         display: flex;
+        margin: 0;
 
     }
+
+    img.profile {
+        height: 500px;
+        width: auto;
+    }
+
     .col {
         /* display: inline-grid; */
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 200px;
         grid-template-columns: auto;
         /* margin: 0 auto; */
         width: 100%;
     }
     div.icons{
         display: inline-flex;
-        margin: auto;
+        /*margin: auto;*/
     }
 
     img.icons {
@@ -306,8 +327,8 @@ h1.sectionHeader{
         margin: auto;*/
     }
     input.icons {
-/*        width: 100px;
-        margin: auto;*/
+        width: 60%;
+        /*margin: auto;*/
     }
     .cardProfile{
         height: 100%;
@@ -317,13 +338,18 @@ h1.sectionHeader{
         /* border-radius: 10px; */
         display: grid;
         /*grid-template-columns: inherit;*/
-        grid-template-rows: auto auto 100px 50px;
+        grid-template-rows: 600px 150px auto 50px;
 
     }
+    .linksIcon{
+        grid-template-rows: 100px;
+        grid-template-columns: 200px 200px 200px;
+    }
+
 }
 #bio {
     display: block;
-    height: 90%;
+    height: 95%;
     /* padding: 25px 0; */
     /* align-content: center; */
     /* width: 95%; */
@@ -340,7 +366,7 @@ h1.sectionHeader{
     height: 95%;
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
-    padding: 2.5%;
+    padding: 5%;
     /*margin: auto 0;*/
     overflow-y: scroll;
 }
@@ -353,7 +379,7 @@ h1.sectionHeader{
     /*align-content: center;*/
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
-    padding: 2.5%;
+    padding: 5%;
     /*margin: auto 0;*/
     overflow-y: scroll;
 }
