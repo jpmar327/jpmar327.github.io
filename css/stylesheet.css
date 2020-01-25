@@ -447,7 +447,9 @@ margin: 0 auto;
 
 h1,img,p{opacity: 1;}
 
-@media screen and (max-width:1300px){
+@media only screen and (orientation: landscape){}
+
+@media only screen and (max-width:1300px) and (orientation: portrait){
     body {
         overflow-y: scroll;
          display: grid; 
@@ -528,8 +530,9 @@ h1,img,p{opacity: 1;}
         /*width: 100%;*/
         /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
         display: grid;
-        background-image: url(profile_background1.png);
+        background-image: url(profile_background5.png);
         grid-template-rows: 600px 150px auto 150px;
+        background-position: center;
 
     }
     .linksIcon{
@@ -560,8 +563,9 @@ h1,img,p{opacity: 1;}
         /* width: 100%; */
         /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
         display: grid;
-        background-image: url(profile_background1.png);
+        background-image: url(profile_background_tablet.png);
         grid-template-rows: 475px auto auto 150px;
+        background-position: center;
     }
     img.profile {
         height: 375px;
