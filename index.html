@@ -7,36 +7,56 @@
 </head>
 <script type="text/javascript">
     //bio,experience,projects,skills,photography
+    var about = document.getElementById('bio');
+    var experience = document.getElementById('experience');
+    var project = document.getElementById('projects');
+    var photo = document.getElementById('photos');
+    var bioIcon = document.getElementById('bio_icon');
+    var expIcon = document.getElementById('experience_icon');
+    var projIcon = document.getElementById('projects_icon');
+    var photosIcon = document.getElementById('photos_icon');
+
     function bio(){
         document.getElementById('bio').style.display = "block";
+        // document.getElementById('bio_icon').setProperty("background-color", "white");
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "none";
-        document.getElementById('skills').style.display = "none";
         document.getElementById('photos').style.display = "none";
+        // document.getElementById('skills').style.display = "none";
+
+        document.getElementById('bio_icon').style.backgroundColor = "#1d202b";
+        document.getElementById('experience_icon').style.backgroundColor = "transparent";
+        document.getElementById('projects_icon').style.backgroundColor = "transparent";
+        document.getElementById('photos_icon').style.backgroundColor = "transparent";
+        // document.getElementById('skills_icon').body.style.backgroundColor = "transparent";
     }
 
     function exp(){
         document.getElementById('bio').style.display = "none";
         document.getElementById('experience').style.display = "block";
         document.getElementById('projects').style.display = "none";
-        document.getElementById('skills').style.display = "none";
+        // document.getElementById('skills').style.display = "none";
         document.getElementById('photos').style.display = "none";
+
+        document.getElementById('bio_icon').style.backgroundColor = "transparent";
+        document.getElementById('experience_icon').style.backgroundColor = "#1d202b";
+        document.getElementById('projects_icon').style.backgroundColor = "transparent";
+        document.getElementById('photos_icon').style.backgroundColor = "transparent";
+        // document.getElementById('skills_icon').style.backgroundColor = "transparent";
     }
 
     function proj(){
         document.getElementById('bio').style.display = "none";
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "block";
-        document.getElementById('skills').style.display = "none";
+        // document.getElementById('skills').style.display = "none";
         document.getElementById('photos').style.display = "none";
-    }
 
-    function skills(){
-        document.getElementById('bio').style.display = "none";
-        document.getElementById('experience').style.display = "none";
-        document.getElementById('projects').style.display = "none";
-        document.getElementById('photos').style.display = "none";
-        document.getElementById('skills').style.display = "block";
+        document.getElementById('bio_icon').style.backgroundColor = "transparent";
+        document.getElementById('experience_icon').style.backgroundColor = "transparent";
+        document.getElementById('projects_icon').style.backgroundColor = "#1d202b";
+        document.getElementById('photos_icon').style.backgroundColor = "transparent";
+        // document.getElementById('skills_icon').style.backgroundColor = "transparent";
     }
 
     function photos(){
@@ -44,8 +64,30 @@
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "none";
         document.getElementById('photos').style.display = "block";
-        document.getElementById('skills').style.display = "none";
+        // document.getElementById('skills').style.display = "none";
+
+        document.getElementById('bio_icon').style.backgroundColor = "transparent";
+        document.getElementById('experience_icon').style.backgroundColor = "transparent";
+        document.getElementById('projects_icon').style.backgroundColor = "transparent";
+        document.getElementById('photos_icon').style.backgroundColor = "#1d202b";
+        // document.getElementById('skills_icon').style.backgroundColor = transparent";
     }
+
+    // function skills(){
+    //     document.getElementById('bio').style.display = "none";
+    //     document.getElementById('experience').style.display = "none";
+    //     document.getElementById('projects').style.display = "none";
+    //     document.getElementById('photos').style.display = "none";
+    //     document.getElementById('skills').style.display = "block";
+
+    //     document.getElementById('bio_icon').style.backgroundColor = "transparent";
+    //     document.getElementById('experience_icon').style.backgroundColor = "transparent";
+    //     document.getElementById('projects_icon').style.backgroundColor = "transparent";
+    //     document.getElementById('photos_icon').style.backgroundColor = "transparent";
+    //     document.getElementById('skills_icon').style.backgroundColor = "#1d202b";
+    // }
+
+
 
 </script>
 
@@ -82,19 +124,19 @@
         </div>
         
         <div class="sectionButtons">
-            <div class="icons">
+            <div class="icons" id = "bio_icon">
                 <input class="icons" type="image" name="about me" title = "About Me" src="about.png"  onclick="bio()" />
             </div>
-            <div class="icons">
+            <div class="icons" id = "experience_icon">
                 <input class="icons" type="image" name="experience" title = "Professional Experience" src="experience.png"  onclick="exp()" />
             </div>
-            <div class="icons">
+            <div class="icons" id = "projects_icon">
                 <input class="icons" type="image" name="projects" title = "Technical Projects" src="projects.png"  onclick="proj()" />
             </div>
-            <div class="icons">
+            <div class="icons" id = "photos_icon">
                 <input class="icons" type="image" name="photos" title = "Digital Design" src="photography.png"  onclick="photos()" />
             </div>
-<!--             <div class="icons">
+<!--             <div class="icons" id = "skills_icon">
                 <input class="icons" type="image" name="skills" title = "Skills" src="skills.png"  onclick="skills()" />
             </div> -->
         </div>

@@ -1,3 +1,15 @@
+/*
+Icon Colors Used 
+ - sand: #b1a296
+ - dark background: #0b0c10
+ - section button blue grey: #1d202b
+ - darkslategray
+ - dimgrey
+ - steelblue
+ */
+
+
+
 html {
 /*    height: 100%;
     margin: 0;*/
@@ -22,6 +34,7 @@ body {
     grid-template-columns: 550px auto;
     /* height: 80%; */
     grid-template-rows: 100%;
+    background-color: #1d202b;
     /* grid-template-rows: 100%; */
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
@@ -48,6 +61,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+input:focus {
+    outline:none;
+}
+
 div.page{
     height:95%;
     width: 100%;
@@ -56,7 +74,10 @@ div.page{
 .sectionButtons{
     height: 100%;
     margin: auto;
-    background-color: #1d202b;
+    background-color: #333a41;
+    padding-left: 10%;
+    box-shadow: inset -13px 0px 9px 0 rgba(0,0,0,0.2);
+    /*24292e*/
 }
 
 .text {
@@ -69,7 +90,7 @@ div.page{
 
 div.icons{
     display: inline-flex;
-    padding: 20px;
+    padding: 15px;
 }
 
 img.icons {
@@ -135,7 +156,8 @@ img.iconLinks{
 }
 .card {
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75); */
-    background-color: #0b0c10;
+    /*background-color: #0b0c10;*/
+    background-color: #1d202b;
     /* border-radius: 5px; */
     height: 100vh;
     overflow: hidden;
@@ -146,7 +168,7 @@ img.iconLinks{
     background-repeat: no-repeat; 
     /*background-attachment: fixed;*/
     background-position: center;
-    background-image: url(background1.png);
+    background-image: url(background_blue.png);
     background-size: cover;
 }
 .aboutText{
@@ -311,6 +333,24 @@ h1.sectionHeader{
     /*grid-template-rows: 75% 25%;*/
 }
 
+#bio_icon{
+    background-color:#1d202b;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#experience_icon{
+    background-color:transparent;
+    border-radius: 25px 0px 0px 25px;
+}
+#projects_icon{
+    background-color:transparent;
+    border-radius: 25px 0px 0px 25px;
+}
+#photos_icon{
+    background-color:transparent;
+    border-radius: 25px 0px 0px 25px;
+}
+
 .jobHeader{
     display: grid;
     /*height: 100px;*/
@@ -453,7 +493,7 @@ h1,img,p{opacity: 1;}
     body {
         overflow-y: scroll;
          display: grid; 
-        background-color: #0b0c10;
+        /*background-color: #0b0c10;*/
         grid-template-columns: auto;
         background-size: cover;
         grid-template-rows: auto auto;
@@ -465,7 +505,7 @@ h1,img,p{opacity: 1;}
         /*width: 90%;*/
         /*margin: 50px 0 0 0;*/
         height: 90vh;
-        background-color: #0b0c10;
+        /*background-color: #0b0c10;*/
         background-size: auto;
     }
     input.icons {
@@ -498,6 +538,8 @@ h1,img,p{opacity: 1;}
         height: auto;
         display: flex;
         margin: 0;
+        padding: 2.5% 2.5% 0 2.5%;
+            box-shadow: inset 0px -10px 16px 0 rgba(0,0,0,0.3);
 
     }
 
@@ -551,10 +593,23 @@ h1,img,p{opacity: 1;}
     #photos{
         height:95%;
     }
+    #bio_icon{
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    #experience_icon{
+        border-radius: 25px 25px 0px 0px;
+    }
+    #projects_icon{
+        border-radius: 25px 25px 0px 0px;
+    }
+    #photos_icon{
+        border-radius: 25px 25px 0px 0px;
+    }
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 500px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
