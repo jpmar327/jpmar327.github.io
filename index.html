@@ -6,14 +6,6 @@
 	<link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
 </head>
 <script type="text/javascript">
-
-    function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "grid";
-    }
     //bio,experience,projects,skills,photography
     function bio(){
         document.getElementById('bio').style.display = "block";
@@ -73,7 +65,7 @@
                 </a>
             </div>
             <div>
-                <h1 class = "name">Joao Pedro "JP" Santos Martins</h1>
+                <h1 class = "name">Joao Pedro "JP"<br>Santos Martins</h1>
                 <div class="infoGrid">
                     <img src="css/school_logo.png" class="aboutIMG">
                     <h1 class = "aboutText">Georgia Institute of Technology</h1>
@@ -210,101 +202,8 @@
                     <img src="photos/Lights On.jpg" alt="Let There Be Light">
                 </div>   
             </div>
-                    
-
         </div>
-              <!-- Close the image -->
-              <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-
-              <!-- Expanded image -->
-              <!-- <img id="expandedImg" style="height:100%"> -->
-
-              <!-- Image text -->
-<!--               <div id="imgtext"></div>
-                <div class="row">
-                    <div class="column">
-                        <img src="photos/cave.jpg" alt="Israel Cave" onclick="myFunction(this);">
-                    </div>
-                    <div class="column">
-                        <img src="photos/City.jpg" alt="Sao Paulo City" onclick="myFunction(this);">
-                    </div>
-                    <div class="column">
-                        <img src="photos/General Benny.jpg" alt="General Benny" onclick="myFunction(this);">
-                    </div>
-                    <div class="column">
-                        <img src="photos/Samy Jump.jpg" alt="Wake Kicker" onclick="myFunction(this);">
-                    </div>
-                    <div class="column">
-                        <img src="photos/Santorini.png" alt="Oia Greece" onclick="myFunction(this);">
-                    </div>
-                    <div class="column">
-                        <img src="photos/Santorini Boat.jpg" alt="Mediterranean Sea" onclick="myFunction(this);">
-                    </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- The grid: four columns -->
     </div>
-
-
-<!--             <div class="slideContainer">
-              <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img class = "slides" src="photos/cave.jpg" style="width:100%">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                <img class = "slides" src="photos/City.jpg" style="width:100%">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                <img class = "slides" src="photos/General Benny.jpg" style="width:50%">
-              </div>
-                
-              <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                <img class = "slides" src="photos/Samy Jump.jpg" style="width:100%">
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                <img class = "slides" src="photos/Santorini Boat.jpg" style="width:100%">
-              </div>
-                
-              <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                <img class = "slides" src="photos/Santorini.png" style="width:100%">
-              </div>
-                
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/cave.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                </div>
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/City.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                </div>
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/General Benny.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/Samy Jump.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                </div>
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/Santorini Boat.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                </div>    
-                <div class="column">
-                  <img class="demo cursor slides" src="photos/Santorini.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                </div>
-              </div>
-            </div> -->
 </div>
 
 </body>

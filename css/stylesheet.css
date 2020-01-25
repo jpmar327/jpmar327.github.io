@@ -91,15 +91,21 @@ img.profile {
 }
 .cardProfile{
     height: 100%;
-    width: 100%;
+    width: 95%;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    /* background-color: tomato; */
+    background-color: rgba(29, 32, 43, 1);
     /* border-radius: 10px; */
     display: grid;
-    /*grid-template-columns: inherit;*/
+    background-image: url(profile_background3.png);
+    background-size: cover;
+    /* grid-template-columns: inherit; */
     grid-template-rows: 350px 50px auto;
+    padding: 0 2.5%;
 }
-
+/*.cardProfile img{
+    opacity: 0.5;
+}
+*/
 .linksIcon{
     display: grid;
     margin: auto;
@@ -146,7 +152,7 @@ img.iconLinks{
 .aboutText{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /*font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;*/
-    color: black;
+    color: white;
     padding-bottom: 0.5%;
     /* padding-top: 0.5%; */
     margin-left: 0;
@@ -165,7 +171,7 @@ img.iconLinks{
 .name{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /*font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;*/
-    color: #008080;
+    color: white;
     font-size: 27.5px;
     /* font-weight: 10; */
     margin: 0;
@@ -174,7 +180,7 @@ img.iconLinks{
 }
 .aboutIMG{
     /*float: left;*/
-    height: 90%;
+    height: 80%;
     margin: auto;
     /*padding-right: 10px;*/
 }
@@ -197,7 +203,7 @@ h1.description{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     /* line-height: 90px; */
     /* margin: auto; */
-    color: #008080;
+    color: white;
 }
 p.description{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -373,7 +379,7 @@ h1.projectTitle{
     color: white;
     text-align: center;
     font-size: 125%;
-    height: 75%;
+    height: 50%;
     /* padding: 20px; */
     margin: auto 0 auto auto;
     width: 150px;
@@ -405,38 +411,6 @@ h1.projectTitle{
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-    height: 90%;
-    padding: 0 5%;
-    margin: 0 auto;
-}
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8;
-    cursor: pointer;
-    height: 100%;
-}
-
-.column img:hover {
-  opacity: 1;
-}
-.row{
-    display: grid;
-    grid-template-columns: 18.3333333% 18.333333% 8.333% 18.3333% 18.333% 18.333%;
-    grid-template-rows: 100%;
-    padding-top: 2.5%;
-}
-/* Clear floats after the columns */
-.row:after {
-/*  content: "";
-  display: table;
-  clear: both;
-  width: 100%;*/
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
@@ -476,22 +450,9 @@ h1,img,p{opacity: 1;}
 @media (max-width:1300px){
     body {
         overflow-y: scroll;
-        /* margin-bottom: 0; */
-        /* margin-top: 5%; */
-        /* padding: 0; */
          display: grid; 
-        /* text-align: center; */
-        /* padding-top: 1%; */
-        /* width: 1700px; */
-        /* background-image: url(background_long.png); */
-        /* height: 1450px; */
-        /* min-width: 1000px; */
-        /* overflow-y: hidden; */
         background-color: #0b0c10;
-        /* padding: 1%; */
-        /* padding: 5%; */
         grid-template-columns: auto;
-        /* background-image: url(long3.png); */
         background-size: cover;
         grid-template-rows: auto auto;
         margin: auto;
@@ -535,9 +496,6 @@ h1,img,p{opacity: 1;}
     }
     .sectionButtons{
         height: auto;
-        /*padding: 25px 0 0 0;*/
-        /* background-color: #111; */
-        /* border-radius: 5px; */
         display: flex;
         margin: 0;
 
@@ -549,7 +507,6 @@ h1,img,p{opacity: 1;}
     }
 
     .col {
-        /* display: inline-grid; */
         grid-template-rows: auto 200px;
         grid-template-columns: auto;
         /* margin: 0 auto; */
@@ -570,12 +527,10 @@ h1,img,p{opacity: 1;}
     }
     .cardProfile{
         height: 100%;
-        width: 100%;
+        /*width: 100%;*/
         /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-        background-color: white; 
-        /* border-radius: 10px; */
         display: grid;
-        /*grid-template-columns: inherit;*/
+        background-image: url(profile_background1.png);
         grid-template-rows: 600px 150px auto 50px;
 
     }
