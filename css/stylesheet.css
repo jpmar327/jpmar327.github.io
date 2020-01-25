@@ -464,6 +464,7 @@ h1,img,p{opacity: 1;}
         /*margin: 50px 0 0 0;*/
         /*height: 82.5vh;*/
         background-color: #0b0c10;
+        background-size: auto;
     }
     input.icons {
         width: 75%;
@@ -528,7 +529,7 @@ h1,img,p{opacity: 1;}
         /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
         display: grid;
         background-image: url(profile_background1.png);
-        grid-template-rows: 600px 150px auto 50px;
+        grid-template-rows: 600px 150px auto 150px;
 
     }
     .linksIcon{
