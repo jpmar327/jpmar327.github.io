@@ -477,12 +477,7 @@ h1,img,p{opacity: 1;}
     }
 
     .aboutText {
-        padding-bottom: 0.5%;
-        /* padding-top: 0.5%; */
-        margin-left: 0;
-        font-size: 40px;
-        font-weight: 10;
-        margin: auto 0;
+        font-size: 50px;
         padding-left: 25px;
     }
     .aboutIMG {
@@ -493,7 +488,7 @@ h1,img,p{opacity: 1;}
     }
     .name{
         font-size: 100px;
-        padding: 25px 0 25px 0;
+        padding: 25px 0 50px 0;
         font-weight: 500;
     }
     .sectionButtons{
