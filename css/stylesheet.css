@@ -274,7 +274,7 @@ h1.sectionHeader{
 .columnImg {
   flex: 50%;
   max-width: 50%;
-  padding: 0 4px;
+  padding: 0 0.5%;
 }
 
 .columnImg img {
