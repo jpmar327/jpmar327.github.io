@@ -6,6 +6,9 @@ Icon Colors Used
  - darkslategray
  - dimgrey
  - steelblue
+ - background dark: #171922
+ - current background: #1d202b
+ - wine red (logos) #652232
  */
 
 
@@ -55,7 +58,7 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 /* Handle on hover */
@@ -112,17 +115,17 @@ img.profile {
     margin-top: auto;
 }
 .cardProfile{
-    height: 100%;
-    width: 95%;
+    /*height: 101vh;*/
+    width: 90%;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     background-color: rgba(29, 32, 43, 1);
     /* border-radius: 10px; */
     display: grid;
-    background-image: url(profile_background3.png);
+    background-image: url(profile_background5.png);
     background-size: cover;
     /* grid-template-columns: inherit; */
     grid-template-rows: 350px 50px auto;
-    padding: 0 2.5%;
+    padding: 0 5%;
 }
 /*.cardProfile img{
     opacity: 0.5;
@@ -179,7 +182,7 @@ img.iconLinks{
     padding-bottom: 0.5%;
     /* padding-top: 0.5%; */
     margin-left: 0;
-    font-size: 22.5px;
+    font-size: 21px;
     font-weight: 500;
     margin: auto 0;
 
@@ -293,6 +296,7 @@ h1.sectionHeader{
     padding: 4%;
     /* margin: auto; */
      /*position: relative;*/
+    overflow-y: scroll;
 }
 
 #experience {
@@ -420,7 +424,7 @@ h1.projectTitle{
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #008080;
+    background-color: #652232;
     border: none;
     color: white;
     text-align: center;
@@ -513,7 +517,10 @@ h1,img,p{opacity: 1;}
         padding-top: 2%;
         height: 98%;
         /*background-color: #0b0c10;*/
-        background-size: auto;
+        /*background-size: auto;*/
+        background-position: center;
+        background-image: url(background_long_blue.png);
+        background-size: cover;
     }
     input.icons {
         width: 75%;
@@ -550,7 +557,7 @@ h1,img,p{opacity: 1;}
 
     }
     .col{
-            grid-template-rows: 90vh 10vh;
+        grid-template-rows: 90vh 10vh;
     }
 
     img.profile {
