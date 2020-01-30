@@ -1,5 +1,5 @@
 
-Icon Colors Used 
+/*Icon Colors Used
  - sand: #b1a296
  - dark background: #0b0c10
  - section button blue grey: #1d202b
@@ -115,7 +115,7 @@ img.profile {
     margin-top: auto;
 }
 .cardProfile{
-    /*height: 101vh;*/
+    height: 101vh;
     width: 90%;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     background-color: rgba(29, 32, 43, 1);
@@ -291,7 +291,7 @@ h1.sectionHeader{
 
 #bio {
     display: block;
-    height: 95%;
+    height: 90%;
     /* padding: 25px 0; */
     /* align-content: center; */
     /* width: 95%; */
@@ -306,7 +306,7 @@ h1.sectionHeader{
     height: 90%;
     /* height: 600px; */
     display: none;
-    height: 95%;
+    height: 90%;
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
     width: 92%;
@@ -317,7 +317,7 @@ h1.sectionHeader{
 
 #projects {
 
-    height: 95%;
+    height: 90%;
     /* height: 600px; */
     display: none;
     /*align-content: center;*/
