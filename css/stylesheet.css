@@ -1,4 +1,4 @@
-/*
+
 Icon Colors Used 
  - sand: #b1a296
  - dark background: #0b0c10
@@ -239,6 +239,7 @@ p.description{
     font-size: 35px;
     font-weight: 1px;
     margin: auto;
+    margin-top: 5%;
 }
 div.descriptionContainer{
     /*display: inline-block;*/
@@ -271,6 +272,7 @@ h1.sectionHeader{
   display: flex;
   /*flex-wrap: wrap;*/
   padding: 0 0.5%;
+  margin-top: 5%;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -307,6 +309,7 @@ h1.sectionHeader{
     height: 95%;
     /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
     /* width: 95%; */
+    width: 92%;
     padding: 4%;
     /*margin: auto 0;*/
     overflow-y: scroll;
@@ -361,33 +364,114 @@ h1.sectionHeader{
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0);
 }
 
-.jobHeader{
-    display: grid;
+.titleHeader{
+    display: block;
+    margin: 10% 0 2.5% 0;
     /*height: 100px;*/
-    grid-template-columns: 200px auto;
+    /*grid-template-columns: 200px auto;*/
     /*grid-template-rows: 100%;*/
-
 }
+
+.textTitle {
+    background-color: white;
+    color: black;
+    /*font-size: 5vw;*/
+    font-size: 6vw;
+    font-weight: bold;
+    margin: auto;
+    /*padding: 5px;*/
+    width: 100%;
+    text-align: center;
+    mix-blend-mode: screen;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
 .projectHeader{
     display: grid;
     /*height: 100px;*/
     grid-template-columns: 200px auto auto;
+    margin-top: 5%;
     /*grid-template-rows: 100%;*/
 }
 .iconLogo {
-    height: 150px;
+    height: 175px;
+    margin: auto;
+    padding: 0 25px;
+}
+/*.wrap {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+.links {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.wrap:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid black;
+  background: black;
+  width: 100%;
+  transform: translateY(-50%);
+}*/
+h1.topJob { 
+    display: flex;
+    flex-direction: row;
+        /*margin: 5% 0 2.5% 0;*/
+/*    margin-top: 0;
+    margin-bottom: 15px;*/
+} 
+  
+h1.topJob:before, h1.topJob:after { 
+    content: "";
+    flex: 1 1;
+    border-bottom: 5px solid #652232;
     margin: auto;
 }
-h1.jobTitle{
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+
+/*.logoBorder{
+    display: grid;
+    grid-template-columns: auto 200px auto;
+    grid-template-rows: auto;
+    height: 200px; 
+}
+.lines{
+
+}*/
+
+div.border {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+div.border span.border { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+h1.jobTitle {
+font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 45px;
+    font-weight: 600;
+    font-size: 70px;
     /* padding-left: 2.5%; */
     /* text-align: center; */
     /* display: inline-block; */
     /* width: 100%; */
-    margin: auto 0;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+li:before{
+    /*font-size:1.1em;*/
 }
 
 .liExp {
@@ -399,27 +483,69 @@ h1.jobTitle{
     font-size: 25px;
     margin-bottom: 10px;
 }
-.ulExp{
-        margin: 35px 0 75px 0;
+ul.ulExp{
+        margin: 25px 0 auto 0;
+        /*font-size: 50px;*/
+        list-style-type: circle;
+        /*list-style-image: url('list_icon_circleArrow3.png');*/
+        /*list-style-image: url('list_icon_arrow.png');*/
 }
-i.exp{
-    font-size: 35px;
+.exp{
+    font-size: 45px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: 10;
+    color: white;
+    margin: auto 0;
+    /*padding-left: 2.5%;*/
+}
+i.expDate{
+    font-size: 30px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: 10;
+    color: white;
+    margin: auto 0;
+    /*padding-left: 5%;*/
+    /*float: right;*/
 }
 
 h1.projectTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 45px;
-    margin: auto 0;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+}
+.gridProj{
+    display: grid;
+    width: 100%;
+    grid-template-columns:50% auto;
+
+
+}
+.imgProj{
+    width: 90%;
+    /* margin-bottom: 15px; */
+    margin: 25px auto;
+    border: 5px solid white;
 }
 .liProjects {
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.tech {
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: white;
+    padding-bottom: 0.5%;
+    padding-left: 40px;
+    /*margin-left: 0;*/
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .button {
     display: inline-block;
@@ -497,7 +623,7 @@ margin: 0 auto;
 
 h1,img,p{opacity: 1;}
 
-@media (orientation: landscape){}
+/*@media (orientation: landscape){}*/
 
 @media only screen and (max-width:1300px) and (-webkit-min-device-pixel-ratio: 1){
     body {
@@ -624,6 +750,41 @@ h1,img,p{opacity: 1;}
     #photos_icon{
         border-radius: 25px 25px 0px 0px;
     }
+    .textTitle{
+        font-size: 12vw;
+    }
+    .iconLogo {
+        height: 10vh;
+    }
+    .liProjects {
+        font-size: 25px;
+    }
+    .liExp {
+        font-size: 40px;
+    }
+    .exp{
+        font-size: 55px;
+        font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-weight: 10;
+        color: white;
+        margin: auto 0;
+        /*padding-left: 2.5%;*/
+        /*font-weight: 600;*/
+    }
+    i.expDate{
+        font-size: 40px;
+        font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-weight: 10;
+        color: white;
+        margin: auto 0;
+        /*padding-left: 5%;*/
+        /*float: right;*/
+    }
+    .gridProj{
+        display: grid;
+        width: 100%;
+        grid-template-columns:auto;
+    }
 }
 
 @media only screen 
@@ -676,6 +837,8 @@ h1,img,p{opacity: 1;}
     div.icons {
         padding: 0 30px 0px 30px;
     }
+    .iconLogo {
+        height: 15vh;
+    }
 }
-
- /*and (min-height:100px) and (max-height:1000px)*/
+ /*and (min-height:100px) and (max-height:1000px)

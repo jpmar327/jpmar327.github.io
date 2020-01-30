@@ -22,17 +22,14 @@
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "none";
         document.getElementById('photos').style.display = "none";
-        // document.getElementById('skills').style.display = "none";
         document.getElementById('bio_icon').style.backgroundColor = backDark;
         document.getElementById('experience_icon').style.backgroundColor = "transparent";
         document.getElementById('projects_icon').style.backgroundColor = "transparent";
         document.getElementById('photos_icon').style.backgroundColor = "transparent";
-        // document.getElementById('skills_icon').body.style.backgroundColor = "transparent";
         document.getElementById("bio_icon").style.boxShadow = "0px 0px 11px 3px rgba(0,0,0,0.25)";
         document.getElementById("experience_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("projects_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("photos_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
-
     }
 
     function exp(){
@@ -40,12 +37,10 @@
         document.getElementById('experience').style.display = "block";
         document.getElementById('projects').style.display = "none";
         document.getElementById('photos').style.display = "none";
-        // document.getElementById('skills').style.display = "none";
         document.getElementById('bio_icon').style.backgroundColor = "transparent";
         document.getElementById('experience_icon').style.backgroundColor = backDark;
         document.getElementById('projects_icon').style.backgroundColor = "transparent";
         document.getElementById('photos_icon').style.backgroundColor = "transparent";
-        // document.getElementById('skills_icon').style.backgroundColor = "transparent";
         document.getElementById("bio_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("experience_icon").style.boxShadow = "0px 0px 11px 3px rgba(0,0,0,0.25)";
         document.getElementById("projects_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
@@ -57,12 +52,10 @@
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "block";
         document.getElementById('photos').style.display = "none";
-        // document.getElementById('skills').style.display = "none";
         document.getElementById('bio_icon').style.backgroundColor = "transparent";
         document.getElementById('experience_icon').style.backgroundColor = "transparent";
         document.getElementById('projects_icon').style.backgroundColor = backDark;
         document.getElementById('photos_icon').style.backgroundColor = "transparent";
-        // document.getElementById('skills_icon').style.backgroundColor = "transparent";
         document.getElementById("bio_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("experience_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("projects_icon").style.boxShadow = "0px 0px 11px 3px rgba(0,0,0,0.25)";
@@ -74,12 +67,10 @@
         document.getElementById('experience').style.display = "none";
         document.getElementById('projects').style.display = "none";
         document.getElementById('photos').style.display = "block";
-        // document.getElementById('skills').style.display = "none";
         document.getElementById('bio_icon').style.backgroundColor = "transparent";
         document.getElementById('experience_icon').style.backgroundColor = "transparent";
         document.getElementById('projects_icon').style.backgroundColor = "transparent";
         document.getElementById('photos_icon').style.backgroundColor = backDark;
-        // document.getElementById('skills_icon').style.backgroundColor = transparent";
         document.getElementById("bio_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("experience_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
         document.getElementById("projects_icon").style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0)";
@@ -99,7 +90,6 @@
     //     document.getElementById('photos_icon').style.backgroundColor = "transparent";
     //     document.getElementById('skills_icon').style.backgroundColor = "#1d202b";
     // }
-
 
 
 </script>
@@ -131,9 +121,7 @@
                     <img src="css/house_icon.png" class="aboutIMG">
                     <h1 class = "aboutText">Atlanta, GA, USA</h1>
                 </div>
-
             </div>
-
         </div>
         
         <div class="sectionButtons">
@@ -157,42 +145,59 @@
 
     <div class="card">
         <div id = "bio">
-            <div class = "descriptionContainer">
+            <div class = "textTitle">ABOUT ME</div>
+            <!-- <div class = "descriptionContainer"> -->
                 <p class = "description">
                     Recent graduate from Georgia Tech currently in search of a full-time software engineering position. Experienced in multiple programming languages, frameworks, and engineering software. Developed multiple applications and projects using programming tools and languages, such as Python, JavaScript, HTML, C, React.js, etc.
                 </p>
-            </div>
+            <!-- </div> -->
         </div>
 
         <div id = "experience">
-            <div class = "jobHeader">
-                <img class = "iconLogo" src="css/GTRI_icon4.png" alt="gtri">
-                <h1 class = "jobTitle">Georgia Tech Research Institute<br><i class = "exp">CIPHER Student Assistant</i></h1>
+            <div class = "textTitle">EXPERIENCE</div>
+            <div class = "titleHeader">
+                <h1 class = "topJob">
+                    <img class = "iconLogo" src="css/GTRI_icon4.png" alt="gtri">
+                </h1>
             </div>
+            <!-- <img class = "iconLogo" src="css/GTRI_icon4.png" alt="gtri"> -->
+            <h1 class = "jobTitle">GEORGIA TECH RESEARCH INSTITUTE</h1>
+            <p class = "exp">CIPHER Student Assistant</p><br>
+            <i class="expDate">October 2018 – January 2020</i>
             <ul class = "ulExp">
                 <li class = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
                 <li class = "liExp">Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
                 <li class = "liExp">Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
             </ul>
-
-            <div class = "jobHeader">
-                <img class = "iconLogo" src="css/AW_icon3.png" alt="aw">
-                <h1 class = "jobTitle">Archer Western<br><i class = "exp">Project Engineer Intern / Construction Estimator Intern</i></h1>
-            </div>
+            <div class = "titleHeader">
+                <h1 class = "topJob">
+                    <img class = "iconLogo" src="css/AW_icon3.png" alt="aw">
+                </h1> 
+            </div>         
+            <h1 class = "jobTitle">ARCHER WESTERN</h1>
+            <p class = "exp">Project Engineer Intern</p><br>
+            <i class="expDate">May 2018 – October 2018</i>
             <ul class = "ulExp">
                 <li class = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
                 <li class = "liExp">Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
                 <li class = "liExp">Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
+            </ul>
+            <p class = "exp">Construction Estimator Intern</p><br>
+            <i class="expDate">January 2018 – April 2018</i>
+            <ul class = "ulExp">
                 <li class = "liExp">Analyzed engineering drawings and Department of Transportation (DOT) parameters for quantity take-offs using the On-Screen Take-Off program</li>
                 <li class = "liExp">Appraised national projects based on scope changes including revision of specifications, standards, and quantities</li>
                 <li class = "liExp">Produced regular reports regarding DOT bid specifications for $100,000,000+ DOT projects</li>
                 <li class = "liExp">Managed intern team by designating job roles to meet project deadlines as liaison between interns and management</li>
             </ul>
-
-            <div class = "jobHeader">
-                <img class = "iconLogo" src="css/TI_icon3.png" alt="ti">
-                <h1 class = "jobTitle">TI Automotive<br><i class = "exp">Quality Engineer Intern</i></h1>
-            </div>
+            <div class = "titleHeader">
+                <h1 class = "topJob">
+                    <img class = "iconLogo" src="css/TI_icon3.png" alt="ti">
+                </h1>     
+            </div>           
+            <h1 class = "jobTitle">TI AUTOMOTIVE</h1>
+            <p class = "exp">Quality Engineer Intern</p><br>
+            <i class="expDate">May 2016 – August 2016</i>
             <ul class = "ulExp">
                 <li class = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
                 <li class = "liExp">Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
@@ -201,47 +206,76 @@
             </ul>
         </div>
     <div id = "projects">
-            <div class = "projectHeader">
-                <img class = "iconLogo" src="css/spotify_icon2.png" alt="spotify">
-                <h1 class = "projectTitle">Spotify to Visual App</h1>
-                <a href="https://github.com/jpmar327/Music-Genre-Gif" style="display: contents;">
-                    <button class="button" style="vertical-align:middle"><span>Repository </span></button>
-                </a>
-            </div>
-                <ul  class = "ulExp">
-                    <li class = "liProjects">Created a web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
-                    <li class = "liProjects">Displays current song playback information to a front-end client display using a React.js & Node.js</li>
-                    <li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li>
-                </ul>
-
-            <div class = "projectHeader">
+        <div class = "textTitle">PROJECTS</div>
+        <div class = "titleHeader">
+            <h1 class = "topJob">
+                <img class = "iconLogo" src="css/routelanta_icon5.png" alt="routelanta">
+            </h1>
+        </div>
+            <h1 class = "projectTitle">ROUTELANTA RUNNING APP</h1>
+<!--             <div class = "projectHeader">
                 <img class = "iconLogo" src="css/routelanta_icon5.png" alt="routelanta">
                 <h1 class = "projectTitle">Routelanta Running App</h1>
                 <a href="https://jpmar327.github.io/Routelanta/" style="display: contents;">
                     <button class="button" style="vertical-align:middle"><span>Routelanta </span></button>
                 </a>
+            </div> -->
+            <div class = "gridProj">
+                <ul  class = "ulExp">
+                    <li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
+                    <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
+                    <li class = "liProjects">Used K Means clustering to classify running routes in Atlanta by difficulty based on length and height gain</li>
+                </ul>
+                <img class = "imgProj" src="css/routelanta2.png">
             </div>
-            <ul  class = "ulExp">
-                <li class = "liProjects">Developed a Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
-                <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
-                <li class = "liProjects">Used K Means clustering to classify running routes in Atlanta by difficulty based on length and height gain</li>
-            </ul>
-
+            <div class = "titleHeader">
+                <h1 class = "topJob">
+                    <img class = "iconLogo" src="css/spotify_icon2.png" alt="spotify">
+                </h1>
+            </div>
+            <h1 class = "projectTitle">SPOTIFY TO VISUAL APP</h1>
+<!--             <div class = "projectHeader">
+                <img class = "iconLogo" src="css/spotify_icon2.png" alt="spotify">
+                <h1 class = "projectTitle">Spotify to Visual App</h1>
+                <a href="https://github.com/jpmar327/Music-Genre-Gif" style="display: contents;">
+                    <button class="button" style="vertical-align:middle"><span>Repository </span></button>
+                </a>
+            </div> -->
+            <div class = "gridProj">
+                <img class = "imgProj" src="css/spotify_gif3.jpg">
+                <ul  class = "ulExp">
+                    <li class = "liProjects">Created a web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
+                    <li class = "liProjects">Displays current song playback information to a front-end client display using a React.js & Node.js</li>
+                    <li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li>
+                </ul>
+            </div>
+            <!-- <p class = "tech">Technologies:</p> -->
+            <div class = "titleHeader">
+                <h1 class = "topJob">
+                    <img class = "iconLogo" src="css/motor_icon2.png" alt="motor">
+                </h1>
+            </div>
+            <h1 class = "projectTitle">FOLLOW THE DOT ROBOT</h1>
+<!-- 
             <div class = "projectHeader">
                 <img class = "iconLogo" src="css/motor_icon2.png" alt="motor">
                 <h1 class = "projectTitle">Follow the Dot Robot</h1>
                 <a href="https://github.com/jpmar327/Follow-the-Dot-Robot" style="display: contents;">
                     <button class="button" style="vertical-align:middle"><span>Repository </span></button>
                 </a>
+            </div> -->
+            <div class = "gridProj">
+                <ul  class = "ulExp">
+                    <li class = "liProjects">Constructed a robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
+                    <li class = "liProjects">Movement of colored pin was detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
+                    <li class = "liProjects">A stepper motor control program written in C was flashed onto the MSP Launchpad to control the robot’s pointer based on the coordinates the Python program dictated</li>
+                </ul>
+                <img class = "imgProj" src="css/robot.png">
             </div>
-            <ul  class = "ulExp">
-                <li class = "liProjects">Constructed a robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
-                <li class = "liProjects">Movement of colored pin was detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
-                <li class = "liProjects">A stepper motor control program written in C was flashed onto the MSP Launchpad to control the robot’s pointer based on the coordinates the Python program dictated</li>
-            </ul>
         </div>
 
         <div id = "photos">
+            <div class = "textTitle">DIGITAL DESIGN</div>
                         <!-- The expanding image container -->
             <div class = "rowImg">
                 <div class = "columnImg">
