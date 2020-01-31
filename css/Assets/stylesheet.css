@@ -94,7 +94,7 @@ img.profile {
     width: 90%;
     background-color: rgba(29, 32, 43, 1);
     display: grid;
-    background-image: url(Assets/profile_card_background.png);
+    background-image: url(profile_card_background.png);
     background-size: cover;
     grid-template-rows: 350px 50px auto;
     padding: 0 5%;
@@ -143,7 +143,7 @@ img.iconLinks{
     width: 100%;
     background-repeat: no-repeat; 
     background-position: center;
-    background-image: url(Assets/card_background.png);
+    background-image: url(card_background.png);
     background-size: auto;
 }
 .aboutText{
@@ -361,7 +361,7 @@ font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,san
 ul.ulExp{
     margin: 25px 0 25px 0;
     list-style-type: circle;
-    list-style-image: url(Assets/list_icon_circleArrow.png);
+    list-style-image: url(list_icon_circleArrow.png);
 }
 .exp{
     font-size: 35px;
@@ -460,7 +460,7 @@ h1,img,p{opacity: 1;}
         padding-top: 2%;
         height: 98%;
         background-position: center;
-        background-image: url(Assets/card_background_long.png);
+        background-image: url(card_background_long.png);
         background-size: cover;
     }
     input.icons {
@@ -520,7 +520,7 @@ h1,img,p{opacity: 1;}
     .cardProfile{
         height: 90.5vh;
         display: grid;
-        background-image: url(Assets/profile_card_background.png);
+        background-image: url(profile_card_background.png);
         grid-template-rows: 600px 150px auto 150px;
         background-position: center;
 
@@ -607,7 +607,7 @@ h1,img,p{opacity: 1;}
     .cardProfile {
         height: 100%;
         display: grid;
-        background-image: url(Assets/profile_background_tablet.png);
+        background-image: url(profile_background_tablet.png);
         grid-template-rows: 475px auto auto 150px;
         background-position: center;
     }
