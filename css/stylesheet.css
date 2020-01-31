@@ -13,28 +13,14 @@
 
 
 body {
-    /* padding: 0 25%; */
     display: grid;
     margin: auto;
-    /* padding: 2% 0; */
-    /* width: 1700px; */
-    /* min-width: 1000px; */
     overflow-y: hidden;
     background-color: white;
-    /* background-image: url(background.png); */
-    /* background-image: url(D:/jpmar/Documents/Code/Github Pages/jpmar327.github.io/photos/Santorini Boat.jpg); */
     background-size: cover;
-    /* padding: 1%; */
     grid-template-columns: 550px auto;
-    /* height: 80%; */
     grid-template-rows: 100%;
     background-color: #1d202b;
-    /* grid-template-rows: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /*width: 90%;*/
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +29,6 @@ body {
 
 /*Track */
 ::-webkit-scrollbar-track {
-    /*background: #f1f1f1;*/
     background: transparent; 
 }
  
@@ -72,7 +57,6 @@ div.page{
     background-color: #333a41;
     padding: 10% 0% 0% 10%;
     box-shadow: inset -13px 0px 9px 0 rgba(0,0,0,0.2);
-    /*24292e*/
 }
 
 .text {
@@ -108,24 +92,17 @@ img.profile {
 .cardProfile{
     height: 101vh;
     width: 90%;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     background-color: rgba(29, 32, 43, 1);
-    /* border-radius: 10px; */
     display: grid;
     background-image: url(profile_background5.png);
     background-size: cover;
-    /* grid-template-columns: inherit; */
     grid-template-rows: 350px 50px auto;
     padding: 0 5%;
 }
-/*.cardProfile img{
-    opacity: 0.5;
-}
-*/
+
 .linksIcon{
     display: grid;
     margin: auto;
-    /*height: 50px;*/
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 50px;
 }
@@ -138,10 +115,10 @@ img.iconLinks{
 }
 
 .projLink{
-    padding-left: 40px;
-    width: 45px;
+    padding-left: 35px;
+    width: 40px;
     opacity: 0.65;
-    float: left
+    float: left;
 }
 .projLink:hover {
     opacity: 1;
@@ -151,7 +128,6 @@ img.iconLinks{
     height: 775px;
     width: 95%;
     margin: auto;
-    /*display: block;*/
 }
 
 .col {
@@ -160,18 +136,12 @@ img.iconLinks{
     grid-template-rows: 100%;
 }
 .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75); */
-    /*background-color: #0b0c10;*/
     background-color: #1d202b;
-    /* border-radius: 5px; */
     height: 100vh;
     overflow: hidden;
-    /* position: relative; */
-    /* z-index: 2; */
     margin: 0 auto;
     width: 100%;
     background-repeat: no-repeat; 
-    /*background-attachment: fixed;*/
     background-position: center;
     background-image: url(background_blue.png);
     background-size: auto;
@@ -181,7 +151,6 @@ img.iconLinks{
     /*font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;*/
     color: white;
     padding-bottom: 0.5%;
-    /* padding-top: 0.5%; */
     margin-left: 0;
     font-size: 21px;
     font-weight: 500;
@@ -192,7 +161,6 @@ img.iconLinks{
     display: grid;
     grid-template-rows: 50px 50px 50px 50px;
     grid-template-columns: 75px auto;
-    /*margin: 0 15px;*/
 }
 
 .name{
@@ -206,52 +174,26 @@ img.iconLinks{
     padding: 25px 0;
 }
 .aboutIMG{
-    /*float: left;*/
     height: 80%;
     margin: auto;
-    /*padding-right: 10px;*/
 }
-/*.textCard {
-    box-shadow: 0 4px 8px 0 rgba(50,50,50,50.2);
-    border-radius: 25px;
-    background-color: #24292e;
-    height: 650px;
-    overflow-y: hidden;
-    opacity: 0.75;
-    position: relative;
-    z-index: 1;
-}*/
 
 h1.description{
-/*width: 70%; */
     font-size: 50px;
      font-weight: 10; 
     text-align: center;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    /* line-height: 90px; */
-    /* margin: auto; */
     color: white;
 }
 p.description{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    /*font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;*/
-    /*text-overflow: hidden;*/
     color: white;
     font-size: 35px;
     font-weight: 1px;
     margin: auto;
     margin-top: 5%;
 }
-div.descriptionContainer{
-    /*display: inline-block;*/
-    /*float: left;*/
-    /*min-height: 250px;*/
-    /*padding-left: 5%;*/
-}
-/*div.nameContainer{
-    display: inline-block;
-    padding-left: 5%;
-}*/
+
 .sections{
     text-align: center;
     font-size: 125%;
@@ -266,12 +208,10 @@ h1.sectionHeader{
     color: white;
     font-size: 225%;
     text-align: center;
-    /*display: inline-block;*/
     width: 100%;
 }
 .rowImg {
   display: flex;
-  /*flex-wrap: wrap;*/
   padding: 0 0.5%;
   margin-top: 5%;
 }
@@ -289,65 +229,40 @@ h1.sectionHeader{
   width: 100%;
   opacity: 0.4;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
-  /*border-radius: 500px;*/
 }
 
 .columnImg img:hover {
   opacity: 1;
-  /*border-radius: 0px;*/
 }
 
 
 #bio {
     display: block;
     height: 90%;
-    /* padding: 25px 0; */
-    /* align-content: center; */
-    /* width: 95%; */
     padding: 4%;
-    /* margin: auto; */
-     /*position: relative;*/
     overflow-y: scroll;
 }
 
 #experience {
-    /* display: grid; 
-    height: 90%;
-    /* height: 600px; */
     display: none;
     height: 90%;
-    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
-    /* width: 95%; */
     width: 92%;
     padding: 4%;
-    /*margin: auto 0;*/
     overflow-y: scroll;
 }
 
 #projects {
-
     height: 90%;
-    /* height: 600px; */
     display: none;
-    /*align-content: center;*/
-    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
-    /* width: 95%; */
     padding: 4%;
-    /*margin: auto 0;*/
     overflow-y: scroll;
 }
 
 #photos{
-    /*display: grid;*/
     height: 85%;
-    /* height: 600px; */
-     display: none; 
-    /* align-content: center; */
-    /* grid-template-rows: calc(150%/12) calc(150%/6) calc(100%/12) calc(100%/6) calc(100%/12) calc(100%/6); */
-    /* width: 95%; */
+    display: none; 
     padding: 4%;
-     overflow-y: scroll; 
-    /*grid-template-rows: 75% 25%;*/
+    overflow-y: scroll; 
 }
 
 #bio_icon{
@@ -376,64 +291,32 @@ h1.sectionHeader{
 .titleHeader{
     display: block;
     margin: 7.5% 0 2.5% 0;
-    /*height: 100px;*/
-    /*grid-template-columns: 200px auto;*/
-    /*grid-template-rows: 100%;*/
 }
 
 .textTitle {
-    /* background-color: white; */
     color: white;
-    /* font-size: 5vw; */
     font-size: 6vw;
     font-weight: bold;
     margin: auto;
-    /* padding: 5px; */
     width: 100%;
     text-align: center;
-    /* mix-blend-mode: screen; */
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .projectHeader{
     display: grid;
-    /*height: 100px;*/
     grid-template-columns: 200px auto auto;
     margin-top: 5%;
-    /*grid-template-rows: 100%;*/
 }
 .iconLogo {
     height: 175px;
     margin: auto;
     padding: 0 25px;
 }
-/*.wrap {
-  text-align: center;
-  margin: 20px;
-  position: relative;
-}
-.links {
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-.wrap:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  border-top: 1px solid black;
-  background: black;
-  width: 100%;
-  transform: translateY(-50%);
-}*/
+
 h1.topJob { 
     display: flex;
     flex-direction: row;
-        /*margin: 5% 0 2.5% 0;*/
-/*    margin-top: 0;
-    margin-bottom: 15px;*/
 } 
   
 h1.topJob:before, h1.topJob:after { 
@@ -442,16 +325,6 @@ h1.topJob:before, h1.topJob:after {
     border-bottom: 5px solid #652232;
     margin: auto;
 }
-
-/*.logoBorder{
-    display: grid;
-    grid-template-columns: auto 200px auto;
-    grid-template-rows: auto;
-    height: 200px; 
-}
-.lines{
-
-}*/
 
 div.border {
    width: 100%; 
@@ -471,57 +344,45 @@ font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,san
     font-weight: 10;
     color: white;
     font-weight: 600;
-    font-size: 70px;
-    /* padding-left: 2.5%; */
-    /* text-align: center; */
-    /* display: inline-block; */
-    /* width: 100%; */
+    font-size: 68px;
     text-align: center;
     margin: 0 0 50px 0;
 }
-li:before{
-    /*font-size:1.1em;*/
-}
+
 
 .liExp {
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
-    padding-bottom: 0.5%;
-    /* padding-top: 0.5%; */
+    /*padding-bottom: 0.5%;*/
     margin-left: 0;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 ul.ulExp{
-        margin: 25px 0 auto 0;
-        /*font-size: 50px;*/
-        list-style-type: circle;
-        list-style-image: url('list_icon_circleArrow3.png');
-        /*list-style-image: url('list_icon_arrow.png');*/
+    margin: 25px 0 25px 0;
+    list-style-type: circle;
+    list-style-image: url(list_icon_circleArrow3.png);
 }
 .exp{
-    font-size: 45px;
+    font-size: 35px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-weight: 10;
+    font-weight: 600;
     color: white;
     margin: auto 0;
-    /*padding-left: 2.5%;*/
 }
 i.expDate{
-    font-size: 30px;
+    font-size: 25px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-weight: 10;
+    font-weight: 600;
     color: white;
     margin: auto 0;
-    /*padding-left: 5%;*/
-    /*float: right;*/
 }
 
 h1.projectTitle{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: 10;
     color: white;
-    font-size: 70px;
+    font-size: 68px;
     text-align: center;
     margin: 0 0 50px 0;
     font-weight: 600;
@@ -534,10 +395,8 @@ h1.projectTitle{
 
 }
 .imgProj{
-    width: 90%;
-    /* margin-bottom: 15px; */
-    margin: 25px auto;
-     /*border: 15px solid white;*/
+    height: 500px;
+    margin: 0 auto;
     border-radius: 15px;
 }
 .liProjects {
@@ -545,59 +404,10 @@ h1.projectTitle{
     color: white;
     padding-bottom: 0.5%;
     margin-left: 0;
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-.tech {
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: white;
-    padding-bottom: 0.5%;
-    padding-left: 40px;
-    /*margin-left: 0;*/
     font-size: 25px;
-    margin-bottom: 20px;
-}
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #652232;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 125%;
-    height: 50%;
-    /* padding: 20px; */
-    margin: auto 0 auto auto;
-    width: 150px;
-    transition: all 0.5s;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    cursor: pointer;
+    margin-bottom: 15px;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
@@ -639,7 +449,6 @@ h1,img,p{opacity: 1;}
     body {
         overflow-y: scroll;
          display: grid; 
-        /*background-color: #0b0c10;*/
         grid-template-columns: auto;
         background-size: cover;
         grid-template-rows: 100vh 90vh;
@@ -648,12 +457,8 @@ h1,img,p{opacity: 1;}
         background-position: center;
     }
     .card{
-        /*width: 90%;*/
-        /*margin: 50px 0 0 0;*/
         padding-top: 2%;
         height: 98%;
-        /*background-color: #0b0c10;*/
-        /*background-size: auto;*/
         background-position: center;
         background-image: url(background_long_blue.png);
         background-size: cover;
@@ -674,10 +479,8 @@ h1,img,p{opacity: 1;}
         padding-left: 25px;
     }
     .aboutIMG {
-        /* float: left; */
         height: 75px;
         margin: auto;
-        /* padding-right: 10px; */
     }
     .name{
         font-size: 100px;
@@ -704,27 +507,18 @@ h1,img,p{opacity: 1;}
     .col {
         grid-template-rows: auto 200px;
         grid-template-columns: auto;
-        /* margin: 0 auto; */
         width: 100%;
     }
     div.icons{
         display: inline-flex;
         padding: 0 30px 30px 30px;
-        /*margin: auto;*/
     }
 
-    img.icons {
-    /*    width: 100px;
-        margin: auto;*/
-    }
     input.icons {
         width: 60%;
-        /*margin: auto;*/
     }
     .cardProfile{
         height: 90.5vh;
-        /*width: 100%;*/
-        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
         display: grid;
         background-image: url(profile_background5.png);
         grid-template-rows: 600px 150px auto 150px;
@@ -736,13 +530,10 @@ h1,img,p{opacity: 1;}
         grid-template-columns: 200px 200px 200px;
     }
     .columnImg {
-        /*flex: none;*/
         max-width: 100%;
     }
     .rowImg {
         display: block;
-        /*flex-wrap: none;*/
-        /*padding: 0 4px;*/
     }
     .columnImg img{
         opacity: 1;
@@ -776,22 +567,16 @@ h1,img,p{opacity: 1;}
         font-size: 40px;
     }
     .exp{
-        font-size: 55px;
+        font-size: 50px;
         font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        font-weight: 10;
         color: white;
         margin: auto 0;
-        /*padding-left: 2.5%;*/
-        /*font-weight: 600;*/
     }
     i.expDate{
         font-size: 40px;
         font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        font-weight: 10;
         color: white;
         margin: auto 0;
-        /*padding-left: 5%;*/
-        /*float: right;*/
     }
     .gridProj{
         display: grid;
@@ -806,6 +591,8 @@ h1,img,p{opacity: 1;}
     }
     .imgProj {
         margin: 75px auto;
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -819,8 +606,6 @@ h1,img,p{opacity: 1;}
 
     .cardProfile {
         height: 100%;
-        /* width: 100%; */
-        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
         display: grid;
         background-image: url(profile_background_tablet.png);
         grid-template-rows: 475px auto auto 150px;
@@ -838,10 +623,8 @@ h1,img,p{opacity: 1;}
         font-size: 50px;
     }
     .aboutIMG {
-        /* float: left; */
         height: 60px;
         margin: auto;
-        /* padding-right: 10px; */
     }
     .aboutText {
         font-size: 40px;
