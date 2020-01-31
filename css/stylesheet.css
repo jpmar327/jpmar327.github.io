@@ -137,6 +137,16 @@ img.iconLinks{
     height: 100%;
 }
 
+.projLink{
+    padding-left: 40px;
+    width: 45px;
+    opacity: 0.65;
+    float: left
+}
+.projLink:hover {
+    opacity: 1;
+}
+
 .cardSections{
     height: 775px;
     width: 95%;
@@ -164,7 +174,7 @@ img.iconLinks{
     /*background-attachment: fixed;*/
     background-position: center;
     background-image: url(background_blue.png);
-    background-size: cover;
+    background-size: auto;
 }
 .aboutText{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -364,16 +374,16 @@ h1.sectionHeader{
 }
 
 .textTitle {
-    background-color: white;
-    color: black;
-    /*font-size: 5vw;*/
+    /* background-color: white; */
+    color: white;
+    /* font-size: 5vw; */
     font-size: 6vw;
     font-weight: bold;
     margin: auto;
-    /*padding: 5px;*/
+    /* padding: 5px; */
     width: 100%;
     text-align: center;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
@@ -776,6 +786,15 @@ h1,img,p{opacity: 1;}
         width: 100%;
         grid-template-columns:auto;
     }
+    .projLink{
+        padding-left: 40px;
+        width: 75px;
+        opacity: 1;
+        float: left
+    }
+    .imgProj {
+        margin: 75px auto;
+    }
 }
 
 @media only screen 
@@ -800,7 +819,7 @@ h1,img,p{opacity: 1;}
         width: auto;
     }
     .linksIcon {
-        grid-template-rows: 75px;
+        grid-template-rows: 70px;
         grid-template-columns: 200px 200px 200px;
     }
     .name {
