@@ -287,6 +287,12 @@ h1.sectionHeader{
   margin-top: 2.5%;
   vertical-align: middle;
   width: 100%;
+  opacity: 0.4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
+}
+
+.columnImg img:hover {
+  opacity: 1;
 }
 
 
@@ -734,6 +740,9 @@ h1,img,p{opacity: 1;}
         display: block;
         /*flex-wrap: none;*/
         /*padding: 0 4px;*/
+    }
+    .columnImg img{
+        opacity: 1;
     }
     #photos{
         height:95%;
