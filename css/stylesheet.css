@@ -537,7 +537,8 @@ h1.projectTitle{
     width: 90%;
     /* margin-bottom: 15px; */
     margin: 25px auto;
-    border: 5px solid white;
+     /*border: 15px solid white;*/
+    border-radius: 15px;
 }
 .liProjects {
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
