@@ -259,7 +259,7 @@ h1.sectionHeader{
 }
 
 #photos{
-    height: 85%;
+    height: 90%;
     display: none; 
     padding: 4%;
     overflow-y: scroll; 
@@ -362,6 +362,19 @@ ul.ulExp{
 /*    margin: 10px 0 0 0;
     list-style-type: circle;
     list-style-image: url(Assets/list_icon_circleArrow.png);*/
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #b1a296; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 .exp{
     font-size: 30px;
