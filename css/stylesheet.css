@@ -74,6 +74,7 @@ div.icons{
 
 img.icons {
     width: 100%;
+    height: auto;
     margin: auto;
 }
 input.icons {
