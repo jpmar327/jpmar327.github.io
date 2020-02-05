@@ -212,7 +212,7 @@ h1.sectionHeader{
 .rowImg {
   display: flex;
   padding: 0 0.5%;
-  margin-top: 5%;
+  margin-top: 2.5%;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -525,6 +525,7 @@ h1,img,p{opacity: 1;}
     div.icons{
         display: inline-flex;
         padding: 0 30px 30px 30px;
+        height: auto;
     }
 
     input.icons {
