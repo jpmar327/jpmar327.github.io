@@ -22,16 +22,6 @@ body {
     grid-template-rows: 100%;
     background-color: #1d202b;
 }
-* {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;box-sizing: content-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-}
 div,h1,h2,h3,i,li,ul,p{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
@@ -89,12 +79,7 @@ div.icons{
     padding: 15px;
     height: 50px;
 }
-.card-body {
-        height: 225px;
-}
-.card{
-    background-color: #333a41;
-}
+
 img.icons {
     width: 100%;
     height: auto;
@@ -153,7 +138,7 @@ img.iconLinks{
     margin: auto;
 }
 
-.colInfo {
+.col {
     display: inline-grid;
     grid-template-columns: auto 90px;
     grid-template-rows: 100%;
@@ -205,7 +190,7 @@ h1.description{
     text-align: center;
     
 }
-.description{
+p.description{
     
     font-size: 25px;
     margin: 5% 0
@@ -318,7 +303,6 @@ h1.description{
 h1.topJob { 
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
 } 
   
 h1.topJob:before, h1.topJob:after { 
@@ -402,7 +386,7 @@ i.expDate{
 .projectTitle{
     font-weight: 10;
     
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     margin: 0 0 35px 0;
     font-weight: 600;
@@ -438,7 +422,7 @@ grid-template-rows: 65% 7.5% 22.5%;
 
 /* Expanding image text */
 #expandedImg{
-    margin: 0 auto;
+margin: 0 auto;
     height: 100%;
     border-bottom: 45px solid #008080;
 }
@@ -466,14 +450,13 @@ h1,img,p{opacity: 1;}
 @media only screen and (max-width:1300px) and (-webkit-min-device-pixel-ratio: 1){
     body {
         overflow-y: scroll;
-        display: grid; 
+         display: grid; 
         grid-template-columns: auto;
         background-size: cover;
         grid-template-rows: 100vh 90vh;
         margin: auto;
         background-attachment: fixed;
         background-position: center;
-        /*-webkit-text-size-adjust:none;*/
     }
     .sections{
         padding-top: 2%;
@@ -494,7 +477,7 @@ h1,img,p{opacity: 1;}
     }
 
     .aboutText {
-        font-size: 45px;
+        font-size: 50px;
         padding-left: 25px;
     }
     .aboutIMG {
@@ -514,7 +497,7 @@ h1,img,p{opacity: 1;}
         box-shadow: inset 0px -10px 16px 0 rgba(0,0,0,0.3);
 
     }
-    .colInfo{
+    .col{
         grid-template-rows: 90vh 10vh;
         grid-template-rows: auto 200px;
         grid-template-columns: auto;
@@ -559,20 +542,6 @@ h1,img,p{opacity: 1;}
     #photos{
         height:95%;
     }
-    #bio{
-        height: 96%;
-    }
-    #experience {
-        height: 96%;
-    }
-
-    #projects {
-        height: 96%;
-    }
-
-    #photos{
-        height: 96%;
-    }
     #bio_icon{
         border-radius: 25px 25px 0px 0px;
     }
@@ -593,19 +562,19 @@ h1,img,p{opacity: 1;}
         height: 10vh;
     }
     .liProjects {
-        font-size: 45px;
+        font-size: 25px;
     }
     .liExp {
-        font-size: 45px;
+        font-size: 37.5px;
     }
     .exp{
-        font-size: 50px;
+        font-size: 42.5px;
         font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         
         margin: auto 0;
     }
     i.expDate{
-        font-size: 47.5px;
+        font-size: 40px;
         font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         
         margin: auto 0;
@@ -622,13 +591,13 @@ h1,img,p{opacity: 1;}
         float: left
     }
     .imgProj {
-        margin: 40px auto;
+        margin: 75px auto;
         width: 90%;
         height: auto;
     }
     .jobTitle{
-        font-size: 60px;
-        margin: 5% 0;
+        font-size: 50px;
+        /*margin:auto;*/
     }
     .description{
         font-size: 45px;
@@ -675,7 +644,7 @@ h1,img,p{opacity: 1;}
     #photos {
         height: 91.5%;
     }
-    .colInfo{
+    .col{
         grid-template-rows: 85% 15%;
     }
     div.icons {
@@ -687,7 +656,7 @@ h1,img,p{opacity: 1;}
     .liProjects{
         font-size: 40px;
     }
-    .description{
+    p.description{
         font-size: 40px;
     }
 }

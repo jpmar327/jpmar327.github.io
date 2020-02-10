@@ -3,13 +3,20 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
+    <script src="js/index.js"></script>
+
 </head>
 
-<script src="js/index.js"></script>
+
 
 <body>
-    <div class="col">
+    <div class="colInfo">
         <div class = "cardProfile">
             <img class="profile" src="css/Assets/prof_pic_blue.png" alt="me">
             <div class = "linksIcon">
@@ -28,13 +35,13 @@
                 <h1 class = "name">Joao Pedro "JP" Santos Martins</h1>
                 <div class="infoGrid">
                     <img src="css/Assets/school_logo.png" class="aboutIMG">
-                    <h1 class = "aboutText">Georgia Institute of Technology</h1>
+                    <h2 class = "aboutText">Georgia Institute of Technology</h2>
                     <img src="css/Assets/bachelors_icon.png" class="aboutIMG">
-                    <h1 class = "aboutText">B.S.M.E.</h1>
+                    <h2 class = "aboutText">B.S.M.E.</h2>
                     <img src="css/Assets/mail_icon.png" class="aboutIMG">
-                    <h1 class = "aboutText">jpmartins327@gmail.com</h1>
+                    <h2 class = "aboutText">jpmartins327@gmail.com</h2>
                     <img src="css/Assets/house_icon.png" class="aboutIMG">
-                    <h1 class = "aboutText">Atlanta, GA, USA</h1>
+                    <h2 class = "aboutText">Atlanta, GA, USA</h2>
                 </div>
             </div>
         </div>
@@ -56,7 +63,7 @@
     </div>
 
 
-    <div class="card">
+    <div class="sections">
         <div id = "bio">
             <div class = "textTitle">ABOUT ME</div>
             <p class = "description">
@@ -65,8 +72,144 @@
             <h1 class = "topJob">
                 <img class = "iconLogo" src="css/Assets/skills_logo.png" alt="skills">
             </h1>
+    <div class="card-columns">
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Program Languages</h2>
+                    <ul class = "ulSkills">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </p>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Framework</h2>
+                <ul class = "ulSkills">
+                    <li>React.js</li>
+                    <li>Flask</li>
+                    <li>D3.js</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Software</h2>
+                <ul class = "ulSkills">
+                    <li>Git</li>
+                    <li>Tableau</li>
+                    <li>Oracle VM VirtualBox</li>
+                    <li>SolidWorks</li>
+                    <li>AutoCAD</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Hardware</h2>
+                <ul class = "ulSkills">
+                    <li>Raspberry Pi</li>
+                    <li>MSP Launchpad</li>
+                    <li>Circuit Design</li>
+                </ul>
+            </p>
+          </div>
+        </div>  
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Design</h2>
+                <ul class = "ulSkills">
+                    <li>Photoshop</li>
+                    <li>Premier Rush</li>
+                    <li>Inkscape</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <p class="card-text">
+                <h2 style = "text-align: center; font-size: 25px">Languages</h2>
+                <ul class = "ulSkills">
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>Portuguese</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+    </div>
 
+<!--         <div style = "padding:2.5% 5%;">
+            <div style = "margin:auto;display: grid; grid-template-rows: auto; grid-template-columns: 33.3% 33.3% 33.3%; grid-template-rows: auto auto">
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Program Languages</h2>
+                    <ul class = "ulSkills">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Framework</h2>
+                    <ul class = "ulSkills">
+                        <li>React.js</li>
+                        <li>Flask</li>
+                        <li>D3.js</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Software</h2>
+                    <ul class = "ulSkills">
+                        <li>Git</li>
+                        <li>Tableau</li>
+                        <li>Oracle VM VirtualBox</li>
+                        <li>SolidWorks</li>
+                        <li>AutoCAD</li>
+                    </ul>
+                </div>    
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Hardware</h2>
+                    <ul class = "ulSkills">
+                        <li>Raspberry Pi</li>
+                        <li>MSP Launchpad</li>
+                        <li>Circuit Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Design</h2>
+                    <ul class = "ulSkills">
+                        <li>Photoshop</li>
+                        <li>Premier Rush</li>
+                        <li>Inkscape</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style = "text-align: center; font-size: 25px">Languages</h2>
+                    <ul class = "ulSkills">
+                        <li>English</li>
+                        <li>Spanish</li>
+                        <li>Portuguese</li>
+                    </ul>
+                </div>     
+            </div>
+        </div> -->
+    </div>
         <div id = "experience">
 
             <div class = "textTitle">EXPERIENCE</div>
@@ -76,7 +219,7 @@
                 </h1>
             </div>
             <h1 class = "jobTitle">GEORGIA TECH RESEARCH INSTITUTE</h1>
-            <p class = "exp">CIPHER Student Assistant</p><br>
+            <h2 class = "exp">CIPHER Student Assistant</h2><br>
             <i class="expDate">October 2018 – January 2020</i>
             <ul class = "ulExp">
                 <li class = "liExp">Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
@@ -90,14 +233,14 @@
                 </h1> 
             </div>         
             <h1 class = "jobTitle">ARCHER WESTERN</h1>
-            <p class = "exp">Project Engineer Intern</p><br>
+            <h2 class = "exp">Project Engineer Intern</h2><br>
             <i class="expDate">May 2018 – October 2018</i>
             <ul class = "ulExp">
                 <li class = "liExp">Assisted project manager on Clear Creek West Sewer Improvement Project</li>
                 <li class = "liExp">Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
                 <li class = "liExp">Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
             </ul>
-            <p class = "exp">Construction Estimator Intern</p><br>
+            <h2 class = "exp">Construction Estimator Intern</h2><br>
             <i class="expDate">January 2018 – April 2018</i>
             <ul class = "ulExp">
                 <li class = "liExp">Analyzed engineering drawings and Department of Transportation (DOT) parameters for quantity take-offs using the On-Screen Take-Off program</li>
@@ -112,7 +255,7 @@
                 </h1>     
             </div>           
             <h1 class = "jobTitle">TI AUTOMOTIVE</h1>
-            <p class = "exp">Quality Engineer Intern</p><br>
+            <h2 class = "exp">Quality Engineer Intern</h2><br>
             <i class="expDate">May 2016 – August 2016</i>
             <ul class = "ulExp">
                 <li class = "liExp">Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
@@ -131,11 +274,11 @@
                 <img class = "iconLogo" src="css/Assets/routelanta_logo.png" alt="routelanta">
             </h1>
         </div>
-            <h1 class = "projectTitle">ROUTELANTA RUNNING APP</h1>
+            <h2 class = "projectTitle">ROUTELANTA RUNNING APP</h2>
             <div class = "gridProj">
                 <div>
                     <ul  class = "ulExp">
-                        <li class = "liProjects"> Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
+                        <li class = "liProjects">Web-Based application which visualizes, classifies, and recommends running routes around Atlanta</li>
                         <li class = "liProjects">API calls processed in Python, SciKit Learn used for K Means clustering using user running data from Strava</li>
                         <li class = "liProjects">Uses K Means clustering to classify running routes in Atlanta by difficulty based on length and height gain</li>
                     </ul>
@@ -154,7 +297,7 @@
                     <img class = "iconLogo" src="css/Assets/spotify_logo.png" alt="spotify">
                 </h1>
             </div>
-            <h1 class = "projectTitle">SPOTIFY TO VISUAL APP</h1>
+            <h2 class = "projectTitle">SPOTIFY TO VISUAL APP</h2>
 
             <div class = "gridProj">
                 <img class = "imgProj" src="css/Assets/spotify_gif_example.jpg">
@@ -175,7 +318,7 @@
                     <img class = "iconLogo" src="css/Assets/dot_robot_logo.png" alt="motor">
                 </h1>
             </div>
-            <h1 class = "projectTitle">FOLLOW THE DOT ROBOT</h1>
+            <h2 class = "projectTitle">FOLLOW THE DOT ROBOT</h2>
             <div class = "gridProj">
                 <div>
                     <ul  class = "ulExp">
@@ -211,7 +354,7 @@
             </div>
         </div>
     </div>
-</div>
+
 
 </body>
 </html>
