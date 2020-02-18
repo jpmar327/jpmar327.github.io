@@ -32,14 +32,39 @@ body {
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-div,h1,h2,h3,i,li,ul,p{
+div,h1,h2,h3,h4,h5,i,li,ul,p{
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: white;
 }
 
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-weight: 600;
+}
 
-h2{
-    font-size: 15px;
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 25px auto 0;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 19px;
+    margin: auto 0;
+}
+
+li {
+    margin-left: 0;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -78,11 +103,11 @@ div.page{
     box-shadow: inset -13px 0px 9px 0 rgba(0,0,0,0.2);
 }
 
-.text {
+/*.text {
     text-align: center;
     font-size: 50px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
+}*/
 
 div.icons{
     display: inline-flex;
@@ -90,10 +115,14 @@ div.icons{
     height: 50px;
 }
 .card-body {
-        height: 225px;
+        height: 275px;
+        padding:1.5rem;
+}
+.text-center {
+     text-align: left!important; 
 }
 .card{
-    background-color: #333a41;
+    background-color: rgba(51, 58, 65, 0.75);
 }
 img.icons {
     width: 100%;
@@ -296,7 +325,6 @@ h1.description{
 }
 
 .textTitle {
-    
     font-size: 5vw;
     font-weight: bold;
     margin: auto;
@@ -343,7 +371,6 @@ div.border span.border {
 
 .jobTitle {
     font-weight: 10;
-    
     font-weight: 600;
     font-size: 45px;
     text-align: center;
@@ -351,13 +378,13 @@ div.border span.border {
 }
 
 
-.liExp {
-    
+/*.liExp {
+    */
     /* padding-bottom: 0.5%; */
-    margin-left: 0;
+/*    margin-left: 0;
     font-size: 20px;
     margin-bottom: 5px;
-}
+}*/
 
 .ulSkills {
     
@@ -368,14 +395,16 @@ div.border span.border {
     padding:0 20%;
 }
 
-ul.ulExp{
+/*ul.ulExp{*/
 /*    margin: 10px 0 0 0;
     list-style-type: circle;
     list-style-image: url(Assets/list_icon_circleArrow.png);*/
-}
+/*    margin-top: 15px;
+}*/
 
 ul {
   list-style: none; /* Remove default bullets */
+  margin-top: 15px;
 }
 
 ul li::before {
@@ -386,12 +415,12 @@ ul li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
-.exp{
+/*.exp{
     font-size: 30px;
     font-weight: 600;
     
     margin: 25px auto 0;
-}
+}*/
 i.expDate{
     font-size: 20px;
     font-weight: 600;
@@ -399,14 +428,13 @@ i.expDate{
     margin: auto 0;
 }
 
-.projectTitle{
-    font-weight: 10;
-    
+/*.projectTitle{
+    font-weight: 10;  
     font-size: 60px;
     text-align: center;
     margin: 0 0 35px 0;
     font-weight: 600;
-}
+}*/
 .gridProj{
     display: grid;
     width: 100%;
@@ -450,14 +478,14 @@ grid-template-rows: 65% 7.5% 22.5%;
 }
 
 /* Closable button inside the image */
-.closebtn {
+/*.closebtn {
     position: absolute;
     right: 15%;
     top: -1%;
     
     font-size: 35px;
     cursor: pointer;
-}
+}*/
 
 h1,img,p{opacity: 1;}
 
@@ -474,6 +502,23 @@ h1,img,p{opacity: 1;}
         background-attachment: fixed;
         background-position: center;
         /*-webkit-text-size-adjust:none;*/
+    }
+
+    li {
+        font-size: 45px;
+    }
+    
+    h2{
+        font-size: 75px;
+    }
+
+    h3{
+        font-size: 60px;
+    }
+
+    h5{
+        font-size: 48px;
+        padding-left: 15px;
     }
     .sections{
         padding-top: 2%;
@@ -501,11 +546,13 @@ h1,img,p{opacity: 1;}
         height: 75px;
         margin: auto;
     }
+
     .name{
         font-size: 100px;
         padding: 25px 0 50px 0;
         font-weight: 500;
     }
+
     .sectionButtons{
         height: auto;
         display: flex;
@@ -532,9 +579,14 @@ h1,img,p{opacity: 1;}
         height: auto;
     }
 
+    img.iconLogo{
+        height:275px;
+    }
+
     input.icons {
         width: 60%;
     }
+
     .cardProfile{
         height: 90.5vh;
         display: grid;
@@ -543,6 +595,7 @@ h1,img,p{opacity: 1;}
         background-position: center;
 
     }
+
     .linksIcon{
         grid-template-rows: 100px;
         grid-template-columns: 200px 200px 200px;
@@ -573,6 +626,7 @@ h1,img,p{opacity: 1;}
     #photos{
         height: 96%;
     }
+
     #bio_icon{
         border-radius: 25px 25px 0px 0px;
     }
@@ -580,34 +634,24 @@ h1,img,p{opacity: 1;}
     #experience_icon{
         border-radius: 25px 25px 0px 0px;
     }
+
     #projects_icon{
         border-radius: 25px 25px 0px 0px;
     }
+
     #photos_icon{
         border-radius: 25px 25px 0px 0px;
     }
+
     .textTitle{
         font-size: 12vw;
     }
+
     .iconLogo {
         height: 10vh;
     }
-    .liProjects {
-        font-size: 45px;
-    }
-    .liExp {
-        font-size: 45px;
-    }
-    .exp{
-        font-size: 50px;
-        font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        
-        margin: auto 0;
-    }
     i.expDate{
-        font-size: 47.5px;
-        font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        
+        font-size: 50px;        
         margin: auto 0;
     }
     .gridProj{
@@ -615,23 +659,41 @@ h1,img,p{opacity: 1;}
         width: 100%;
         grid-template-columns:auto;
     }
+
     .projLink{
         padding-left: 40px;
         width: 75px;
         opacity: 1;
         float: left
     }
+
     .imgProj {
         margin: 40px auto;
         width: 90%;
         height: auto;
     }
-    .jobTitle{
-        font-size: 60px;
-        margin: 5% 0;
-    }
+
     .description{
         font-size: 45px;
+    }
+
+    h1.topJob:before,
+    h1.topJob:after {
+        border-bottom: 10px solid #652232;
+    }
+
+    .card-columns{
+        column-count:2;
+    }
+
+    .card-body {
+        height: 625px;
+        padding: 1.25rem 3rem;
+    }
+
+    h4 {
+        font-size: 60px;
+        margin-bottom: 25px;
     }
 }
 
@@ -650,41 +712,60 @@ h1,img,p{opacity: 1;}
         grid-template-rows: 475px auto auto 150px;
         background-position: center;
     }
+
     img.profile {
         height: 375px;
         width: auto;
     }
+
     .linksIcon {
-        grid-template-rows: 70px;
+        grid-template-rows: 80px;
         grid-template-columns: 200px 200px 200px;
     }
     .name {
-        font-size: 50px;
+        font-size: 65px;
+        padding: 25px 0;
     }
+
     .aboutIMG {
         height: 60px;
         margin: auto;
     }
+
+    h5{
+        font-size: 45px;
+        padding-left: 25px;
+    }
+
+    .infoGrid{
+        grid-template-rows: 75px 75px 75px 75px;
+    }
+
     .aboutText {
         font-size: 40px;
         padding-left: 25px;
     }
+
     .sections{
         height: 100%;
     }
+
     #photos {
         height: 91.5%;
     }
+
     .colInfo{
         grid-template-rows: 85% 15%;
     }
+
     div.icons {
         padding: 0 30px 0px 30px;
     }
+
     .iconLogo {
         height: 15vh;
     }
-    .liProjects{
+    li{
         font-size: 40px;
     }
     .description{
