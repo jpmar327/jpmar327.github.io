@@ -103,12 +103,6 @@ div.page{
     box-shadow: inset -13px 0px 9px 0 rgba(0,0,0,0.2);
 }
 
-/*.text {
-    text-align: center;
-    font-size: 50px;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}*/
-
 div.icons{
     display: inline-flex;
     padding: 15px;
@@ -216,7 +210,6 @@ img.iconLinks{
 
 .name{
     /*font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;*/
-    
     font-size: 35px;
     font-weight: 400;
     margin: 0;
@@ -225,16 +218,9 @@ img.iconLinks{
 }
 .aboutIMG{
     height: 80%;
-    margin: auto;
+    margin: auto;  
 }
-
-h1.description{
-    font-size: 50px;
-     font-weight: 10; 
-    text-align: center;
-    
-}
-.description{
+p{
     
     font-size: 25px;
     margin: 5% 0
@@ -343,13 +329,13 @@ h1.description{
     padding: 0 25px;
 }
 
-h1.topJob { 
+h1.titleBreak { 
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
 } 
   
-h1.topJob:before, h1.topJob:after { 
+h1.titleBreak:before, h1.titleBreak:after { 
     content: "";
     flex: 1 1;
     border-bottom: 3px solid #652232;
@@ -673,12 +659,12 @@ h1,img,p{opacity: 1;}
         height: auto;
     }
 
-    .description{
+    p{
         font-size: 45px;
     }
 
-    h1.topJob:before,
-    h1.topJob:after {
+    h1.titleBreak:before,
+    h1.titleBreak:after {
         border-bottom: 10px solid #652232;
     }
 
@@ -768,7 +754,7 @@ h1,img,p{opacity: 1;}
     li{
         font-size: 40px;
     }
-    .description{
+    p{
         font-size: 40px;
     }
 }
