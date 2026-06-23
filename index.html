@@ -2,75 +2,85 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type = "text/css" href="css/stylesheet.css"/>
-    <script src="js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JP Santos Martins — CX, Data, and Professional Services Engineer. Portfolio featuring experience at Leadspace, Appen, and GTRI.">
+    <meta property="og:title" content="JP Santos Martins | Portfolio">
+    <meta property="og:description" content="CX, Data, and Professional Services Engineer based in Atlanta, GA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jpmar327.github.io/">
+    <title>JP Santos Martins | Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
-    <div class="colInfo">
-        <div class = "cardProfile">
-            <img class="profile" src="css/Assets/prof_pic_blue.png" alt="me">
-            <div class = "linksIcon">
-                <a href="https://linkedin.com/in/joao-pedro-jp-santos-martins-532574108" class="iconLinks">
-                    <img src="css/Assets/linkedin_icon.png" class="iconLinks" title = "LinkedIn">
+    <aside class="colInfo" aria-label="Profile and navigation">
+        <div class="cardProfile">
+            <img class="profile" src="css/Assets/prof_pic_blue.png" alt="JP Santos Martins">
+            <div class="linksIcon">
+                <a href="https://linkedin.com/in/jpmartins327/" class="iconLinks">
+                    <img src="css/Assets/linkedin_icon.png" class="iconLinks" alt="LinkedIn" title="LinkedIn">
                 </a>
-                <a href="https://github.com/jpmar327" class="iconLinks" title = "GitHub">
-                    <img src="css/Assets/github_icon.png" class="iconLinks">
+                <a href="https://github.com/jpmar327" class="iconLinks" title="GitHub">
+                    <img src="css/Assets/github_icon.png" class="iconLinks" alt="GitHub">
                 </a>
-                <a href="https://www.flickr.com/gp/115564363@N02/z804Ad" class="iconLinks" title = "Flickr">
-                    <img src="css/Assets/flikr_icon.png" class="iconLinks">
+                <a href="https://www.flickr.com/gp/115564363@N02/z804Ad" class="iconLinks" title="Flickr">
+                    <img src="css/Assets/flikr_icon.png" class="iconLinks" alt="Flickr">
                 </a>
             </div>
 
             <div>
-                <h2 class = "name">Joao Pedro "JP" Santos Martins</h2>
+                <h2 class="name">Joao Pedro "JP" Santos Martins</h2>
                 <div class="infoGrid">
-                    <img src="css/Assets/school_logo.png" class="aboutIMG">
+                    <img src="css/Assets/school_logo.png" class="aboutIMG" alt="Georgia Tech">
                     <h5>Georgia Institute of Technology</h5>
-                    <img src="css/Assets/bachelors_icon.png" class="aboutIMG">
+                    <img src="css/Assets/bachelors_icon.png" class="aboutIMG" alt="Degree">
                     <h5>B.S.M.E.</h5>
-                    <img src="css/Assets/mail_icon.png" class="aboutIMG">
+                    <img src="css/Assets/mail_icon.png" class="aboutIMG" alt="Email">
                     <h5>jpmartins327@gmail.com</h5>
-                    <img src="css/Assets/house_icon.png" class="aboutIMG">
+                    <img src="css/Assets/house_icon.png" class="aboutIMG" alt="Location">
                     <h5>Atlanta, GA, USA</h5>
                 </div>
             </div>
         </div>
 
-        <div class="sectionButtons">
-            <div class="icons" id = "bio_icon">
-                <input class="icons" type="image" name="about me" title = "About Me" src="css/Assets/about.png"  onclick="bio()" />
+        <nav class="sectionButtons" aria-label="Portfolio sections">
+            <div class="icons nav-active" id="bio_icon">
+                <button class="nav-btn" type="button" data-tab="bio" aria-label="About Me" title="About Me">
+                    <img src="css/Assets/about.png" alt="" aria-hidden="true">
+                </button>
             </div>
-            <div class="icons" id = "experience_icon">
-                <input class="icons" type="image" name="experience" title = "Professional Experience" src="css/Assets/experience.png"  onclick="exp()" />
+            <div class="icons" id="experience_icon">
+                <button class="nav-btn" type="button" data-tab="experience" aria-label="Professional Experience" title="Professional Experience">
+                    <img src="css/Assets/experience.png" alt="" aria-hidden="true">
+                </button>
             </div>
-            <div class="icons" id = "projects_icon">
-                <input class="icons" type="image" name="projects" title = "Technical Projects" src="css/Assets/projects.png"  onclick="proj()" />
+            <div class="icons" id="projects_icon">
+                <button class="nav-btn" type="button" data-tab="projects" aria-label="Technical Projects" title="Technical Projects">
+                    <img src="css/Assets/projects.png" alt="" aria-hidden="true">
+                </button>
             </div>
-            <div class="icons" id = "photos_icon">
-                <input class="icons" type="image" name="photos" title = "Digital Design" src="css/Assets/photography.png"  onclick="photos()" />
+            <div class="icons" id="photos_icon">
+                <button class="nav-btn" type="button" data-tab="photos" aria-label="Photography" title="Photography">
+                    <img src="css/Assets/photography.png" alt="" aria-hidden="true">
+                </button>
             </div>
-        </div>
-    </div>
+        </nav>
+    </aside>
 
 
-    <div class="sections">
-        <div id = "bio">
-            <div class = "textTitle">ABOUT ME</div>
+    <main class="sections" aria-label="Portfolio content">
+        <div id="bio" class="tab-panel tab-active" role="tabpanel" aria-label="About Me">
+            <div class="textTitle">ABOUT ME</div>
             <p>
-                CX, Data, Professional Services, Post Sales Engineer with a Bachelor of Science (B.S.) in Mechanical Engineering from the Georgia Institute of Technology. Experienced in multiple programming languages, frameworks, and engineering software. Developed multiple applications and projects using programming tools and languages, such as Python, JavaScript, HTML, CSS, SQL, C, React.js, etc. 
+                CX, Data, Professional Services, Post Sales Engineer with a Bachelor of Science (B.S.) in Mechanical Engineering from the Georgia Institute of Technology. Experienced in multiple programming languages, frameworks, and engineering software. Developed multiple applications and projects using programming tools and languages, such as Python, JavaScript, HTML, CSS, SQL, C, React.js, etc.
             </p>
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/skills_logo.png" alt="skills">
+            <h1 class="titleBreak">
+                <img class="iconLogo" src="css/Assets/skills_logo.png" alt="skills">
             </h1>
-            <div class="card-columns">
-                <div class="card">
-                  <div class="card-body text-center">
+            <div class="skills-grid">
+                <div class="skill-card">
                     <h4>Program Languages</h4>
                     <ul>
                         <li>Python</li>
@@ -82,10 +92,8 @@
                         <li>MATLAB</li>
                     </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                <h4>Framework/Library</h4>
+                <div class="skill-card">
+                    <h4>Framework/Library</h4>
                     <ul>
                         <li>PySpark</li>
                         <li>Pandas</li>
@@ -96,9 +104,7 @@
                         <li>Liquid</li>
                     </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
+                <div class="skill-card">
                     <h4>Software/Tools</h4>
                     <ul>
                         <li>Git</li>
@@ -108,39 +114,9 @@
                         <li>Tableau</li>
                         <li>JIRA</li>
                         <li>Oracle VM VirtualBox</li>
-
                     </ul>
                 </div>
-
-            
-            </div>
-<!-- UPDATE SIZE OF BOXES TO FIT SKILLS BELOW -->
-            <!-- <div class="card">
-                <div class="card-body text-center">
-                    <h4>Software/Tools</h4>
-                    <ul>
-                        <li>Git</li>
-                        <li>DataBricks</li>
-                        <li>Apache Airflow</li>
-                        <li>Postman</li>
-                        <li>Kibana</li>
-                        <li>Elasticsearch</li>
-                        <li>Docker</li>
-                        <li>GCP</li>
-                        <li>AWS Lambda</li>
-                        <li>AWS S3</li>
-                        <li>Mode SQL</li>
-                        <li>Lucid Chart</li>
-                        <li>Tableau</li>
-                        <li>Jira</li>
-                        <li>Jenkins</li>
-                        <li>Oracle VM VirtualBox</li>
-
-                    </ul>
-                </div> -->
-
-            <div class="card">
-                <div class="card-body text-center">
+                <div class="skill-card">
                     <h4>Hardware</h4>
                     <ul>
                         <li>Raspberry Pi</li>
@@ -149,9 +125,7 @@
                         <li>Circuit Design</li>
                     </ul>
                 </div>
-            </div>  
-            <div class="card">
-                <div class="card-body text-center">
+                <div class="skill-card">
                     <h4>Design</h4>
                     <ul>
                         <li>Adobe Photoshop</li>
@@ -161,9 +135,7 @@
                         <li>AutoCAD</li>
                     </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
+                <div class="skill-card">
                     <h4>Languages</h4>
                     <ul>
                         <li>English</li>
@@ -173,204 +145,186 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id = "experience">
+        <div id="experience" class="tab-panel" role="tabpanel" aria-label="Professional Experience">
 
-        <div class = "textTitle">EXPERIENCE</div>
+            <div class="textTitle">EXPERIENCE</div>
 
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/leadspace_logo.png" alt="leadspace">
-            </h1>
-        </div>
-        <h2>LEADSPACE</h2>
-        <h3>Professional Services Engineer</h3><br>
-        <i class="expDate">January 2022 – May 2024</i>
-        <ul>
-            <li>Supported the entire sales lifecycle across several large clients, partnering with cross functional peers in customer success, account management, product, and engineering to close gaps in the implementation and go-live journey</li>
-            <li>Cultivated strong client relationships by providing prompt customized solutions that catered to their evolving needs, directly preventing client churn and resulting in upsell opportunities of $750K+</li>
-            <li>Refactored and evolved legacy Airflow DAGs, reducing technical debt and total cost of ownership with minimal downtime for deployments at Leadspace's two largest revenue-generating projects, valued at over $XM</li>
-            <li>Streamlined client-engineer communication and project visibility by implementing a centralized Jira process and dashboard for feature requests, project timeline forecasting, status tracking, and resource allocation</li>
-            <li>Built a custom match level confidence scoring algorithm using Python to address clients’ inability to assess the reliability of their customer data records, enabling clients to prioritize high-quality records for outreach</li>
-            <li>Implemented ETL pipeline to consolidate and clean over 14M records of client data sourced from disparate systems, unifying and optimizing the data pipeline to enable precise sales lead scoring, account matching, and targeted marketing campaigns for multiple clients</li>
-            <li>Developed reusable exploratory data analysis and pipeline primitives (PySpark, Pandas, SQL, Kibana) over the core Google Cloud data warehouse, reducing the overall cost of demo preparation and post-sales implementation for multiple solutions engineers across multiple client projects</li>
-            <li>Built, managed, and maintained Databricks workflow to query customer data warehouses for daily data refresh, the reporting of daily aggregated lead generation metrics, and notification of data quality violations</li>
-        </ul>
-
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/appen_logo2.png" alt="appen">
-            </h1>
-        </div>
-        <h2>APPEN</h2>
-        <h3>Professional Services Engineer</h3><br>
-        <i class="expDate">July 2020 – January 2022</i>
-        <ul>
-            <!-- <li>Promoted within ten months from an Associate Professional Services Engineer to a Professional Services Engineer</li> -->
-            <!-- <li>Collaborated with software engineers, sales executive, project managers and customer success managers in conceptualizing and developing ETL workflows and scripts to pipeline data for client projects</li>
-            <li>Focused on the end-to-end experience of the customer when building out new Data Annotation Workflows; continuously solved customer tickets, communicated with internal and external stakeholders, adapted the Appen Platform to customer requirements, and educated customers on best practices within the ecosystem</li>
-            <li>Spearheaded efforts to uplevel the team’s technical skills: trained the team to use GitHub, optimized scripts, and refactored our codebase to be more readable and maintainable</li>
-            <li>Improved client job design on Appen Platform to enhance user experience, which enabled more accurate output from contributors based on customer anecdotes</li>
-            <li>Implemented and delivered custom user interfaces including new feature tools such as a front-end data visualizer to asses contributor annotation quality on the Appen Platform, filling a gap between customer needs and the product</li>
-            <li>Developed and integrated a computer vision algorithm to extend the window over which the annotated target can leave the field of view across video batches by 60 seconds using Python OpenCV</li>
-            <li>Built out Mode SQL reports and dashboards to aggregate metrics on progress of Appen annotation jobs</li>
-            <li>Reversed a failing pilot project into a successful client contract by designing and implementing a new workflow and developing automated and scalable processing scripts</li> -->
-            <li>Implemented JavaScript, Python, and Liquid Logic scripts to configure clients’ AI training data annotation platform on Appen, designing manual annotation tasks for unstructured data that enabled a human workforce to provide high-quality, reliable training datasets, significantly enhancing the performance of the clients' AI models</li>
-            <li>Led development of ETL workflows, reusable scripts, and new data annotation workflows, managing requirements and expectations of internal and external stakeholders and refining the customer journey in partnership with software engineers, project managers, and customer success managers</li>
-            <li>Developed custom user interface using Javascript, D3, and JQuery to enable trusted annotators to review, validate, and correct coded data produced by less experienced annotators, ensuring high-quality training data and a reliable annotation workforce</li>
-            <li> Developed and integrated a computer vision algorithm using Python OpenCV to intelligently track annotated objects that temporarily left a camera's field of view, preventing them from being misclassified as new entities upon re-entry; increased the tracking time from ~1 second to over a minute</li>
-            <li>Took over an off track and at risk pilot project, repairing customer trust and resulting in a contract by clarifying requirements early and often, maintaining clear and frequent communication, and creatively building new automated and scalable processing pipelines using Appen’s webhook and AWS for the client’s unique use case</li>
-            <li>Acted as an interim hiring manager to the Professional Services team following a period of high attrition by revamping the interview process, updating the technical interview, interviewing ~10 new candidates, hiring and onboarding 5 engineers, and training the PS team’s new manager</li>
-            <li>Evangelized software engineering and DevOps best practices the Professional Services team; introduced and standardized the usage of Github, performance tuned frequently used scripts, and refactored our codebase to be more readable and maintainable as the team grew</li>
-        </ul>
-
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/GTRI_logo.png" alt="gtri">
-            </h1>
-        </div>
-        <h2>GEORGIA TECH RESEARCH INSTITUTE</h2>
-        <h3>CIPHER Student Assistant</h3><br>
-        <i class="expDate">October 2018 – January 2020</i>
-        <ul>
-            <li>Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
-            <li>Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
-            <li>Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
-        </ul>
-
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/AW_logo.png" alt="aw">
-            </h1> 
-        </div>         
-        <h2>ARCHER WESTERN</h2>
-        <h3>Project Engineer Intern</h3><br>
-        <i class="expDate">May 2018 – October 2018</i>
-        <ul>
-            <li>Assisted project manager on Clear Creek West Sewer Improvement Project</li>
-            <li>Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development </li>
-            <li>Managed engineering drawings and subcontractor quantities to track project’s units complete for monthly cost report</li>
-        </ul>
-        <h3>Construction Estimator Intern</h3><br>
-        <i class="expDate">January 2018 – April 2018</i>
-        <ul>
-            <li>Analyzed engineering drawings and Department of Transportation (DOT) parameters for quantity take-offs using the On-Screen Take-Off program</li>
-            <li>Appraised national projects based on scope changes including revision of specifications, standards, and quantities</li>
-            <li>Produced regular reports regarding DOT bid specifications for $100,000,000+ DOT projects</li>
-            <li>Managed intern team by designating job roles to meet project deadlines as liaison between interns and management</li>
-        </ul>
-
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/TI_logo.png" alt="ti">
-            </h1>     
-        </div>           
-        <h2>TI AUTOMOTIVE</h2>
-        <h3>Quality Engineer Intern</h3><br>
-        <i class="expDate">May 2016 – August 2016</i>
-        <ul>
-            <li>Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
-            <li>Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
-            <li>Formulated and enforced new work protocol tests to analyze quality of gas tanks and filler pipes</li>
-            <li>Trained new employees on proper testing operations and effectively using aforementioned work protocols</li>
-        </ul>
-    </div>
-
-
-    <div id = "projects">
-
-        <div class = "textTitle">PROJECTS</div>
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/routelanta_logo.png" alt="routelanta">
-            </h1>
-        </div>
-        <h2>ROUTELANTA RUNNING APP</h2>
-        <div class = "gridProj">
-            <div>
-                <ul>
-                    <li>Web-Based application that visualizes, classifies, and recommends running routes and displays points of interest in a map of Atlanta using D3.js, SciKit Learn, and K-Means Clustering</li>
-                    <li>Analyzes user running data by requesting Strava API responses in Python and SciKit Learn</li>
-                    <li>Implements K-Means Clustering to classify running routes by difficulty based on distance and height gain</li>
-                </ul>
-                <a href="https://jpmar327.github.io/Routelanta/"  title = "Go to App">
-                    <img src="css/Assets/external_link.png" class="projLink">
-                </a>
-                <a href="https://github.com/jpmar327/Routelanta"  title = "Go to GitHub">
-                    <img src="css/Assets/github_link.png" class="projLink">
-                </a>
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/leadspace_logo.png" alt="Leadspace">
+                </h1>
             </div>
-            <img class = "imgProj" src="css/Assets/routelanta_example.PNG">
-        </div>
+            <h2>LEADSPACE</h2>
+            <h3>Professional Services Engineer</h3><br>
+            <i class="expDate">January 2022 – May 2024</i>
+            <ul>
+                <li>Supported the entire sales lifecycle across several large clients, partnering with cross functional peers in customer success, account management, product, and engineering to close gaps in the implementation and go-live journey</li>
+                <li>Cultivated strong client relationships by providing prompt customized solutions that catered to their evolving needs, directly preventing client churn and resulting in upsell opportunities of $750K+</li>
+                <li>Refactored and evolved legacy Airflow DAGs, reducing technical debt and total cost of ownership with minimal downtime for deployments at Leadspace's two largest revenue-generating projects, valued at over $XM</li>
+                <li>Streamlined client-engineer communication and project visibility by implementing a centralized Jira process and dashboard for feature requests, project timeline forecasting, status tracking, and resource allocation</li>
+                <li>Built a custom match level confidence scoring algorithm using Python to address clients' inability to assess the reliability of their customer data records, enabling clients to prioritize high-quality records for outreach</li>
+                <li>Implemented ETL pipeline to consolidate and clean over 14M records of client data sourced from disparate systems, unifying and optimizing the data pipeline to enable precise sales lead scoring, account matching, and targeted marketing campaigns for multiple clients</li>
+                <li>Developed reusable exploratory data analysis and pipeline primitives (PySpark, Pandas, SQL, Kibana) over the core Google Cloud data warehouse, reducing the overall cost of demo preparation and post-sales implementation for multiple solutions engineers across multiple client projects</li>
+                <li>Built, managed, and maintained Databricks workflow to query customer data warehouses for daily data refresh, the reporting of daily aggregated lead generation metrics, and notification of data quality violations</li>
+            </ul>
 
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/spotify_logo.png" alt="spotify">
-            </h1>
-        </div>
-        <h2>SPOTIFY TO VISUAL APP</h2>
-
-        <div class = "gridProj">
-            <img class = "imgProj" src="css/Assets/spotify_gif_example.jpg">
-            <div>
-                <ul>
-                    <li>Web application that tracks user’s current Spotify song, and displays a gif based on music genre using Spotify API</li>
-                    <li>Displays current song playback information to a front-end client display using a React.js & Node.js</li>
-                    <!--                         <li class = "liProjects">Pivoted from a Python/Flask stack to a JavaScript based stack</li> -->
-                </ul>
-                <a href="https://github.com/jpmar327/Music-Genre-Gif"  title = "Go to GitHub">
-                    <img src="css/Assets/github_link.png" class="projLink">
-                </a>
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/appen_logo2.png" alt="Appen">
+                </h1>
             </div>
-        </div>
+            <h2>APPEN</h2>
+            <h3>Professional Services Engineer</h3><br>
+            <i class="expDate">July 2020 – January 2022</i>
+            <ul>
+                <li>Implemented JavaScript, Python, and Liquid Logic scripts to configure clients' AI training data annotation platform on Appen, designing manual annotation tasks for unstructured data that enabled a human workforce to provide high-quality, reliable training datasets, significantly enhancing the performance of the clients' AI models</li>
+                <li>Led development of ETL workflows, reusable scripts, and new data annotation workflows, managing requirements and expectations of internal and external stakeholders and refining the customer journey in partnership with software engineers, project managers, and customer success managers</li>
+                <li>Developed custom user interface using Javascript, D3, and JQuery to enable trusted annotators to review, validate, and correct coded data produced by less experienced annotators, ensuring high-quality training data and a reliable annotation workforce</li>
+                <li>Developed and integrated a computer vision algorithm using Python OpenCV to intelligently track annotated objects that temporarily left a camera's field of view, preventing them from being misclassified as new entities upon re-entry; increased the tracking time from ~1 second to over a minute</li>
+                <li>Took over an off track and at risk pilot project, repairing customer trust and resulting in a contract by clarifying requirements early and often, maintaining clear and frequent communication, and creatively building new automated and scalable processing pipelines using Appen's webhook and AWS for the client's unique use case</li>
+                <li>Acted as an interim hiring manager to the Professional Services team following a period of high attrition by revamping the interview process, updating the technical interview, interviewing ~10 new candidates, hiring and onboarding 5 engineers, and training the PS team's new manager</li>
+                <li>Evangelized software engineering and DevOps best practices the Professional Services team; introduced and standardized the usage of Github, performance tuned frequently used scripts, and refactored our codebase to be more readable and maintainable as the team grew</li>
+            </ul>
 
-        <div class = "titleHeader">
-            <h1 class = "titleBreak">
-                <img class = "iconLogo" src="css/Assets/dot_robot_logo.png" alt="motor">
-            </h1>
-        </div>
-        <h2>FOLLOW THE DOT ROBOT</h2>
-        <div class = "gridProj">
-            <div>
-                <ul>
-                    <li>A robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
-                    <li>Movement of colored pin is detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
-                    <li>A stepper motor control program written in C is flashed onto the MSP Launchpad to control the robot’s pointer based on the coordinates the Python program dictated</li>
-                </ul>
-                <a href="https://github.com/jpmar327/Follow-the-Dot-Robot"  title = "Go to GitHub">
-                    <img src="css/Assets/github_link.png" class="projLink">
-                </a>
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/GTRI_logo.png" alt="GTRI">
+                </h1>
             </div>
-            <img class = "imgProj" src="css/Assets/follow_dot_example.PNG">
-        </div>
-    </div>
+            <h2>GEORGIA TECH RESEARCH INSTITUTE</h2>
+            <h3>CIPHER Student Assistant</h3><br>
+            <i class="expDate">October 2018 – January 2020</i>
+            <ul>
+                <li>Prototyped Software Defined Network (SDN) techniques using software image OpenWrt with a Linksys WRT32X router, Open vSwitch with Raspberry Pi, and Zodiac FX OpenFlow Switch for military communication</li>
+                <li>Implemented a keylogging program in C in order to test how efficient a program can track keyboard inputs</li>
+                <li>Learned Linux and Python to test and interact with multiple code base for existing and future projects</li>
+            </ul>
 
-    <div id = "photos">
-        <div class = "textTitle">PHOTOGRAPHY</div>
-        <!-- The expanding image container -->
-        <div class = "rowImg">
-            <div class = "columnImg">
-                <img src="photos/Samy Jump.jpg" alt="Wake Kicker">
-                <img src="photos/Santorini.png" alt="Oia Greece">
-                <img src="photos/Col. Rolo.jpg" alt="Colonel Rolo">
-                
-                <img src="photos/Amizade.jpg" alt="Amizade">
-                
-                
-            </div>   
-            <div class = "columnImg">
-                <!-- <img src="photos/Santorini Boat.jpg" alt="Mediterranean Sea"> -->
-                <img src="photos/Sails.png" alt="Sails">
-                <img src="photos/General Benny.jpg" alt="General Benny">
-                <img src="photos/Lights On.jpg" alt="Let There Be Light">
-                <img src="photos/Cave.jpg" alt="Israel Cave">
-                <!-- <img src="photos/Sails.png" alt="Sails"> -->
-                <!-- <img src="photos/City.jpg" alt="Sao Paulo City"> -->
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/AW_logo.png" alt="Archer Western">
+                </h1>
+            </div>
+            <h2>ARCHER WESTERN</h2>
+            <h3>Project Engineer Intern</h3><br>
+            <i class="expDate">May 2018 – October 2018</i>
+            <ul>
+                <li>Assisted project manager on Clear Creek West Sewer Improvement Project</li>
+                <li>Routinely surveyed jobsite and operated DJI drone to monitor quality control, safety, and project development</li>
+                <li>Managed engineering drawings and subcontractor quantities to track project's units complete for monthly cost report</li>
+            </ul>
+            <h3>Construction Estimator Intern</h3><br>
+            <i class="expDate">January 2018 – April 2018</i>
+            <ul>
+                <li>Analyzed engineering drawings and Department of Transportation (DOT) parameters for quantity take-offs using the On-Screen Take-Off program</li>
+                <li>Appraised national projects based on scope changes including revision of specifications, standards, and quantities</li>
+                <li>Produced regular reports regarding DOT bid specifications for $100,000,000+ DOT projects</li>
+                <li>Managed intern team by designating job roles to meet project deadlines as liaison between interns and management</li>
+            </ul>
+
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/TI_logo.png" alt="TI Automotive">
+                </h1>
+            </div>
+            <h2>TI AUTOMOTIVE</h2>
+            <h3>Quality Engineer Intern</h3><br>
+            <i class="expDate">May 2016 – August 2016</i>
+            <ul>
+                <li>Directed a team of 5+ new hires to perform quality control tests in the BMW X5 G01 gas tank trial</li>
+                <li>Executed 10+ tests to analyze quality of tanks and filler pipes daily</li>
+                <li>Formulated and enforced new work protocol tests to analyze quality of gas tanks and filler pipes</li>
+                <li>Trained new employees on proper testing operations and effectively using aforementioned work protocols</li>
+            </ul>
+        </div>
+
+
+        <div id="projects" class="tab-panel" role="tabpanel" aria-label="Technical Projects">
+
+            <div class="textTitle">PROJECTS</div>
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/routelanta_logo.png" alt="Routelanta">
+                </h1>
+            </div>
+            <h2>ROUTELANTA RUNNING APP</h2>
+            <div class="gridProj">
+                <div>
+                    <ul>
+                        <li>Web-Based application that visualizes, classifies, and recommends running routes and displays points of interest in a map of Atlanta using D3.js, SciKit Learn, and K-Means Clustering</li>
+                        <li>Analyzes user running data by requesting Strava API responses in Python and SciKit Learn</li>
+                        <li>Implements K-Means Clustering to classify running routes by difficulty based on distance and height gain</li>
+                    </ul>
+                    <a href="https://jpmar327.github.io/Routelanta/" title="Go to App">
+                        <img src="css/Assets/external_link.png" class="projLink" alt="View project">
+                    </a>
+                    <a href="https://github.com/jpmar327/Routelanta" title="Go to GitHub">
+                        <img src="css/Assets/github_link.png" class="projLink" alt="View on GitHub">
+                    </a>
+                </div>
+                <img class="imgProj" src="css/Assets/routelanta_example.PNG" alt="Routelanta app screenshot" loading="lazy">
+            </div>
+
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/spotify_logo.png" alt="Spotify">
+                </h1>
+            </div>
+            <h2>SPOTIFY TO VISUAL APP</h2>
+
+            <div class="gridProj">
+                <img class="imgProj" src="css/Assets/spotify_gif_example.jpg" alt="Spotify visual app screenshot" loading="lazy">
+                <div>
+                    <ul>
+                        <li>Web application that tracks user's current Spotify song, and displays a gif based on music genre using Spotify API</li>
+                        <li>Displays current song playback information to a front-end client display using a React.js & Node.js</li>
+                    </ul>
+                    <a href="https://github.com/jpmar327/Music-Genre-Gif" title="Go to GitHub">
+                        <img src="css/Assets/github_link.png" class="projLink" alt="View on GitHub">
+                    </a>
+                </div>
+            </div>
+
+            <div class="titleHeader">
+                <h1 class="titleBreak">
+                    <img class="iconLogo" src="css/Assets/dot_robot_logo.png" alt="Follow the Dot Robot">
+                </h1>
+            </div>
+            <h2>FOLLOW THE DOT ROBOT</h2>
+            <div class="gridProj">
+                <div>
+                    <ul>
+                        <li>A robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
+                        <li>Movement of colored pin is detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
+                        <li>A stepper motor control program written in C is flashed onto the MSP Launchpad to control the robot's pointer based on the coordinates the Python program dictated</li>
+                    </ul>
+                    <a href="https://github.com/jpmar327/Follow-the-Dot-Robot" title="Go to GitHub">
+                        <img src="css/Assets/github_link.png" class="projLink" alt="View on GitHub">
+                    </a>
+                </div>
+                <img class="imgProj" src="css/Assets/follow_dot_example.PNG" alt="Follow the Dot Robot screenshot" loading="lazy">
             </div>
         </div>
-    </div>
 
-</div>
+        <div id="photos" class="tab-panel" role="tabpanel" aria-label="Photography">
+            <div class="textTitle">PHOTOGRAPHY</div>
+            <div class="rowImg">
+                <div class="columnImg">
+                    <img src="photos/Samy Jump.jpg" alt="Wake Kicker" loading="lazy">
+                    <img src="photos/Santorini.png" alt="Oia Greece" loading="lazy">
+                    <img src="photos/Col. Rolo.jpg" alt="Colonel Rolo" loading="lazy">
+                    <img src="photos/Amizade.jpg" alt="Amizade" loading="lazy">
+                </div>
+                <div class="columnImg">
+                    <img src="photos/Sails.png" alt="Sails" loading="lazy">
+                    <img src="photos/General Benny.jpg" alt="General Benny" loading="lazy">
+                    <img src="photos/Lights On.jpg" alt="Let There Be Light" loading="lazy">
+                    <img src="photos/Cave.jpg" alt="Israel Cave" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+    </main>
 </body>
 </html>
