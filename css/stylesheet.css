@@ -362,8 +362,13 @@ ul li::before {
     }
 
     .nav-btn img {
-        height: 55%;
+        height: 45%;
         width: auto;
+        transition: height 0.15s ease;
+    }
+
+    div.icons.nav-active .nav-btn img {
+        height: 75%;
     }
 
     .infoGrid {
