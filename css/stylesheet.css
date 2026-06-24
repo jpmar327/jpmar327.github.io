@@ -278,7 +278,7 @@ p {
 }
 
 .iconLogo {
-    height: 200px;
+    height: 25vh;
     margin: auto;
     padding: 0 25px;
 }
@@ -443,7 +443,7 @@ ul li::before {
     }
 
     img.iconLogo {
-        height: clamp(60px, 12vh, 150px);
+        height: clamp(60px, 20vh, 150px);
     }
 
     .cardProfile {
@@ -481,7 +481,7 @@ ul li::before {
     }
 
     .iconLogo {
-        height: 12vh;
+        height: 25vh;
     }
 
     i.expDate {
@@ -551,7 +551,7 @@ ul li::before {
     }
 
     .iconLogo {
-        height: 15vh;
+        height: 25vh;
     }
 }
 
