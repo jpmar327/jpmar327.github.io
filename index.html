@@ -310,8 +310,13 @@
                 <img class="imgProj" src="css/Assets/spotify_gif_example.jpg" alt="Spotify visual app screenshot" loading="lazy">
                 <div>
                     <ul class="projectList">
-                        <li>Web application that tracks user's current Spotify song, and displays a gif based on music genre using Spotify API</li>
-                        <li>Displays current song playback information to a front-end client display using a React.js & Node.js</li>
+                        <li>Built a cross-platform desktop app (Windows, macOS, Linux) that detects the genre of the currently playing Spotify track and displays a matching fullscreen GIF in real time with sub-second latency</li>
+                        <li>Implemented Spotify OAuth 2.0 with PKCE — no client secret exposed — with persistent token storage via the OS keychain and silent refresh on expiry, enabling one-time login across sessions</li>
+                        <li>Designed a multi-source genre resolution pipeline: Last.fm track.getTopTags as primary, Spotify artist genres as fallback, with noise-tag filtering, diacritic normalization, and alias-based matching to correctly resolve variants like "funk carioca" → Brazilian funk vs. American funk</li>
+                        <li>Built a dual-provider GIF search strategy (Giphy primary, Klipy fallback) with genre-to-visual-phrase mapping to improve fullscreen aesthetic quality over raw genre keyword searches</li>
+                        <li>Engineered GIF preloading with crossfade transitions so new GIFs appear instantly on track change without visible loading delay</li>
+                        <li>Added a metadata inspector panel with per-section raw JSON toggles, API call log with response times and HTTP status, and genre detection provenance showing source, raw tags, and search term used</li>
+
                     </ul>
                     <a href="https://github.com/jpmar327/Music-Genre-Gif" title="Go to GitHub">
                         <img src="css/Assets/github_link.png" class="projLink" alt="View on GitHub">
