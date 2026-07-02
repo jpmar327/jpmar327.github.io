@@ -107,7 +107,7 @@ div.icons.nav-active {
 }
 
 ul.projectList {
-    padding-left: 7.5%;
+    /* padding-left: 6%; */
 }
 .nav-btn {
     background: none;
@@ -161,7 +161,8 @@ img.iconLinks {
 }
 
 .projLink {
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    margin-right: 15px;
     width: 35px;
     opacity: 0.65;
     float: left;
@@ -495,6 +496,7 @@ ul li::before {
 
     .projLink {
         margin-left: 15px;
+        /* margin-right: 15px; */
         width: 7.5%;
         opacity: 1;
         float: left;
