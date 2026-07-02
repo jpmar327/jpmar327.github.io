@@ -372,9 +372,12 @@
                 <img class="imgProj" src="css/Assets/follow_dot_example.PNG" alt="Follow the Dot Robot screenshot" loading="lazy">
             </div>
             <ul class="projectList">
-                <li>A robot that detects and follows 2D movement of a colored pin within a system using stepper motors, motor driver, MSP Launchpad, and camera</li>
-                <li>Movement of colored pin is detected using a camera with Python OpenCV running to send coordinates to the MSP Launchpad using UART communication</li>
-                <li>A stepper motor control program written in C is flashed onto the MSP Launchpad to control the robot's pointer based on the coordinates the Python program dictated</li>
+                <li>Built a closed-loop robotic positioning system that uses real-time camera tracking to guide an X-Y stepper motor actuator to specific coordinates on a physical surface</li>
+                <li>Developed a computer vision pipeline in Python (OpenCV) that captures live webcam video, isolates colored markers via HSV color-space thresholding and contour detection, and computes each marker's centroid using image moments</li>
+                <li>Implemented serial (UART) communication at 57600 baud to stream marker coordinates from the vision system to a TI MSP432P401R microcontroller in real time</li>
+                <li>Wrote embedded C firmware for the MSP432 that parses incoming UART data via an interrupt-driven handler, decoding comma-delimited coordinate strings into position values</li>
+                <li>Designed a proportional control algorithm that converts x/y positional error into stepper motor speed and direction, driving two independent motors via PWM to move the actuator to a target location</li>
+                <li>Configured low-level microcontroller peripherals — clock system, GPIO, PWM timers, and UART — directly through TI's driverlib and register-level code</li>
             </ul>
         </div>
             <div class="titleHeader">
